@@ -1,10 +1,18 @@
 <template >
-  <div>
-    <h1 class="text-3xl font-bold underline">Hello world!</h1>
-  </div>
+  <div class="min-h-screen bg-linear-to-br from-gray-900
+  via-blue-900 to-gray-900">
+<NavBar />
+ 
+</div>
 </template>
 <script>
-export default {};
+import NavBar from './components/NavBar.vue';
+export default {
+components : {
+    NavBar, 
+}
+
+};
 </script>
 <style >
 
