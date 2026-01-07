@@ -33,8 +33,53 @@
             his teeth.
           </p>
           <div
-            class="flex items-center gap-4 pt-8 flex-col sm:flex-row sm:w-max sm:mx-auto lg:mx-0">
-            
+            class="flex items-center gap-4 pt-8 flex-col 
+            sm:flex-row sm:w-max sm:mx-auto lg:mx-0"
+          data-aos="fade-up"
+          data-aos-delay="450">
+          <button
+          class="px-8 md:px-10 py-4 rounded-x1 relative group
+          w-full sm:w-max flex justify-center overflow-hidden
+           bg-linear-to-r from-red-400 to-blue-800
+           hover:from-white-500 hover:to-blue-600 transition-all
+           duration-300"
+           >
+            <span class="relative flex items-center 
+            justify-center text-white font-semibold
+            text-lg" >
+              Reach out to me
+              <ArrowRightIcon class="ml-2 w-5 h-5
+            group-hover:translate-x-1 transition-transform" />
+            </span>
+            </button>
+            <button
+            class="border-2 border-blue-400 px-8 md:px-10
+            py-4 rounded-xl relative troup w-full sm:w-max
+            flex justify-center hover:bg-blue-400/10
+            transition-all duration-300
+            ">
+            <div class="flex items-center justify-center relative">
+              <ArrowDownTrayIcon
+              class="w-5 h-5 text-white 
+              group-hover:translate-y-1 transition/transform" />
+              <span class="pl-3 text-white font-semibold
+              text-lg">
+                Download CV
+              </span>
+            </div>
+            </button>
+        </div>
+        <div class="flex items-center justify-center 
+        lg:justify-start gap-7 pt-12"
+        data-aos="fade-up" data-aos-delay="300">
+        <div class="text-center">
+          <div>
+            50+
+          </div>
+
+        </div>
+        
+
         </div>
         </div>
       </div>
@@ -42,10 +87,9 @@
   </section>
 </template>
 
-<script>
-export default {
-  name: "MeSection",
-};
+<script setup>
+import { ArrowDownTrayIcon, ArrowRightIcon } from '@heroicons/vue/16/solid';
+
+
 </script>
 
-<style></style>
