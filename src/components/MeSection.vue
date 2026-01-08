@@ -73,14 +73,42 @@
         lg:justify-start gap-7 pt-12"
         data-aos="fade-up" data-aos-delay="300">
         <div class="text-center">
-          <div>
-            50+
+          <div class="text-2xl font-bold text-blue-400">50+</div>
+          <div class="text-blue-200 text-sm" >Projects</div>
+        </div>
+          <div class="text-center">
+          <div class="text-2xl font-bold text-blue-400">2+</div>
+          <div class="text-blue-200 text-sm" >Years</div>
+        </div>
+          <div class="text-center">
+          <div class="text-2xl font-bold text-blue-400">30+</div>
+          <div class="text-blue-200 text-sm" >Clients</div>
+        </div>
+        </div>
+        </div>
+        <!-- Profile Image-->
+        <div class="lg:h-full flex justify-center lg:justify-end">
+          <div class="relative w-full max-w-md lg:max-w-lg">
+            <div class="relative z-10 bg-linear-to-r
+            from-blue-600 to-cyan-500 shadow-2xl
+            rounded-[50%_40%_30%_60%/60%_30%_70%_30%]
+            p-4 backdrop-blur-sm border border-orange-600/30
+            -translate-y-6" 
+            data-aos="zoom-in" data-aos-delay="450">
+            <div class="reounded-xl overflow-hidden" >
+              <img 
+              src="../../public/Ian.png" 
+              alt="Ian - Profile Image"
+              loading="lazy"
+              class="w-[50px] h-[500px] object-contain
+              -translate-y-8">
+            </div>
+               </div>
+               <div class="absolute" >
+
+               </div>
           </div>
 
-        </div>
-        
-
-        </div>
         </div>
       </div>
     </div>
