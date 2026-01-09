@@ -3,7 +3,8 @@
   via-blue-900 to-gray-900">
 <NavBar />
 <MeSection />
- 
+<Services /> 
+<AboutMe />
 </div>
 </template>
 <script>
@@ -13,11 +14,15 @@ import 'aos/dist/aos.css';
 import MeSection from './components/MeSection.vue';
 import NavBar from './components/NavBar.vue';
 import {ref, nextTick, onMounted } from 'vue';
+import Services from './components/Services.vue';
+import AboutMe from './components/AboutMe.vue';
 
 export default {
 components : {
     NavBar, 
   MeSection,
+  Services,
+  AboutMe,
 },
 setup() {
   const loading = ref(true);

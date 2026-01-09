@@ -22,11 +22,12 @@
               data-aos="fade-right"
               data-aos-delay="80"
             ></p>
-            <p>Full-Stack Developer & Content Specialist</p>
+            <p>Full-Stack Developer</p>
           </div>
           <p
             class="text-gray-300 pt-6 text-center lg:text-left mx-auto max-w-xl text-lg leading-relaxed"
-          >
+          data-aos="fade-right"
+              data-aos-delay="150">
             I was eyes to the blind, and feet was I to the lame. 16I was a
             father to the poor: and the cause which I knew not I searched out.
             17And I brake the jaws of the wicked, and plucked the spoil out of
@@ -100,13 +101,13 @@
               src="../../public/Ian.png" 
               alt="Ian - Profile Image"
               loading="lazy"
-              class="w-[50px] h-[500px] object-contain
-              -translate-y-8">
+              class="w-[400px] h-[500px] object-contain
+              -translate-y-7 translate-x-8 rounded-[20%]">
             </div>
                </div>
-               <div class="absolute" >
-
-               </div>
+               <div class="absolute -top-2 -right-4 w-10 h-10
+               bg:red-400 rounded-full blur-sm opacity-6
+               animate-pulse"></div>
           </div>
 
         </div>
@@ -116,8 +117,9 @@
 </template>
 
 <script setup>
-import { ArrowDownTrayIcon, ArrowRightIcon } from '@heroicons/vue/16/solid';
-
-
+import { 
+ArrowDownTrayIcon, 
+ArrowRightIcon 
+} from '@heroicons/vue/16/solid';
 </script>
 
