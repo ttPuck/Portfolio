@@ -31,7 +31,7 @@ setup() {
     Aos.init({
       duration: 900,
       once: false,
-      offest: 100,
+      offset: 100,
       easing: 'ease-in-out',
     });
 setTimeout(() => {

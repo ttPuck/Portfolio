@@ -1,13 +1,168 @@
-<template >
-    <div>
-        
+<template>
+  <section
+    class="relative py-20 overflow-hidden min-h-screen flex items-center"
+    id="about"
+  >
+    <div
+      class="w-full px-5 sm:px-8 md:px-12 lg:px-8 max-w-5xl lg:max-w-7xl mx-auto relative z-10"
+    >
+      <div class="grid lg:grid-cols-2 gap-10 xl:gap-14 items-center">
+        <div
+          class="lg:h-full flex justify-center lg:justify-start order-2 lg:order-1">
+          <div class="relative w-full max-w-md">
+            <div 
+            data-aos="zoom-in"
+            class="relative bg-linear-to-br 
+            from-gray-800/60 to-blue-900/40 rounded-3xl
+            backdrop-blur-sm border border-blue-500/30 shadow-2xl"
+            >
+            <div class="grid grid-cols-2 gap-4">
+                <div
+                v-for="(image, index) in aboutImage"
+                :key="image.id"
+                class="relative group"
+                :data-aos="image.animation"
+                :data-aos-delay="image.delay"
+                >
+                <div class="rounded-2xl p-2 border
+                shadow-lg"
+                :class="image.gradient">
+                <img 
+                :src="image.src" 
+                :alt="image.alt"
+                class="w-full h-48 object-cover
+        rounded-xl group-hover:scale-105 transition-transform
+        duration-300">
+                </div>
+                <div class="absolute -top-2 -right-2
+                text-white text-xs px-2 py-1 rounded-full
+                font-semibold"
+                :class="image.badgeColor"
+                >
+                {{ image.badge }}
+                </div>
+                </div>
+            </div>
+            <div>
+
+            </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
     </div>
+  </section>
 </template>
-<script>
-export default {
-    
-}
+
+<script setup>
+import { ChatBubbleLeftRightIcon, 
+    CodeBracketSquareIcon, 
+    CubeIcon, 
+    PaintBrushIcon, 
+    ArrowRightIcon,
+    ServerIcon } from '@heroicons/vue/16/solid'
+import about1 from '../../public/about1.png'
+import about2 from '../../public/about2.png'
+import about3 from '../../public/about3.png'
+import about4 from '../../public/about4.png'
+
+
+const aboutImage = [
+    {
+        id: 1,
+        src: about1,
+        alt: "Pro",
+        gradient: `bg-linear-to-r from-blue-600 to-cyan-600 
+         border-blue-400/40`,
+        badge: 'Professional',
+        badgeColor: 'bg-blue-500',
+        animation: 'fade-right',
+        delay: 200
+    },
+        {
+        id: 2,
+        src: about2,
+        alt: "Environment",
+        gradient: `bg-linear-to-r from-blue-500 to-cyan-500 
+         border-blue-400/40`,
+        badge: 'Creative',
+        badgeColor: 'bg-cyan-500',
+        animation: 'fade-left',
+        delay: 200
+    },    
+    {
+        id: 3,
+        src: about3,
+        alt: "Pro",
+        gradient: `bg-linear-to-r from-blue-500 to-cyan-500 
+         border-blue-400/40`,
+        badge: 'Developer',
+        badgeColor: 'bg-blue-600',
+        animation: 'fade-right',
+        delay: 400
+    },    {
+        id: 4,
+        src: about4,
+        alt: "Design",
+        gradient: `bg-linear-to-r from-blue-600 to-cyan-600 
+         border-blue-400/40`,
+        badge: 'Designer',
+        badgeColor: 'bg-cyan-600',
+        animation: 'fade-left',
+        delay: 400
+    },
+]
+
+const skills = [
+    {
+        id:1,
+        icon: CodeBracketSquareIcon,
+        iconColor: "text-blue-400",
+        title: 'Frontend',
+        desc: "Vue.js, React, Next.js, Typescript, Tailwind CSS"
+    },
+      {
+        id:2,
+        icon: ServerIcon,
+        iconColor: "text-cyan-400",
+        title: 'Backend',
+        desc: "Node.js, MongoDB, Supabase, SQL"
+    },
+      {
+        id:3,
+        icon: PaintBrushIcon,
+        iconColor: "text-blue-400",
+        title: 'Design',
+        desc: "UI/UX Design, Photoshop, Figma, Prototyping"
+    },
+      {
+        id:4,
+        icon: CubeIcon,
+        iconColor: "text-cyan-400",
+        title: 'Tools',
+        desc: "Git, VSCode, Xcode, Webpack, Hosting Services "
+    },
+]
+
+const ctaButtons = [
+    {
+        id:1,
+        text:'View Portfolio',
+        icon: ArrowRightIcon,
+        iconclass : `ml-2 group-hover:translate-x-1
+        transition-transform`,
+        classes: `bg-linear-to-r from-blue-600 to-cyan-600
+        text-white hover:from-blue-500 hover:to-cyan-500`
+    },
+      {
+        id:2,
+        text:'Contact Me',
+        icon: ChatBubbleLeftRightIcon,
+        iconclass : `mr-2`,
+        classes: `border border-blue-400 text-blue-400 
+        hover:bg-blue-400/10`
+    }
+]
 </script>
-<style >
-    
-</style>
+
