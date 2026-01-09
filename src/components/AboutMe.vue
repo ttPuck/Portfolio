@@ -13,7 +13,7 @@
             <div 
             data-aos="zoom-in"
             class="relative bg-linear-to-br 
-            from-gray-800/60 to-blue-900/40 rounded-3xl
+            from-gray-800/60 to-blue-900/40 rounded-3xl p-6
             backdrop-blur-sm border border-blue-500/30 shadow-2xl"
             >
             <div class="grid grid-cols-2 gap-4">
@@ -43,15 +43,88 @@
                 </div>
                 </div>
             </div>
-            <div>
-
+            <div class="absolute -bottom-4 left-1/2
+            transform -translate-x-1/2 z-20 bg-linear-to-r
+            from-blue-500 to-cyan-500 rounded-2xl px-6 py-3
+            border border-blue-400/40 shadow-xl"
+            data-aos="fade up"
+            data-aos-delay="600">
+                <div
+                class="text-center text-white text-xl font-bold"
+                >3+ Years Experience</div>
             </div>
             </div>
-
           </div>
+        </div>
+        <div class="flex flex-col justify-center
+        order-1 lg:order-2">
+
+        <div class="text-center lg:text-left"
+        data-aos="fade-left">
+        <h2 class="text-white font-bold text-4xl
+        md:text-5xl lg:text-6xl leading-tight">
+            About 
+            <span
+            class="text-transparent bg-clip-text
+        bg-linear-to-r from-blue-400 to-cyan-400">
+        Me</span>
+        </h2>
+        <p class="text-white font-medium text-lg
+        md:text-xl mt-4" data-aos="fade-left"
+        data-aos-delay="400">
+            Full-Stack Developer
+        </p>
+        </div>
+        <p class="text-white pt-4 text-center
+        lg:text-left text-lg leading-relaxed"
+        data-aos="fade-left"
+        data-aos-delay="600">
+            "I know that you can do all things, and that no purpose 
+            of yours can be thwarted"
+        </p>
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-6
+        pt-8" data-aos="fade-up" data-aos-delay="300">
+        <div
+        v-for="skill in skills"
+        :key="skill.id"
+        class="flex flex-col">
+        <div class="flex items-center gap-3 mb-3">
+            <component 
+            :is="skill.icon"
+            class="w-6 h-6"
+            :class="skill.iconColor"
+            ></component>
+            <h3 class="text-lg font-bold text-white">
+                {{ skill.title }}
+            </h3>
+        </div>
+        <p class="text-blue-200 text-sm">
+                {{ skill.desc }}
+        </p>
+        </div>
+        </div>
+        <div class="flex gap-4 pt-8 flex-col sm:flex-row"
+        data-aos="fade-up"
+        data-aos-delay="400"
+        >
+        <button
+        v-for="button in ctaButtons"
+        :key="button.id"
+        class="px-8 py-3 rounded-xl font-semibold
+        transition-all duration-300 flex items-center
+        jusitfy-center"
+        :class="button.classes">
+        <component 
+        :is="button.icon"
+        class="w-4 h-4"
+        :class="button.iconclass"/>
+        {{ button.text }}
+        </button>
         </div>
       </div>
     </div>
+ </div>
+
   </section>
 </template>
 
