@@ -5,6 +5,7 @@
 <MeSection />
 <Services /> 
 <AboutMe />
+<ExperienceSkills />
 </div>
 </template>
 <script>
@@ -16,6 +17,7 @@ import NavBar from './components/NavBar.vue';
 import {ref, nextTick, onMounted } from 'vue';
 import Services from './components/Services.vue';
 import AboutMe from './components/AboutMe.vue';
+import ExperienceSkills from './components/ExperienceSkills.vue';
 
 export default {
 components : {
@@ -23,6 +25,7 @@ components : {
   MeSection,
   Services,
   AboutMe,
+  ExperienceSkills,
 },
 setup() {
   const loading = ref(true);
