@@ -11,7 +11,7 @@
             </span> & Experience 
         </h2>
         <p class="text-white text-lg max-w-2xl mx-auto">
-            My technical catalouge and professional journey
+            My technical cataloge and professional journey
         </p>
     </div>
     <div class="grid lg:grid-cols-2 gap-12 lg:gap-16">
@@ -97,8 +97,19 @@
                     :class="exp.borderClass">
                     <div class="flex flex-col sm:flex-row sm:items-center
                     sm:jusitfy-between mb-3">
-                    <h4 class="text-">{{ exp.position }}</h4>
+                    <h4 class="text-lg font-bold text-white
+                    ">{{ exp.position }}</h4>
+                    <span 
+                    :class="exp.dateColor"
+                    class="mt-1 sm:mt-0 "
+                    >{{ exp.period }}</span>
                     </div>
+                    <p 
+                    :class="exp.companyColor"
+                    class="font-medium mb-3">{{ exp.company }}</p>
+                    <p
+                    class="text-blue-100 text-sm leading-relaxed"
+                    >{{ exp.desc }}</p>
                     </div>
 
                     </div>
@@ -161,13 +172,25 @@ const skills = [
     
 
 ]
-const experience = [
+const experiences = [
     {
         id: 1,
-        position: "Freelance Full-Stack Developer",
+        position: "Freelance Full-Stack Developer ",
         company: "Garbero Media",
-        period: "2025 - Present",
+        period: " 2025 - Present",
         desc: "Full-stack developer and UI/UX design for multiple websites, the major being a photography portfolio and booking website built with Vue.js and a Node.js backend, featuring a MongoDB customer database and responsive UI. Integrated Plaid Link on the frontend with secure server-side Plaid API workflows for bank-linked payments. Implemented booking, scheduling, and transaction management using RESTful APIs.",
+        borderColor: "border-blue-500/30",
+        dotColor: "bg-blue-500",
+        borderClass: "botder-blue=500/20",
+        dateColor: "text-blue-400 text-sm font-semibold",
+        companyColor: "text-cyan-400"
+    },
+      {
+        id: 2,
+        position: "Frontend Developer & Administrative Manager",
+        company: "Faith Talent Services",
+        period: "2019 - 2025",
+        desc: "Frontend developer and UI/UX design for one recruiting website, and manager of all HR and administrative duties for the company. Duties included: Onboarding, Payroll, Calendar Management, Administrative Tasks, and Clerical Tasks.",
         borderColor: "border-blue-500/30",
         dotColor: "bg-blue-500",
         borderClass: "botder-blue=500/20",

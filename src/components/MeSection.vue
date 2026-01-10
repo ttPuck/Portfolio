@@ -70,7 +70,7 @@
             data-aos-delay="300"
           >
             <div class="text-center">
-              <div class="text-2xl font-bold text-blue-400">50+</div>
+              <div class="text-2xl font-bold text-blue-400">15+</div>
               <div class="text-blue-200 text-sm">Projects</div>
             </div>
             <div class="text-center">
@@ -78,7 +78,7 @@
               <div class="text-blue-200 text-sm">Years</div>
             </div>
             <div class="text-center">
-              <div class="text-2xl font-bold text-blue-400">30+</div>
+              <div class="text-2xl font-bold text-blue-400">10+</div>
               <div class="text-blue-200 text-sm">Clients</div>
             </div>
           </div>
