@@ -6,6 +6,8 @@
 <Services /> 
 <AboutMe />
 <ExperienceSkills />
+<Projects />
+<Contact />
 </div>
 </template>
 <script>
@@ -18,6 +20,8 @@ import {ref, nextTick, onMounted } from 'vue';
 import Services from './components/Services.vue';
 import AboutMe from './components/AboutMe.vue';
 import ExperienceSkills from './components/ExperienceSkills.vue';
+import Projects from './components/Projects.vue';
+import Contact from './components/Contact.vue';
 
 export default {
 components : {
@@ -26,6 +30,8 @@ components : {
   Services,
   AboutMe,
   ExperienceSkills,
+  Projects,
+  Contact,
 },
 setup() {
   const loading = ref(true);
