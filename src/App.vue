@@ -8,6 +8,7 @@
 <ExperienceSkills />
 <Projects />
 <Contact />
+<Testimonials />
 </div>
 </template>
 <script>
@@ -22,6 +23,7 @@ import AboutMe from './components/AboutMe.vue';
 import ExperienceSkills from './components/ExperienceSkills.vue';
 import Projects from './components/Projects.vue';
 import Contact from './components/Contact.vue';
+import Testimonials from './components/Testimonials.vue';
 
 export default {
 components : {
@@ -32,6 +34,7 @@ components : {
   ExperienceSkills,
   Projects,
   Contact,
+  Testimonials,
 },
 setup() {
   const loading = ref(true);
