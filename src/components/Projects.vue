@@ -140,7 +140,7 @@ const projects = ref([
         communication software like ATAK, built 
         with Next.js 13 and React, featuring real-time 
         messaging via Socket.io, a MySQL database managed with Prisma, and a responsive UI styled with Tailwind CSS.`,
-        image: '../public/project1.png',
+        image: '../public/project2.png',
         category: 'Full-stack',
         bordColor: 'border-blue-500/30',
         badgeColor: "bg-blue-500",
@@ -183,7 +183,7 @@ const projects = ref([
          The application implements full CRUD functionality with a focus on 
         reliable local data management, and a 
          streamlined user experience.`,
-        image: '../public/project2.png',
+        image: '../public/project3.png',
         category: 'Full-stack',
         bordColor: 'border-blue-500/30',
         badgeColor: "bg-blue-500",

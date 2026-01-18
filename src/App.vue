@@ -1,5 +1,9 @@
 <template >
-  <div class="min-h-screen bg-linear-to-br from-gray-900
+  <div v-if="loading">
+    <LoadingSpinner />
+  
+  </div>
+  <div v-else class="min-h-screen bg-linear-to-br from-gray-900
   via-blue-900 to-gray-900">
 <NavBar />
 <MeSection />
@@ -9,6 +13,8 @@
 <Projects />
 <Contact />
 <Testimonials />
+<Footer />
+<BackToTop />
 </div>
 </template>
 <script>
@@ -24,6 +30,9 @@ import ExperienceSkills from './components/ExperienceSkills.vue';
 import Projects from './components/Projects.vue';
 import Contact from './components/Contact.vue';
 import Testimonials from './components/Testimonials.vue';
+import Footer from './components/Footer.vue';
+import BackToTop from './components/BackToTop.vue';
+import LoadingSpinner from './components/LoadingSpinner.vue';
 
 export default {
 components : {
@@ -35,6 +44,9 @@ components : {
   Projects,
   Contact,
   Testimonials,
+  Footer,
+  BackToTop,
+  LoadingSpinner
 },
 setup() {
   const loading = ref(true);
