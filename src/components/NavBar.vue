@@ -55,7 +55,7 @@
             class="relative block text-blue-100 hover:text-blue-400 transition-all duration-300 text-xl md:text-base font-medium group"
           @click="scrollToSection(item.href)">
             {{ item.name }}
-            <span class="absolute button-0 left-0 w-0 h-0.5 bg-blue-400
+            <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-blue-400
             transition-all duration-300 group-hover:w-full"></span>
 
           </a>

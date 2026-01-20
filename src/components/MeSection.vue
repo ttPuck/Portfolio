@@ -29,10 +29,12 @@
             data-aos="fade-right"
             data-aos-delay="150"
           >
-            I was eyes to the blind, and feet was I to the lame. 16I was a
-            father to the poor: and the cause which I knew not I searched out.
-            17And I brake the jaws of the wicked, and plucked the spoil out of
-            his teeth.
+            I am an experienced frontend and backend developer of 2+ years, with a handful of projects under my belt. I specialize in 
+
+            Vue.js and other JavaScript frameworks and their complimentary backend
+            tools such as MongoDB, Supabase, and Cloudflare, as well as app development in Swift for macOS and iOS. I love to be part of a team
+
+            where I could deliver effective and efficient code and provide my gifts and skills to any project that may need them!
           </p>
           <div
             class="flex items-center gap-4 pt-8 flex-col sm:flex-row sm:w-max sm:mx-auto lg:mx-0"

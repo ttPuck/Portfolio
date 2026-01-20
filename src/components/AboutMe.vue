@@ -136,8 +136,8 @@ import {
   ArrowRightIcon,
   ServerIcon,
 } from "@heroicons/vue/16/solid";
-import about1 from "../../public/about1.png";
-import about2 from "../../public/about2.png";
+import about1 from "../../public/about1.jpg";
+import about2 from "../../public/about2.jpeg";
 import about3 from "../../public/about3.png";
 import about4 from "../../public/about4.png";
 
@@ -148,7 +148,7 @@ const aboutImage = [
     alt: "Pro",
     gradient: `bg-linear-to-r from-blue-600 to-cyan-600 
          border-blue-400/40`,
-    badge: "Professional",
+    badge: "Developer",
     badgeColor: "bg-blue-500",
     animation: "fade-right",
     delay: 200,
@@ -156,10 +156,10 @@ const aboutImage = [
   {
     id: 2,
     src: about2,
-    alt: "Environment",
+    alt: "",
     gradient: `bg-linear-to-r from-blue-500 to-cyan-500 
          border-blue-400/40`,
-    badge: "Creative",
+    badge: "Mobile Development",
     badgeColor: "bg-cyan-500",
     animation: "fade-left",
     delay: 200,
@@ -170,7 +170,7 @@ const aboutImage = [
     alt: "Pro",
     gradient: `bg-linear-to-r from-blue-500 to-cyan-500 
          border-blue-400/40`,
-    badge: "Developer",
+    badge: "Professional",
     badgeColor: "bg-blue-600",
     animation: "fade-right",
     delay: 400,
@@ -194,14 +194,14 @@ const skills = [
     icon: CodeBracketSquareIcon,
     iconColor: "text-blue-400",
     title: "Frontend",
-    desc: "Vue.js, React, Next.js, Typescript, Tailwind CSS",
+    desc: "JavaScript, Vue.js, React, Next.js, Angular, Typescript, Tailwind CSS",
   },
   {
     id: 2,
     icon: ServerIcon,
     iconColor: "text-cyan-400",
     title: "Backend",
-    desc: "Node.js, MongoDB, Supabase, SQL",
+    desc: "Node.js, MongoDB, Supabase, Cloudflare, SQL",
   },
   {
     id: 3,

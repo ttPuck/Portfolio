@@ -63,13 +63,13 @@ import person3 from "../../public/person3.png";
 const testimonials = [
   {
     id: 1,
-    text: `The LORD said to my Lord, 
-        “Sit in the place of honor at my right hand 
-        until I humble your enemies, making them a 
-        footstool under your feet."`,
+    text: `Ian has an admirable level of attention to detail, 
+    and a profound ability to comprehend complex subjects quickly. His creativity 
+    and adaptability to problems is limitless, and it shows in the projects he has produced.
+     Ian is a wonderful person to work with, and I would recommend him to anyone interested in an extraordinary team player.`,
     name: "Alex Garbero",
     position: "CEO, Garbero Media",
-    avatar: person1,
+    avatar: person3,
   },
   {
     id: 2,
