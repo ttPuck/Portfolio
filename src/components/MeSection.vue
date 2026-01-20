@@ -56,6 +56,7 @@
                 />
               </span>
             </button>
+            <a href="/Ian-CV.pdf" download>
             <button
               class="border-2 border-blue-400 px-8 md:px-10 py-4 rounded-xl relative troup w-full sm:w-max flex justify-center hover:bg-blue-400/10 transition-all duration-300"
             >
@@ -68,6 +69,7 @@
                 </span>
               </div>
             </button>
+            </a>
           </div>
           <div
             class="flex items-center justify-center lg:justify-start gap-7 pt-12"

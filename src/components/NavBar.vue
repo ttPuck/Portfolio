@@ -64,6 +64,7 @@
       </ul>
       <div class="mt-8 md:mt-0 md:ml-8">
         <button
+        @click="scrollToContact"
           class="px-6 py-2.5 bg-linear-to-r from-blue-500 to-cyan-500 text-white rounded-full hover:shadow-lg hover:shadow-blue-500/25 transition-all duration-300 hover:scale-100"
         >
           Talk With Me!
@@ -83,6 +84,12 @@ const Menu = ref([
   { name: "Reviews", href: "#reviews" },
 ]);
 const isMenuOpen = ref(false);
+const scrollToContact = () => {
+  const el = document.getElementById("contact")
+  if (!el) return
+
+  el.scrollIntoView({ behavior: "smooth" })
+}
 const scrollToSection = (href) => {
   isMenuOpen.value = false;
   const section = document.querySelector(href);
