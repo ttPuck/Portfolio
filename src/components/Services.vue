@@ -15,8 +15,7 @@
           data-aos="fade-up"
           data-aos-delay="80"
         >
-          18 Flee sexual immorality. Every sin that a man does is outside the
-          body, but he who commits sexual immorality sins against his own body.
+         My Skill Sets To Provide You And Your Team With Amazing Services
         </p>
       </div>
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
@@ -60,6 +59,7 @@
       <div class="text-center mt-16" data-aos="fade-up" data-aos-delay="200">
         <div class="inline-flex flex-col sm:flex-row gap-4 items-center">
           <button
+           @click="scrollToContact"
             class="px-8 py-4 rounded-xl border-2 border-blue-500 text-blue-400 font-semibold hover:bg-blue-400/10 transition-all duration-300 flex items-center"
           >
             Get In Touch
@@ -71,6 +71,12 @@
   </section>
 </template>
 <script setup>
+  const scrollToContact = () => {
+  const el = document.getElementById("contact")
+  if (!el) return
+
+  el.scrollIntoView({ behavior: "smooth" })
+}
 import {
   ArrowRightIcon,
   ChatBubbleLeftRightIcon,
@@ -86,25 +92,25 @@ const services = ref([
     id: 1,
     icon: CodeBracketIcon,
     name: "Web Development",
-    desc: `18 Flee sexual immorality. Every sin that a man does is outside the body, but he who commits sexual immorality sins against his own body.`,
+    desc: `Experience in JavaScript frameworks such as Vue.js, Next.Js, and their backend compliments such as MongoDB, Supabase, and Cloudflare`,
   },
   {
     id: 2,
     icon: DevicePhoneMobileIcon,
     name: "Mobile Development",
-    desc: `18 Flee sexual immorality. Every sin that a man does is outside the body, but he who commits sexual immorality sins against his own body.`,
+    desc: `Creating amazing iOS and macOS counterparts to applications and providing an easy path to having apps on the Apple ecosystem.`,
   },
   {
     id: 3,
     icon: DocumentTextIcon,
     name: "Technical Writing",
-    desc: `18 Flee sexual immorality. Every sin that a man does is outside the body, but he who commits sexual immorality sins against his own body.`,
+    desc: `Able to distill complex and hard to understand topics and subjects into a neatly packaged and easy to comprehend source books or teaching material.`,
   },
   {
     id: 4,
     icon: EnvelopeIcon,
     name: "Administrative Services",
-    desc: `18 Flee sexual immorality. Every sin that a man does is outside the body, but he who commits sexual immorality sins against his own body.`,
+    desc: `With overwhelming experience, I am able to provide any form of Administrative services such as Technical Writing, Copywriting, Clerical and Management tasks, and general Knowledge Transfer.`,
   },
 ]);
 </script>

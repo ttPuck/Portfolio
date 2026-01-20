@@ -11,7 +11,7 @@
           & Experience
         </h2>
         <p class="text-white text-lg max-w-2xl mx-auto">
-          My technical cataloge and professional journey
+          My Technical Cataloge And Professional Journey
         </p>
       </div>
       <div class="grid lg:grid-cols-2 gap-12 lg:gap-16">

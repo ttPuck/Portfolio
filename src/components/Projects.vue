@@ -11,7 +11,7 @@
           </span>
         </h2>
         <p class="text-blue-200 text-lg max-w-2xl mx-auto">
-          A collection of my projects, with both public and private source code
+          A Collection Of My Projects, With Both Public And Private Source Code
         </p>
       </div>
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -84,6 +84,7 @@
             <ArrowRightIcon class="w-5 h-5 ml-2" />
           </button>
           <button
+           @click="scrollToContact"
             class="px-8 py-4 rounded-xl border-2 border-blue-400 text-blue-400 font-semibold hover:bg-blue-400/10 transition-all duration-300 flex items-center"
           >
             <ChatBubbleLeftRightIcon class="w-5 h-5 mr-2" />
@@ -103,6 +104,12 @@ import {
   EyeIcon,
 } from "@heroicons/vue/16/solid";
 import { ref } from "vue";
+const scrollToContact = () => {
+  const el = document.getElementById("contact")
+  if (!el) return
+
+  el.scrollIntoView({ behavior: "smooth" })
+}
 
 const projects = ref([
   {

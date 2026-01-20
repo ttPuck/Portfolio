@@ -11,7 +11,7 @@
           </span>
         </h2>
         <p class="text-blue-200 text-lg">
-          Let's work together on your next project
+          Let's Work Together On Your Next Project
         </p>
       </div>
       <div class="grid lg:grid-cols-2 gap-12">

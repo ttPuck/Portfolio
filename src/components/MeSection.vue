@@ -43,8 +43,10 @@
             data-aos-delay="450"
           >
             <button
+              @click="scrollToContact"
               class="px-8 md:px-10 py-4 rounded-x1 relative group w-full sm:w-max flex justify-center overflow-hidden bg-linear-to-r from-red-400 to-blue-800 hover:from-white-500 hover:to-blue-600 transition-all duration-300"
             >
+            
               <span
                 class="relative flex items-center justify-center text-white font-semibold text-lg"
               >
@@ -115,4 +117,10 @@
 
 <script setup>
 import { ArrowDownTrayIcon, ArrowRightIcon } from "@heroicons/vue/16/solid";
+const scrollToContact = () => {
+  const el = document.getElementById("contact")
+  if (!el) return
+
+  el.scrollIntoView({ behavior: "smooth" })
+}
 </script>

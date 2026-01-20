@@ -78,8 +78,7 @@
             data-aos="fade-left"
             data-aos-delay="600"
           >
-            "I know that you can do all things, and that no purpose of yours can
-            be thwarted"
+            Frontend and backend developer specializing in JS frameworks and app development for macOS and cross-platform applications.
           </p>
           <div
             class="grid grid-cols-1 sm:grid-cols-2 gap-6 pt-8"
@@ -112,6 +111,8 @@
               :key="button.id"
               class="px-8 py-3 rounded-xl font-semibold transition-all duration-300 flex items-center jusitfy-center"
               :class="button.classes"
+             @click="button.text === 'Contact Me' && scrollToContact()"
+
             >
               <component
                 :is="button.icon"
@@ -128,6 +129,12 @@
 </template>
 
 <script setup>
+  const scrollToContact = () => {
+  const el = document.getElementById("contact")
+  if (el) {
+    el.scrollIntoView({ behavior: "smooth" })
+  }
+}
 import {
   ChatBubbleLeftRightIcon,
   CodeBracketSquareIcon,

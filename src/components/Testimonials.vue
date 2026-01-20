@@ -14,7 +14,7 @@
           </span>
         </h2>
         <p class="text-blue-200 text-lg">
-          What people say about working with me
+          What People Say About Working With Me
         </p>
       </div>
       <div class="grid grid-cols-1 md:grid-cols-2 gap-5 lg:grid-cols-2 gap-6">
