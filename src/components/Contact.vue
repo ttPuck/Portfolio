@@ -29,17 +29,17 @@
             </div>
             <div class="flex justify-items-center gap-3">
               <img :src="githuboutline" class="w-10 h-7 text-blue-400" />
-            <div>
-  <p class="text-white font-semibold">Github</p>
-  <a
-    href="https://github.com/ptwees"
-    target="_blank"
-    rel="noopener noreferrer"
-    class="text-orange-300 hover:text-cyan-400 transition-colors"
-  >
-    ptwees
-  </a>
-</div>
+              <div>
+                <p class="text-white font-semibold">Github</p>
+                <a
+                  href="https://github.com/ptwees"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="text-orange-300 hover:text-cyan-400 transition-colors"
+                >
+                  ptwees
+                </a>
+              </div>
             </div>
             <div class="flex items-center gap-4">
               <MapIcon class="w-6 h-6 text-blue-400" />
@@ -136,8 +136,5 @@ import {
   UserGroupIcon,
 } from "@heroicons/vue/16/solid";
 
-
 import githuboutline from "../../public/github-outline.png";
-
-
 </script>

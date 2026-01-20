@@ -53,20 +53,20 @@
           <a
             :href="item.href"
             class="relative block text-blue-100 hover:text-blue-400 transition-all duration-300 text-xl md:text-base font-medium group"
-          @click="scrollToSection(item.href)">
+            @click="scrollToSection(item.href)"
+          >
             {{ item.name }}
-            <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-blue-400
-            transition-all duration-300 group-hover:w-full"></span>
-
+            <span
+              class="absolute bottom-0 left-0 w-0 h-0.5 bg-blue-400 transition-all duration-300 group-hover:w-full"
+            ></span>
           </a>
         </li>
       </ul>
       <div class="mt-8 md:mt-0 md:ml-8">
-        <button class="px-6 py-2.5 bg-linear-to-r from-blue-500
-        to-cyan-500 text-white rounded-full hover:shadow-lg
-        hover:shadow-blue-500/25 transition-all duration-300
-        hover:scale-100">
-        Talk With Me!
+        <button
+          class="px-6 py-2.5 bg-linear-to-r from-blue-500 to-cyan-500 text-white rounded-full hover:shadow-lg hover:shadow-blue-500/25 transition-all duration-300 hover:scale-100"
+        >
+          Talk With Me!
         </button>
       </div>
     </nav>

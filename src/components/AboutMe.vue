@@ -136,7 +136,7 @@ import {
   ArrowRightIcon,
   ServerIcon,
 } from "@heroicons/vue/16/solid";
-import about1 from "../../public/about1.jpg";
+import about1 from "../../public/about1.png";
 import about2 from "../../public/about2.jpeg";
 import about3 from "../../public/about3.png";
 import about4 from "../../public/about4.png";
@@ -194,7 +194,7 @@ const skills = [
     icon: CodeBracketSquareIcon,
     iconColor: "text-blue-400",
     title: "Frontend",
-    desc: "JavaScript, Vue.js, React, Next.js, Angular, Typescript, Tailwind CSS",
+    desc: "JavaScript, Vue.js, React, Next.js, Typescript, Tailwind CSS",
   },
   {
     id: 2,

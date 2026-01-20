@@ -34,13 +34,13 @@
                 </span>
               </div>
               <div class="flex flex-wrap gap-1">
-         <span
-  v-for="t in skill.tech"
-  :key="t.name"
-  class="px-2 py-2 bg-linear-to-r from-blue-500/20 border border-blue-400/30 rounded-full text-white text-sm font-medium hover:scale-105 transition-transform duration-300"
->
-  {{ t.name }}
-</span>
+                <span
+                  v-for="t in skill.tech"
+                  :key="t.name"
+                  class="px-2 py-2 bg-linear-to-r from-blue-500/20 border border-blue-400/30 rounded-full text-white text-sm font-medium hover:scale-105 transition-transform duration-300"
+                >
+                  {{ t.name }}
+                </span>
               </div>
               <div class="mt-3 h-2 bg-gray-700 rounded-full overflow-hidden">
                 <div
@@ -122,10 +122,11 @@ import {
 const tech = {
   vue: { name: "Vue.js" },
   react: { name: "React" },
-  angular: { name: "Angular" },
   next: { name: "Next.js" },
   node: { name: "Node.js" },
   swift: { name: "Swift" },
+  objectivec: { name: "Objective-C" },
+  appkit: { name: "AppKit" },
   mongo: { name: "MongoDB" },
   postgres: { name: "PostgreSQL" },
   supabase: { name: "Supabase" },
@@ -143,7 +144,7 @@ const skills = [
     percentage: 95,
     percentageColor: "text-blue-400 text-sm",
     gradient: "bg-linear-to-r from-blue-500 to-cyan-500",
-    tech: [tech.vue, tech.react, tech.next, tech.angular],
+    tech: [tech.vue, tech.react, tech.next, tech.objectivec, tech.appkit],
   },
   {
     id: 2,
@@ -163,7 +164,7 @@ const skills = [
     percentage: 75,
     percentageColor: "text-blue-400 text-sm",
     gradient: "bg-linear-to-r from-blue-500 to-cyan-500",
-    tech: [tech.swift],
+    tech: [tech.swift, tech.objectivec, tech.appkit],
   },
   {
     id: 4,
@@ -173,8 +174,7 @@ const skills = [
     percentage: 70,
     percentageColor: "text-blue-400 text-sm",
     gradient: "bg-linear-to-r from-blue-500 to-cyan-500",
-        tech: [tech.tailwind, tech.figma],
-
+    tech: [tech.tailwind, tech.figma],
   },
   {
     id: 5,
@@ -212,5 +212,4 @@ const experiences = [
     companyColor: "text-cyan-400",
   },
 ];
-
 </script>

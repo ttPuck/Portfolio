@@ -17,7 +17,7 @@
           What people say about working with me
         </p>
       </div>
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-5 lg:grid-cols-3 gap-6">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-5 lg:grid-cols-2 gap-6">
         <div
           v-for="(testimonial, index) in testimonials"
           :key="testimonial.id"
@@ -73,23 +73,13 @@ const testimonials = [
   },
   {
     id: 2,
-    text: `The LORD said to my Lord, 
-        “Sit in the place of honor at my right hand 
-        until I humble your enemies, making them a 
-        footstool under your feet."`,
-    name: "Alex Garbero",
-    position: "Product Manager",
+    text: `Ian is able to understand and comprehend any and all ideas brought to him, and deliver a finalized product to 
+    clients on time and well above
+    their expectations. His ability to distill and explain overly technical ideas and topics to any person is amazing in a team
+    environment. Ian delivers amazing products with end users in mind and is a creative powerhouse.`,
+    name: "Faith Talent Services",
+    position: "Recruiting Business",
     avatar: person2,
-  },
-  {
-    id: 3,
-    text: `The LORD said to my Lord, 
-        “Sit in the place of honor at my right hand 
-        until I humble your enemies, making them a 
-        footstool under your feet."`,
-    name: "Alex Garbero",
-    position: "CEO, Garbero Media",
-    avatar: person3,
   },
 ];
 </script>
