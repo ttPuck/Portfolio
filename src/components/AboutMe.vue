@@ -78,7 +78,7 @@
             data-aos="fade-left"
             data-aos-delay="600"
           >
-            Frontend and backend developer specializing in JS frameworks and app development for macOS and cross-platform applications.
+            Frontend and backend developer specializing in JS frameworks and app development for macOS and cross-platform desktop applications.
           </p>
           <div
             class="grid grid-cols-1 sm:grid-cols-2 gap-6 pt-8"
