@@ -20,7 +20,7 @@
             Contact Information
           </h3>
           <div class="space-y-6">
-            <div class="flex items-center gap-4">
+            <div class="flex items-center gap-4 ">
               <EnvelopeIcon class="w-6 h-6 text-blue-400" />
               <div>
                 <p class="text-white font-semibold">Email</p>
@@ -42,36 +42,9 @@
               </div>
             </div>
             <div class="flex items-center gap-4">
-              <MapIcon class="w-6 h-6 text-blue-400" />
-              <div>
-                <p class="text-white font-semibold">My Location</p>
-                <p class="text-white">La Jolla, California</p>
-              </div>
             </div>
           </div>
-          <div class="mt-8">
-            <h4 class="text-lg font-bold text-white mb-4">Follow Me</h4>
-            <div class="flex gap-4">
-              <a
-                href="#"
-                class="p-3 bg-blue-500/20 border border-cyan-400/30 rounded-xl text-hover-400 hover:bg-blue-500/30 transition-all"
-              >
-                <ChatBubbleLeftEllipsisIcon class="w-5 h-5" />
-              </a>
-              <a
-                href="#"
-                class="p-3 bg-cyan-500/20 border border-cyan-400/30 rounded-xl text-hover-400 hover:bg-cyan-500/30 transition-all"
-              >
-                <UserGroupIcon class="w-5 h-5" />
-              </a>
-              <a
-                href="#"
-                class="p-3 bg-blue-500/20 border border-blue-400/30 rounded-xl text-hover-400 hover:bg-blue-500/30 transition-all"
-              >
-                <ShareIcon class="w-5 h-5" />
-              </a>
-            </div>
-          </div>
+          
         </div>
         <div data-aos="fade-left">
           <form class="space-y-6">
@@ -128,12 +101,7 @@
 </template>
 <script setup>
 import {
-  ChatBubbleLeftEllipsisIcon,
   EnvelopeIcon,
-  FingerPrintIcon,
-  MapIcon,
-  ShareIcon,
-  UserGroupIcon,
 } from "@heroicons/vue/16/solid";
 
 import githuboutline from "../../public/github-outline.png";

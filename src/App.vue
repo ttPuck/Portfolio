@@ -10,7 +10,7 @@
     <MeSection />
     <Services />
     <AboutMe />
-    <ExperienceSkills />
+    <Skillset />
     <Projects />
     <Contact />
     <Testimonials />
@@ -26,7 +26,7 @@ import NavBar from "./components/NavBar.vue";
 import { ref, nextTick, onMounted } from "vue";
 import Services from "./components/Services.vue";
 import AboutMe from "./components/AboutMe.vue";
-import ExperienceSkills from "./components/ExperienceSkills.vue";
+import Skillset from "./components/Skillset.vue";
 import Projects from "./components/Projects.vue";
 import Contact from "./components/Contact.vue";
 import Testimonials from "./components/Testimonials.vue";
@@ -40,7 +40,7 @@ export default {
     MeSection,
     Services,
     AboutMe,
-    ExperienceSkills,
+    Skillset,
     Projects,
     Contact,
     Testimonials,

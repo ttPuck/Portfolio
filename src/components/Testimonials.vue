@@ -73,7 +73,7 @@ const testimonials = [
   },
   {
     id: 2,
-    text: `Ian is able to understand and comprehend any and all ideas brought to him, and deliver a finalized product to 
+    text: `Able to understand and comprehend any and all ideas brought to him, Ian is able to deliver a finalized product to 
     clients on time and well above
     their expectations. His ability to distill and explain overly technical ideas and topics to any person is amazing in a team
     environment. Ian delivers amazing products with end users in mind and is a creative powerhouse.`,

@@ -30,10 +30,8 @@
             data-aos-delay="150"
           >
             I am an experienced frontend and backend developer of 2+ years, with
-            a handful of projects under my belt. I specialize in Vue.js and
-            other JavaScript frameworks and their complimentary backend tools
-            such as MongoDB, Supabase, and Cloudflare, as well as app
-            development in Swift for macOS and iOS. I love to be part of a team
+            a handful of projects under my belt. I specialize in Vue.js, Next.js, React, along with their complimentary backend tools
+            such as MongoDB, Supabase, and Cloudflare. I would love to be part of a team
             where I could deliver effective and efficient code and provide my
             gifts and skills to any project that may need them!
           </p>
@@ -77,7 +75,7 @@
             data-aos-delay="300"
           >
             <div class="text-center">
-              <div class="text-2xl font-bold text-blue-400">15+</div>
+              <div class="text-2xl font-bold text-blue-400">4</div>
               <div class="text-blue-200 text-sm">Projects</div>
             </div>
             <div class="text-center">
@@ -85,7 +83,7 @@
               <div class="text-blue-200 text-sm">Years</div>
             </div>
             <div class="text-center">
-              <div class="text-2xl font-bold text-blue-400">10+</div>
+              <div class="text-2xl font-bold text-blue-400">2+</div>
               <div class="text-blue-200 text-sm">Clients</div>
             </div>
           </div>

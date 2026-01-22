@@ -193,35 +193,19 @@ const projects = ref([
       },
     ],
   },
+
   {
     id: 3,
-    title: "Task Velocity",
-    desc: `A minimalist, cross-platform desktop To-Do application
-         developed with Vue.js and packaged via Electron,
-         featuring a SQLite-backed persistence layer. Inspired by the quick ease of use of
-         Notaional Velocity/nvALT.
-         The application implements full CRUD functionality with a focus on 
-        reliable local data management, and a 
-         streamlined user experience.`,
-    image: "../public/project3.png",
-    category: "Full-stack",
+    title: "Dev Portfolio Template",
+    desc: `A Github repository of this very website, built in Vue.js! Supply your own information and images, and customize
+    to how you see fit. `,
+    image: "../public/project4.png",
+    category: "Frontend",
     bordColor: "border-blue-500/30",
     badgeColor: "bg-blue-500",
     technolg: [
       {
         name: "Vue.js",
-        class: "bg-blue-500/20 border-blue-400/30 text-blue-200",
-      },
-      {
-        name: "Node.js",
-        class: "bg-blue-500/20 border-blue-400/30 text-blue-200",
-      },
-      {
-        name: "Electron",
-        class: "bg-blue-500/20 border-blue-400/30 text-blue-200",
-      },
-      {
-        name: "SQlite",
         class: "bg-blue-500/20 border-blue-400/30 text-blue-200",
       },
       {
@@ -231,36 +215,7 @@ const projects = ref([
     ],
     links: [
       {
-        name: "Github Repo & Installer",
-        url: "#",
-        icon: ArrowDownTrayIcon,
-        class: "text-white hover:text-blue-300",
-      },
-    ],
-  },
-  {
-    id: 4,
-    title: "nvSIL",
-    desc: `A minimalist, macOS app built in Objective-C with 
-        AppKit for Apple Silicon as a replacement for nvALT. Provides quick and efficient 
-        access to notes and blazing fast search capabilities.`,
-    image: "../public/project4.png",
-    category: "Full-stack",
-    bordColor: "border-blue-500/30",
-    badgeColor: "bg-blue-500",
-    technolg: [
-      {
-        name: "Objective-C",
-        class: "bg-blue-500/20 border-blue-400/30 text-blue-200",
-      },
-      {
-        name: "AppKit",
-        class: "bg-blue-500/20 border-blue-400/30 text-blue-200",
-      },
-    ],
-    links: [
-      {
-        name: "Github Repo & Installer",
+        name: "Github Repo",
         url: "#",
         icon: ArrowDownTrayIcon,
         class: "text-white hover:text-blue-300",

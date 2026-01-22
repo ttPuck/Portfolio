@@ -80,8 +80,7 @@ const Menu = ref([
   { name: "About", href: "#about" },
   { name: "Skillset", href: "#skillset" },
   { name: "Projects", href: "#projects" },
-  { name: "Contact", href: "#services" },
-  { name: "Reviews", href: "#reviews" },
+  { name: "Testimonials", href: "#testimonials" },
 ]);
 const isMenuOpen = ref(false);
 const scrollToContact = () => {
@@ -94,7 +93,7 @@ const scrollToSection = (href) => {
   isMenuOpen.value = false;
   const section = document.querySelector(href);
   if (section) {
-    section.scrollInView({ behavior: "smooth" });
+    section.scrollIntoView({ behavior: "smooth" });
   }
 };
 </script>

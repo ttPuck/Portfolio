@@ -92,25 +92,21 @@ const services = ref([
     id: 1,
     icon: CodeBracketIcon,
     name: "Web Development",
-    desc: `Experience in JavaScript frameworks such as Vue.js, Next.Js, and their backend compliments such as MongoDB, Supabase, and Cloudflare`,
-  },
-  {
-    id: 2,
-    icon: DevicePhoneMobileIcon,
-    name: "Mobile Development",
-    desc: `Creating amazing iOS and macOS counterparts to applications and providing an easy path to having apps on the Apple ecosystem.`,
+    desc: `Experience in JavaScript 
+    frameworks such as Vue.js and Next.js and their backend complements such as MongoDB, Supabase, and Cloudflare`,
   },
   {
     id: 3,
     icon: DocumentTextIcon,
     name: "Technical Writing",
-    desc: `Able to distill complex and hard to understand topics and subjects into a neatly packaged and easy to comprehend source books or teaching material.`,
+    desc: `Able to distill complex and hard-to-understand topics and subjects into a neatly packaged 
+    and easy-to-comprehend source books, teaching material, or general knowledge transfer.`,
   },
   {
     id: 4,
     icon: EnvelopeIcon,
     name: "Administrative Services",
-    desc: `With overwhelming experience, I am able to provide any form of Administrative services such as Technical Writing, Copywriting, Clerical and Management tasks, and general Knowledge Transfer.`,
+    desc: `With overwhelming experience, I am able to provide any form of administrative services, such as technical writing, copywriting, clerical and management tasks.`,
   },
 ]);
 </script>

@@ -9,23 +9,8 @@
             Ian.dev
           </div>
           <p class="text-blue-300 text-sm leading-relaxed max-w-md">
-            Love the Lord your God with all your heart and with all your soul
-            and with all your mind and with all your strength.
+           Thank you for checking out my porfolio!
           </p>
-          <div class="flex gap-4 mt-6">
-            <a
-              href="#"
-              class="p-2 bg-blue-500/40 border border-blue-400/30 rounded-lg text-blue-400 hover:bg-blue-500/30 transition-all"
-            >
-              <EnvelopeIcon class="w-5 h-5" />
-            </a>
-            <a
-              href="#"
-              class="p-2 bg-blue-500/40 border border-blue-400/30 rounded-lg text-blue-400 hover:bg-blue-500/30 transition-all"
-            >
-              <MapIcon class="w-5 h-5" />
-            </a>
-          </div>
         </div>
         <div>
           <h3 class="text-white font-semibold mb-4">Quick Links</h3>
@@ -57,13 +42,12 @@
       <div
         class="border-t border-blue-600/50 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center"
       >
-        <p class="text-blue-300 text-sm">@ 2026 Ian. All rights reserved</p>
+        <p class="text-[#D3D3D3] text-sm">Copyright laws are confusing :(</p>
       </div>
     </div>
   </footer>
 </template>
 <script setup>
-import { EnvelopeIcon, MapIcon } from "@heroicons/vue/16/solid";
 
 const quickLinks = [
   { name: "Home", href: "#home" },

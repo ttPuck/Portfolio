@@ -1,5 +1,5 @@
 <template>
-  <section class="relative py-20 overflow-hidden" id="skills">
+  <section class="relative py-20 overflow-hidden" id="skillset">
     <div class="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="text-center mb-16" data-aos="fade-up">
         <h2 class="text-4xl md:text-5xl font-bold text-blue-200 mb-4">
@@ -124,9 +124,6 @@ const tech = {
   react: { name: "React" },
   next: { name: "Next.js" },
   node: { name: "Node.js" },
-  swift: { name: "Swift" },
-  objectivec: { name: "Objective-C" },
-  appkit: { name: "AppKit" },
   mongo: { name: "MongoDB" },
   postgres: { name: "PostgreSQL" },
   supabase: { name: "Supabase" },
@@ -144,7 +141,7 @@ const skills = [
     percentage: 95,
     percentageColor: "text-blue-400 text-sm",
     gradient: "bg-linear-to-r from-blue-500 to-cyan-500",
-    tech: [tech.vue, tech.react, tech.next, tech.objectivec, tech.appkit],
+    tech: [tech.vue, tech.react, tech.next,],
   },
   {
     id: 2,
@@ -158,16 +155,6 @@ const skills = [
   },
   {
     id: 3,
-    title: "Mobile Development",
-    icon: DevicePhoneMobileIcon,
-    iconColor: "text-blue-400",
-    percentage: 75,
-    percentageColor: "text-blue-400 text-sm",
-    gradient: "bg-linear-to-r from-blue-500 to-cyan-500",
-    tech: [tech.swift, tech.objectivec, tech.appkit],
-  },
-  {
-    id: 4,
     title: "UI/UX Design",
     icon: PaintBrushIcon,
     iconColor: "text-cyan-400",
@@ -177,7 +164,7 @@ const skills = [
     tech: [tech.tailwind, tech.figma],
   },
   {
-    id: 5,
+    id: 4,
     title: "Team Development & Remote Operations",
     icon: CloudIcon,
     iconColor: "text-cyan-400",
