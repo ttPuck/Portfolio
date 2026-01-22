@@ -47,7 +47,7 @@
             <p>Full-Stack Developer</p>
           </div>
           <p
-            class="text-white pt-6 text-center lg:text-left mx-auto max-w-xl text-lg leading-relaxed"
+            class="font-light text-white pt-6 text-center lg:text-left mx-auto max-w-xl text-lg leading-relaxed"
             data-aos="fade-right"
             data-aos-delay="150"
           >

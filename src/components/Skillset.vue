@@ -86,7 +86,7 @@
                 :class="exp.borderClass"
               >
                 <div
-                  class="flex flex-col sm:flex-row sm:items-center sm:jusitfy-between mb-3"
+                  class="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-3"
                 >
                   <h4 class="text-lg font-bold text-white">
                     {{ exp.position }}
