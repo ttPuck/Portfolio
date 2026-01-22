@@ -3,7 +3,7 @@
     class="flex justify-between items-center p-6 bg-opacity-50 relative z-20"
   >
     <div
-      class="text-3xl font-bold bg-linear-to-r from-blue-430 to-cyan-400 bg-clip-text text-transparent"
+      class="text-3xl font-bold bg-linear-to-r from-red-500 to-white bg-clip-text text-transparent"
     >
       Dev <span class="font-black">Portfolio</span>
     </div>
@@ -52,7 +52,7 @@
         <li v-for="item in Menu" :key="item.name" class="group relative">
           <a
             :href="item.href"
-            class="relative block text-blue-100 hover:text-blue-400 transition-all duration-300 text-xl md:text-base font-medium group"
+            class="relative block text-white hover:text-blue-400 transition-all duration-300 text-xl md:text-base font-medium group"
             @click="scrollToSection(item.href)"
           >
             {{ item.name }}

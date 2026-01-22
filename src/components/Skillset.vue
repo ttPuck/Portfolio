@@ -98,7 +98,7 @@
                 <p :class="exp.companyColor" class="font-medium mb-3">
                   {{ exp.company }}
                 </p>
-                <p class="text-blue-100 text-sm leading-relaxed">
+                <p class="text-white text-sm leading-relaxed">
                   {{ exp.desc }}
                 </p>
               </div>
@@ -182,8 +182,8 @@ const experiences = [
     desc: "Full-stack developer and UI/UX design for multiple websites, the major being a photography portfolio and booking website built with Vue.js and a Node.js backend, featuring a MongoDB customer database and responsive UI. Integrated Plaid Link on the frontend with secure server-side Plaid API workflows for bank-linked payments. Implemented booking, scheduling, and transaction management using RESTful APIs.",
     borderColor: "border-blue-500/30",
     dotColor: "bg-blue-500",
-    borderClass: "botder-blue=500/20",
-    dateColor: "text-blue-400 text-sm font-semibold",
+    borderClass: "border-blue=500/20",
+    dateColor: "text-cyan-400 text-sm font-semibold",
     companyColor: "text-cyan-400",
   },
   {
@@ -194,8 +194,8 @@ const experiences = [
     desc: "Frontend developer and UI/UX design for one recruiting website, and manager of all HR and administrative duties for the company. Duties included: Onboarding, Payroll, Calendar Management, Administrative Tasks, and Clerical Tasks.",
     borderColor: "border-blue-500/30",
     dotColor: "bg-blue-500",
-    borderClass: "botder-blue=500/20",
-    dateColor: "text-blue-400 text-sm font-semibold",
+    borderClass: "border-blue=500/20",
+    dateColor: "text-cyan-400 text-sm font-semibold",
     companyColor: "text-cyan-400",
   },
 ];

@@ -4,7 +4,7 @@
   </div>
   <div
     v-else
-    class="min-h-screen bg-linear-to-br from-gray-900 via-blue-900 to-gray-900"
+    class="min-h-screen bg-linear-to-br via-[#997570] from-blue-900 to-red-200"
   >
     <NavBar />
     <MeSection />

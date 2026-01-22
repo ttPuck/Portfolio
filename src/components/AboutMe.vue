@@ -97,7 +97,7 @@
                   {{ skill.title }}
                 </h3>
               </div>
-              <p class="text-blue-200 text-sm">
+              <p class="text-white text-sm">
                 {{ skill.desc }}
               </p>
             </div>
@@ -200,7 +200,7 @@ const skills = [
   {
     id: 1,
     icon: CodeBracketSquareIcon,
-    iconColor: "text-blue-400",
+    iconColor: "text-cyan-400",
     title: "Frontend",
     desc: "JavaScript, Vue.js, React, Next.js, Typescript, Tailwind CSS",
   },
@@ -214,7 +214,7 @@ const skills = [
   {
     id: 3,
     icon: PaintBrushIcon,
-    iconColor: "text-blue-400",
+    iconColor: "text-cyan-400",
     title: "Design",
     desc: "UI/UX Design, Photoshop, Figma, Prototyping",
   },
@@ -242,7 +242,7 @@ const ctaButtons = [
     text: "Contact Me",
     icon: ChatBubbleLeftRightIcon,
     iconclass: `mr-2`,
-    classes: `border border-blue-400 text-blue-400 
+    classes: `border border-white text-blue-100
         hover:bg-blue-400/10`,
   },
 ];

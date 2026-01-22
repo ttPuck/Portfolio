@@ -92,14 +92,14 @@ const services = ref([
     id: 1,
     icon: CodeBracketIcon,
     name: "Web Development",
-    desc: `Experience in JavaScript 
-    frameworks such as Vue.js and Next.js and their backend complements such as MongoDB, Supabase, and Cloudflare`,
+    desc: `I am able to provide amazing looking, feeling, and efficient websites and webapps with my experience in JavaScript 
+    frameworks such as Vue.js and Next.js and their backend complements such as MongoDB, Supabase, and Cloudflare.`,
   },
   {
-    id: 3,
+    id: 2,
     icon: DocumentTextIcon,
     name: "Technical Writing",
-    desc: `Able to distill complex and hard-to-understand topics and subjects into a neatly packaged 
+    desc: `With surprising ease, I can distill complex and hard-to-understand topics and subjects into a neatly packaged 
     and easy-to-comprehend source books, teaching material, or general knowledge transfer.`,
   },
   {

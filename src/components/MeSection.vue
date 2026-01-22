@@ -6,14 +6,36 @@
       class="w-full px-5 sm:px-8 md:px-12 lg:px-8 max-w-5xl lg:max-w-7xl mx-auto relative z-10"
     >
       <div class="grid lg:grid-cols-2 gap-10 xl:gap-14 items-center">
+            <!-- Profile Image-->
+          <div class="lg:h-full flex justify-center lg:justify-center">
+          <div class="relative w-full max-w-md lg:max-w-lg">
+            <div
+              class="relative z-10 bg-linear-to-r from-blue-600 to-red-300 shadow-2xl rounded-[40%_20%_30%_80%/10%_20%_30%_30%] p-4 backdrop-blur-sm border border-orange-600/30 -translate-y-6"
+              data-aos="zoom-in"
+              data-aos-delay="450"
+            >
+              <div class="rounded-xl overflow-hidden">
+                <img
+                  src="../../public/Ian.png"
+                  alt="Ian - Profile Image"
+                  loading="lazy"
+                  class="w-[400px] h-[500px] object-contain -translate-y-7 translate-x-8 rounded-[20%]"
+                />
+              </div>
+            </div>
+            <div
+              class="absolute -top-2 -right-4 w-10 h-10 bg:red-400 rounded-full blur-sm opacity-6 animate-pulse"
+            ></div>
+          </div>
+        </div>
         <div class="flex flex-col md:mt-0 mt-20 justify-center">
           <div class="text-white lg:text-left" data-aos="fade-right">
             <h1
               class="text-white font-bold text-4xl md:text-5xl lg:text-6xl leading-tight"
             >
               Hey, I'm
-              <span
-                class="text-transparent bg-clip-text bg-linear-to-r from-red-500 to-orange-200"
+              <span 
+                class="text-transparent bg-clip-text bg-linear-to-r from-red-200 to-red-500"
                 >Ian </span
               >😀
             </h1>
@@ -25,7 +47,7 @@
             <p>Full-Stack Developer</p>
           </div>
           <p
-            class="text-gray-300 pt-6 text-center lg:text-left mx-auto max-w-xl text-lg leading-relaxed"
+            class="text-white pt-6 text-center lg:text-left mx-auto max-w-xl text-lg leading-relaxed"
             data-aos="fade-right"
             data-aos-delay="150"
           >
@@ -89,27 +111,7 @@
           </div>
         </div>
         <!-- Profile Image-->
-        <div class="lg:h-full flex justify-center lg:justify-end">
-          <div class="relative w-full max-w-md lg:max-w-lg">
-            <div
-              class="relative z-10 bg-linear-to-r from-blue-600 to-cyan-500 shadow-2xl rounded-[50%_40%_30%_60%/60%_30%_70%_30%] p-4 backdrop-blur-sm border border-orange-600/30 -translate-y-6"
-              data-aos="zoom-in"
-              data-aos-delay="450"
-            >
-              <div class="reounded-xl overflow-hidden">
-                <img
-                  src="../../public/Ian.png"
-                  alt="Ian - Profile Image"
-                  loading="lazy"
-                  class="w-[400px] h-[500px] object-contain -translate-y-7 translate-x-8 rounded-[20%]"
-                />
-              </div>
-            </div>
-            <div
-              class="absolute -top-2 -right-4 w-10 h-10 bg:red-400 rounded-full blur-sm opacity-6 animate-pulse"
-            ></div>
-          </div>
-        </div>
+     
       </div>
     </div>
   </section>
