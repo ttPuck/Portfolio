@@ -56,14 +56,14 @@
         <div class="flex flex-col justify-center order-1 lg:order-2">
           <div class="text-center lg:text-left" data-aos="fade-left">
             <h2
-              class="text-white font-bold text-4xl md:text-5xl lg:text-6xl leading-tight"
+              class="text-transparent bg-clip-text bg-linear-to-r from-[#454ade] to-[#b14aed] font-bold text-4xl md:text-5xl lg:text-6xl leading-tight"
             >
               About
-              <span
-                class="text-transparent bg-clip-text bg-linear-to-r from-blue-400 to-cyan-400"
+              <span 
+                class="text-white"
               >
                 Me</span
-              >
+              > 
             </h2>
             <p
               class="text-white font-medium text-lg md:text-xl mt-4"
@@ -231,8 +231,8 @@ const ctaButtons = [
     icon: ArrowRightIcon,
     iconclass: `ml-2 group-hover:translate-x-1
         transition-transform`,
-    classes: `bg-linear-to-r from-blue-600 to-cyan-600
-        text-white hover:from-blue-500 hover:to-cyan-500`,
+    classes: `bg-[#5386e4]
+        text-white hover:bg-[#0b132b]/50`,
         
   },
   {
@@ -240,8 +240,8 @@ const ctaButtons = [
     text: "Contact Me",
     icon: ChatBubbleLeftRightIcon,
     iconclass: `mr-2`,
-    classes: `border border-black text-white
-        hover:bg-blue-400/10`,
+    classes: `border border-[#454ade] text-white
+        hover:bg-[#0b132b]/50 `,
   },
 ];
 </script>

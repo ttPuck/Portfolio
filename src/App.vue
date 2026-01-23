@@ -4,7 +4,7 @@
   </div>
   <div
     v-else
-    class="min-h-screen bg-linear-to-bl via-35% from-[#090808] to-[#ffffff] font-[Barlow,sans-serif]"
+    class="min-h-screen bg-linear-to-bl via-35% from-[#0b132b] to-[#b14aed] font-[Barlow,sans-serif]"
   >
     <NavBar />
     <MeSection />

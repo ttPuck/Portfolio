@@ -10,7 +10,7 @@
           <div class="lg:h-full flex justify-center lg:justify-center">
           <div class="relative w-full max-w-md lg:max-w-lg">
             <div
-              class="relative z-10 bg-linear-to-r from-[#2f2d2d] to-[#681d1d] shadow-2xl rounded-[40%_20%_30%_80%/10%_20%_30%_30%] p-4 backdrop-blur-sm border border-orange-600/30 -translate-y-6"
+              class="relative z-10 bg-linear-to-r from-[#501f6d] to-[#2e3194] shadow-2xl rounded-[40%_20%_30%_80%/10%_20%_30%_30%] p-4 backdrop-blur-sm border border-[#b14aed] -translate-y-6"
               data-aos="zoom-in"
               data-aos-delay="450"
             >
@@ -35,7 +35,7 @@
             >
               Hey, I'm
               <span 
-                class="text-transparent bg-clip-text bg-linear-to-r from-red-200 to-red-500"
+                class="text-transparent bg-clip-text bg-linear-to-r from-[#b14aed] to-[#454ade]"
                 >Ian </span
               >😀
             </h1>
@@ -62,9 +62,11 @@
             data-aos="fade-up"
             data-aos-delay="450"
           >
+          <div class="p-[2px] bg-gradient-to-r from-[#b14aed] to-[#454ade] rounded-xl w-full sm:w-max">
             <button
               @click="scrollToContact"
-              class="px-8 md:px-10 py-4 rounded-x1 relative group w-full sm:w-max flex justify-center overflow-hidden bg-linear-to-r from-[#000000] to-[#ff0000] hover:from-black hover:to-white transition-all duration-300"
+              class="px-8 md:px-10 py-4 rounded-xl relative group w-full sm:w-max flex justify-center overflow-hidden 
+              bg-linear-to-r from-[#0b132b] to-[#0b132b] hover:from-[#b14aed] hover:to-[#454ade] transition-all duration-300 bg-gray-900"
             >
             
               <span
@@ -76,19 +78,20 @@
                 />
               </span>
             </button>
+            </div>
             <a href="/Ian-CV.pdf" download>
-            <button
-              class="border-2 border-white px-8 md:px-10 py-4 rounded-xl relative troup w-full sm:w-max flex justify-center hover:bg-blue-400/10 transition-all duration-300"
-            >
-              <div class="flex items-center justify-center relative">
-                <ArrowDownTrayIcon
-                  class="w-5 h-5 text-white group-hover:translate-y-1 transition/transform"
-                />
-                <span class="pl-3 text-white font-semibold text-lg">
-                  Download CV
-                </span>
-              </div>
-            </button>
+          <!-- Gradient wrapper -->
+<div class="p-[2px] bg-gradient-to-r from-[#b14aed] to-[#454ade] rounded-xl w-full sm:w-max">
+  <!-- Inner button -->
+  <button class="px-8 md:px-10 py-4 rounded-xl relative group w-full flex justify-center hover:bg-blue-400/10 transition-all duration-300 bg-gray-900">
+    <div class="flex items-center justify-center relative">
+      <ArrowDownTrayIcon class="w-5 h-5 text-white group-hover:translate-y-1 transition-transform" />
+      <span class="pl-3 text-white font-semibold text-lg">
+        Download CV
+      </span>
+    </div>
+  </button>
+</div>
             </a>
           </div>
           <div
@@ -97,15 +100,15 @@
             data-aos-delay="300"
           >
             <div class="text-center">
-              <div class="text-2xl font-bold text-blue-100">4</div>
+              <div class="text-2xl font-bold text-[#e5f4e3]">4</div>
               <div class="text-white text-sm">Projects</div>
             </div>
             <div class="text-center">
-              <div class="text-2xl font-bold text-blue-100">2+</div>
+              <div class="text-2xl font-bold text-[#e5f4e3]">2+</div>
               <div class="text-white text-sm">Years</div>
             </div>
             <div class="text-center">
-              <div class="text-2xl font-bold text-blue-100">2+</div>
+              <div class="text-2xl font-bold text-[#e5f4e3]">2+</div>
               <div class="text-white text-sm">Clients</div>
             </div>
           </div>

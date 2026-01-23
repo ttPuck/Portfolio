@@ -2,9 +2,9 @@
   <section class="relative py-20 overflow-hidden" id="skillset">
     <div class="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="text-center mb-16" data-aos="fade-up">
-        <h2 class="text-4xl md:text-5xl font-bold text-blue-200 mb-4">
+        <h2 class="text-4xl md:text-5xl font-bold text-white mb-4">
           <span
-            class="text-transparent bg-clip-text bg-linear-to-r from-blue-400 to-cyan-400"
+            class="text-transparent bg-clip-text bg-linear-to-r from-[#454ade] to-[#b14aed]"
           >
             Skills
           </span>

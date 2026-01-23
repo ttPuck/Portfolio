@@ -3,7 +3,7 @@
     class="flex justify-between items-center p-6 bg-opacity-50 relative z-20" id="home"
   >
     <div
-      class="text-3xl font-light bg-linear-to-r from-red-500 to-white bg-clip-text text-transparent"
+      class="text-3xl text-transparent bg-clip-text bg-linear-to-r from-[#eb9486] to-[#5386e4]"
     >
       Dev <span class="font-bold">Portfolio</span>
     </div>
@@ -65,9 +65,9 @@
       <div class="mt-8 md:mt-0 md:ml-8">
         <button
         @click="scrollToContact"
-          class="px-6 py-2.5 bg-[#f20f07] text-white rounded-full hover:shadow-lg hover:shadow-blue-500/25 transition-all duration-300 hover:scale-100"
+          class="px-6 py-2.5 bg-[#5386e4] text-[#e5f4e3] rounded-full hover:shadow-lg hover:shadow-blue-500/25 transition-all duration-300 hover:scale-100"
         >
-          Talk With Me!
+          Message Me!
         </button>
       </div>
     </nav>

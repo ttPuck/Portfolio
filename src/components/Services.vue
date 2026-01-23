@@ -5,7 +5,7 @@
         <h2 class="text-4xl md:text-5xl font-bold text-white mb-4">
           My
           <span
-            class="text-transparent bg-clip-text bg-linear-to-r from-[#f20f07] to-[#fbc5c5]"
+            class="text-transparent bg-clip-text bg-linear-to-r from-[#b14aed] to-[#454ade]"
           >
             Services
           </span>
@@ -62,7 +62,7 @@
         <div class="inline-flex flex-col sm:flex-row gap-4 items-center">
           <button
            @click="scrollToContact"
-            class="px-8 py-4 rounded-xl border-2 border-black text-white font-semibold hover:bg-blue-400/10 transition-all duration-300 flex items-center"
+            class="px-8 py-4 rounded-xl border-2 border-[#454ade] text-white font-semibold hover:bg-[#0b132b]/50 transition-all duration-300 flex items-center"
           >
             Get In Touch
             <ChatBubbleLeftRightIcon class="w-5 h-5 ml-2" />
