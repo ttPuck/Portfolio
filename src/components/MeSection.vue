@@ -10,7 +10,7 @@
           <div class="lg:h-full flex justify-center lg:justify-center">
           <div class="relative w-full max-w-md lg:max-w-lg">
             <div
-              class="relative z-10 bg-linear-to-r from-blue-600 to-red-300 shadow-2xl rounded-[40%_20%_30%_80%/10%_20%_30%_30%] p-4 backdrop-blur-sm border border-orange-600/30 -translate-y-6"
+              class="relative z-10 bg-linear-to-r from-[#2f2d2d] to-[#681d1d] shadow-2xl rounded-[40%_20%_30%_80%/10%_20%_30%_30%] p-4 backdrop-blur-sm border border-orange-600/30 -translate-y-6"
               data-aos="zoom-in"
               data-aos-delay="450"
             >
@@ -64,7 +64,7 @@
           >
             <button
               @click="scrollToContact"
-              class="px-8 md:px-10 py-4 rounded-x1 relative group w-full sm:w-max flex justify-center overflow-hidden bg-linear-to-r from-red-400 to-blue-800 hover:from-white-500 hover:to-blue-600 transition-all duration-300"
+              class="px-8 md:px-10 py-4 rounded-x1 relative group w-full sm:w-max flex justify-center overflow-hidden bg-linear-to-r from-[#000000] to-[#ff0000] hover:from-black hover:to-white transition-all duration-300"
             >
             
               <span
@@ -78,7 +78,7 @@
             </button>
             <a href="/Ian-CV.pdf" download>
             <button
-              class="border-2 border-blue-400 px-8 md:px-10 py-4 rounded-xl relative troup w-full sm:w-max flex justify-center hover:bg-blue-400/10 transition-all duration-300"
+              class="border-2 border-white px-8 md:px-10 py-4 rounded-xl relative troup w-full sm:w-max flex justify-center hover:bg-blue-400/10 transition-all duration-300"
             >
               <div class="flex items-center justify-center relative">
                 <ArrowDownTrayIcon

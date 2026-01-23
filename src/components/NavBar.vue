@@ -3,9 +3,9 @@
     class="flex justify-between items-center p-6 bg-opacity-50 relative z-20" id="home"
   >
     <div
-      class="text-3xl font-bold bg-linear-to-r from-red-500 to-white bg-clip-text text-transparent"
+      class="text-3xl font-light bg-linear-to-r from-red-500 to-white bg-clip-text text-transparent"
     >
-      Dev <span class="font-black">Portfolio</span>
+      Dev <span class="font-bold">Portfolio</span>
     </div>
     <div class="md:hidden z-30">
       <button
@@ -65,7 +65,7 @@
       <div class="mt-8 md:mt-0 md:ml-8">
         <button
         @click="scrollToContact"
-          class="px-6 py-2.5 bg-linear-to-r from-blue-500 to-cyan-500 text-white rounded-full hover:shadow-lg hover:shadow-blue-500/25 transition-all duration-300 hover:scale-100"
+          class="px-6 py-2.5 bg-[#f20f07] text-white rounded-full hover:shadow-lg hover:shadow-blue-500/25 transition-all duration-300 hover:scale-100"
         >
           Talk With Me!
         </button>

@@ -2,7 +2,7 @@
   <button
     v-if="isVisible"
     @click="scrollToTop"
-    class="fixed bottom-4 right-4 bg-linear-to-r from-blue-600 to-cyan text-white rounded-full w-12 h-12 items-center justify-center text-xl cursor-pointer transition-opacity duration-opacity duration 300 hover:bg-blue-600"
+    class="fixed bottom-4 right-4 bg-linear-to-r from-[#f20f07] to-white text-white rounded-full w-12 h-12 items-center justify-center text-xl cursor-pointer transition-opacity duration-opacity duration 300 hover:bg-blue-600"
   >
     ↑
   </button>
