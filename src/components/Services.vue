@@ -18,13 +18,13 @@
          My Skill Sets To Provide You And Your Team With Amazing Services
         </p>
       </div>
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
         <div
           v-for="(service, index) in services"
           :key="service.id"
           :data-aos="'fade-up'"
           :data-aos-delay="index * 100 + 200"
-          class="group relative p-8 rounded-2xl bg-linear-to-br from-gray-800/50 to-blue-900/30 backdrop-blur-sm border border-blue-500/20 hover:border-blue-400/40 transition-all duration-500 hover:transform hover:-translate-y-2"
+          class="group relative p-14 rounded-2xl bg-linear-to-br from-gray-800/50 to-blue-900/30 backdrop-blur-sm border border-blue-500/20 hover:border-blue-400/40 transition-all duration-500 hover:transform hover:-translate-y-2"
         >
           <div
             class="absolute inset-0 bg-linear-to-r from-blue-500/5 to-cyan-500/5 rounded-2xl opacity-0 duration-500 group-hover:opacity-100 transition-opacity"
@@ -39,6 +39,7 @@
               ></component>
             </div>
           </div>
+          <p class="text-white font-bold absolute bottom-6 left opacity-0 group-hover:opacity-100 transform translate-x-4 group-hover:translate-x-[-200] transition-all duration-300">See Projects With This Service!</p>
           <div class="relative z-10">
             <h3
               class="text-xl font-bold text-white mb-3 group-hover:text-blue-400 transition-colors duratoin-300"
@@ -51,8 +52,9 @@
           </div>
           <div
             class="absolute bottom-6 right-6 opacity-0 group-hover:opacity-100 transform translate-x-4 group-hover:translate-x-0 transition-all duration-300"
-          >
+          > <button @click="scrollToProjects">
             <ArrowRightIcon class="w-6 h-6 text-cyan-400" />
+            </button>
           </div>
         </div>
       </div>
@@ -74,14 +76,16 @@
   const scrollToContact = () => {
   const el = document.getElementById("contact")
   if (!el) return
-
+   el.scrollIntoView({ behavior: "smooth" })}
+  const scrollToProjects = () => {
+  const el = document.getElementById("projects")
+  if (!el) return 
   el.scrollIntoView({ behavior: "smooth" })
-}
+  }
 import {
   ArrowRightIcon,
   ChatBubbleLeftRightIcon,
   CodeBracketIcon,
-  DevicePhoneMobileIcon,
   DocumentTextIcon,
   EnvelopeIcon,
 } from "@heroicons/vue/16/solid";
@@ -92,8 +96,8 @@ const services = ref([
     id: 1,
     icon: CodeBracketIcon,
     name: "Web Development",
-    desc: `I am able to provide amazing looking, feeling, and efficient websites and webapps with my experience in JavaScript 
-    frameworks such as Vue.js and Next.js and their backend complements such as MongoDB, Supabase, and Cloudflare.`,
+    desc: `I am able to provide effcient and amazing websites and webapps with my experience in JavaScript 
+    frameworks and their backend complements such as MongoDB, Supabase, and Cloudflare.`,
   },
   {
     id: 2,

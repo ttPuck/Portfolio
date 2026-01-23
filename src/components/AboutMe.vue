@@ -104,7 +104,7 @@
               :key="button.id"
               class="px-8 py-3 rounded-xl font-semibold transition-all duration-300 flex items-center jusitfy-center"
               :class="button.classes"
-             @click="button.text === 'Contact Me' && scrollToContact()"
+             @click="button.text === 'Contact Me' && scrollToContact() ; button.text === 'View Portfolio' ? scrollToProjects() : null"
 
             >
               <component
@@ -112,7 +112,7 @@
                 class="w-4 h-4"
                 :class="button.iconclass"
               />
-              {{ button.text }}
+              {{ button.text }} 
             </button>
           </div>
         </div>
@@ -141,6 +141,11 @@ import about2 from "../../public/about2.jpeg";
 import about3 from "../../public/about3.png";
 import about4 from "../../public/about4.png";
 
+  const scrollToProjects = () => {
+  const el = document.getElementById("projects")
+  if (!el) return 
+  el.scrollIntoView({ behavior: "smooth" })
+  }
 const aboutImage = [
   {
     id: 1,
@@ -228,6 +233,7 @@ const ctaButtons = [
         transition-transform`,
     classes: `bg-linear-to-r from-blue-600 to-cyan-600
         text-white hover:from-blue-500 hover:to-cyan-500`,
+        
   },
   {
     id: 2,

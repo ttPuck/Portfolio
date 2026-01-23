@@ -1,6 +1,6 @@
 <template>
   <header
-    class="flex justify-between items-center p-6 bg-opacity-50 relative z-20"
+    class="flex justify-between items-center p-6 bg-opacity-50 relative z-20" id="home"
   >
     <div
       class="text-3xl font-bold bg-linear-to-r from-red-500 to-white bg-clip-text text-transparent"

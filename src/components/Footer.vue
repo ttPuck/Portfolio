@@ -30,7 +30,7 @@
           <ul class="space-y-2">
             <li v-for="service in services" :key="service">
               <a
-                href="#"
+                href="#services"
                 class="text-blue-200 hover:text-blue-400 text-sm transition-colors"
               >
                 {{ service }}
@@ -59,7 +59,6 @@ const quickLinks = [
 ];
 const services = [
   "Web Development",
-  "Mobile Development",
   "UI/UX Design",
   "Technical Writing",
   "Content Specialist",
