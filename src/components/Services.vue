@@ -18,7 +18,7 @@
          My Skill Sets To Provide You And Your Team With Amazing Services
         </p>
       </div>
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         <div
           v-for="(service, index) in services"
           :key="service.id"
@@ -60,7 +60,7 @@
         <div class="inline-flex flex-col sm:flex-row gap-4 items-center">
           <button
            @click="scrollToContact"
-            class="px-8 py-4 rounded-xl border-2 border-blue-500 text-blue-400 font-semibold hover:bg-blue-400/10 transition-all duration-300 flex items-center"
+            class="px-8 py-4 rounded-xl border-2 border-black text-white font-semibold hover:bg-blue-400/10 transition-all duration-300 flex items-center"
           >
             Get In Touch
             <ChatBubbleLeftRightIcon class="w-5 h-5 ml-2" />

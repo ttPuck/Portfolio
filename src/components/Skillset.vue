@@ -179,7 +179,7 @@ const experiences = [
     position: "Freelance Full-Stack Developer ",
     company: "Garbero Media",
     period: " 2025 - Present",
-    desc: "Full-stack developer and UI/UX design for multiple websites, the major being a photography portfolio and booking website built with Vue.js and a Node.js backend, featuring a MongoDB customer database and responsive UI. Integrated Plaid Link on the frontend with secure server-side Plaid API workflows for bank-linked payments. Implemented booking, scheduling, and transaction management using RESTful APIs.",
+    desc: "Full-stack developer and UI/UX design for a photography portfolio and booking website built with Vue.js and a Node.js backend, featuring a MongoDB customer database and responsive UI. Integrated Plaid Link on the frontend with secure server-side Plaid API workflows for bank-linked payments. Implemented booking, scheduling, and transaction management using RESTful APIs.",
     borderColor: "border-blue-500/30",
     dotColor: "bg-blue-500",
     borderClass: "border-blue=500/20",

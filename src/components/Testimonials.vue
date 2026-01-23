@@ -13,7 +13,7 @@
             Testimonials
           </span>
         </h2>
-        <p class="text-blue-200 text-lg">
+        <p class="text-white text-lg">
           What People Say About Working With Me
         </p>
       </div>
@@ -28,7 +28,7 @@
           <div class="flex gap-1 mb-4">
             <StarIcon v-for="n in 5" :key="n" class="w-5 h-5 text-yellow-400" />
           </div>
-          <p class="text-blue-100 text-sm leading-relaxed mb-6">
+          <p class="text-white text-sm leading-relaxed mb-6">
             "{{ testimonial.text }}"
           </p>
           <div class="flex items-center gap-4">

@@ -10,7 +10,7 @@
             Touch
           </span>
         </h2>
-        <p class="text-blue-200 text-lg">
+        <p class="text-white text-lg">
           Let's Work Together On Your Next Project
         </p>
       </div>
@@ -55,7 +55,7 @@
                 </label>
                 <input
                   type="text"
-                  class="w-full bg-gray500/20 border border-blue-500/30 rounded-xl px-4 py-3 text-white placeholder-blue-400 focus:border-cyan-200 focus:outline-none transition-all"
+                  class="w-full bg-gray500/20 border border-black rounded-xl px-4 py-3 text-white placeholder-blue-400 focus:border-cyan-200 focus:outline-none transition-all"
                 />
               </div>
               <div>
@@ -64,7 +64,7 @@
                 </label>
                 <input
                   type="email"
-                  class="w-full bg-gray500/20 border border-blue-500/30 rounded-xl px-4 py-3 text-white placeholder-blue-400 focus:border-cyan-200 focus:outline-none transition-all"
+                  class="w-full bg-gray500/20 border border-black rounded-xl px-4 py-3 text-white placeholder-blue-400 focus:border-cyan-200 focus:outline-none transition-all"
                 />
               </div>
               <div>
@@ -73,7 +73,7 @@
                 </label>
                 <input
                   type="text"
-                  class="w-full bg-gray500/20 border border-blue-500/30 rounded-xl px-4 py-3 text-white placeholder-blue-400 focus:border-cyan-200 focus:outline-none transition-all"
+                  class="w-full bg-gray500/20 border border-black rounded-xl px-4 py-3 text-white placeholder-blue-400 focus:border-cyan-200 focus:outline-none transition-all"
                 />
               </div>
             </div>
@@ -83,7 +83,7 @@
               </label>
               <textarea
                 rows="5"
-                class="w-full bg-gray500/20 border border-blue-500/30 rounded-xl px-4 py-3 text-white placeholder-blue-400 focus:border-cyan-200 focus:outline-none transition-all"
+                class="w-full bg-gray500/20 border border-black rounded-xl px-4 py-3 text-white placeholder-blue-400 focus:border-cyan-200 focus:outline-none transition-all"
               >
               </textarea>
             </div>

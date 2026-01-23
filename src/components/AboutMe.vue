@@ -73,14 +73,6 @@
               Full-Stack Developer
             </p>
           </div>
-          <p
-            class="text-white pt-4 text-center lg:text-left text-lg leading-relaxed"
-            data-aos="fade-left"
-            data-aos-delay="600"
-          >
-            Frontend and backend developer specializing 
-            in JS frameworks and app development for macOS and cross-platform desktop applications.
-          </p>
           <div
             class="grid grid-cols-1 sm:grid-cols-2 gap-6 pt-8"
             data-aos="fade-up"
@@ -242,7 +234,7 @@ const ctaButtons = [
     text: "Contact Me",
     icon: ChatBubbleLeftRightIcon,
     iconclass: `mr-2`,
-    classes: `border border-white text-blue-100
+    classes: `border border-black text-white
         hover:bg-blue-400/10`,
   },
 ];

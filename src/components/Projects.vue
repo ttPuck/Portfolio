@@ -10,7 +10,7 @@
             Projects
           </span>
         </h2>
-        <p class="text-blue-200 text-lg max-w-2xl mx-auto">
+        <p class="text-white text-lg max-w-2xl mx-auto">
           A Collection Of My Projects, With Both Public And Private Source Code
         </p>
       </div>
@@ -85,7 +85,7 @@
           </button>
           <button
            @click="scrollToContact"
-            class="px-8 py-4 rounded-xl border-2 border-white text-blue-100 font-semibold hover:bg-blue-400/10 transition-all duration-300 flex items-center"
+            class="px-8 py-4 rounded-xl border-2 border-black text-blue-100 font-semibold hover:bg-blue-400/10 transition-all duration-300 flex items-center"
           >
             <ChatBubbleLeftRightIcon class="w-5 h-5 mr-2" />
             Discuss Project

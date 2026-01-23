@@ -40,7 +40,7 @@
               >😀
             </h1>
             <p
-              class="text-blue-200 font-medium text-lg md:text-xl mt-4"
+              class="text-white font-medium text-lg md:text-xl mt-4"
               data-aos="fade-right"
               data-aos-delay="80"
             ></p>
@@ -97,16 +97,16 @@
             data-aos-delay="300"
           >
             <div class="text-center">
-              <div class="text-2xl font-bold text-blue-400">4</div>
-              <div class="text-blue-200 text-sm">Projects</div>
+              <div class="text-2xl font-bold text-blue-100">4</div>
+              <div class="text-white text-sm">Projects</div>
             </div>
             <div class="text-center">
-              <div class="text-2xl font-bold text-blue-400">2+</div>
-              <div class="text-blue-200 text-sm">Years</div>
+              <div class="text-2xl font-bold text-blue-100">2+</div>
+              <div class="text-white text-sm">Years</div>
             </div>
             <div class="text-center">
-              <div class="text-2xl font-bold text-blue-400">2+</div>
-              <div class="text-blue-200 text-sm">Clients</div>
+              <div class="text-2xl font-bold text-blue-100">2+</div>
+              <div class="text-white text-sm">Clients</div>
             </div>
           </div>
         </div>
