@@ -222,5 +222,28 @@ const projects = ref([
       },
     ],
   },
+    {
+    id: 1,
+    title: "nvSIL",
+    desc: `A faithful replica of nvALT (a successor to Notational Velocity) for Apple Silicon. Built in Swift using StoryBoard UI.`,
+    image: "../public/project4.png",
+    category: "Frontend",
+    bordColor: "border-blue-500/30",
+    badgeColor: "bg-blue-500",
+    technolg: [
+      {
+        name: "Swift",
+        class: "bg-blue-500/20 border-blue-400/30 text-blue-200",
+      },
+    ],
+    links: [
+      {
+        name: "Github Repo & Packaged App",
+        url: "https://github.com/ptwees/nvSIL",
+        icon: ArrowDownTrayIcon,
+        class: "text-white hover:text-blue-300",
+      },
+    ],
+  },
 ]);
 </script>

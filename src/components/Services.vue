@@ -24,7 +24,7 @@
           :key="service.id"
           :data-aos="'fade-up'"
           :data-aos-delay="index * 100 + 200"
-          class="group relative p-14 rounded-2xl bg-linear-to-br from-gray-800/50 to-blue-900/30 backdrop-blur-sm border border-blue-500/20 hover:border-blue-400/40 transition-all duration-500 hover:transform hover:-translate-y-2"
+          class="group relative p-14 rounded-2xl bg-linear-to-br from-gray-800/50 to-blue-900/30 backdrop-blur-sm border border-[#5386e4] hover:border-[#a73ee4] transition-all duration-500 hover:transform hover:-translate-y-2"
         >
           <div
             class="absolute inset-0 bg-linear-to-r from-blue-500/5 to-cyan-500/5 rounded-2xl opacity-0 duration-500 group-hover:opacity-100 transition-opacity"
@@ -35,7 +35,7 @@
             >
               <component
                 :is="service.icon"
-                class="w-8 h-8 text-blue-400"
+                class="w-8 h-8 text-[#5386e4]"
               ></component>
             </div>
           </div>
@@ -62,7 +62,7 @@
         <div class="inline-flex flex-col sm:flex-row gap-4 items-center">
           <button
            @click="scrollToContact"
-            class="px-8 py-4 rounded-xl border-2 border-[#454ade] text-white font-semibold hover:bg-[#0b132b]/50 transition-all duration-300 flex items-center"
+            class="px-8 py-4 rounded-xl border-2 border-[#5386e4] text-white font-semibold hover:bg-[#0b132b]/50 transition-all duration-300 flex items-center"
           >
             Get In Touch
             <ChatBubbleLeftRightIcon class="w-5 h-5 ml-2" />

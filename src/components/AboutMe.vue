@@ -42,7 +42,7 @@
                 </div>
               </div>
               <div
-                class="absolute -bottom-4 left-1/2 transform -translate-x-1/2 z-20 bg-linear-to-r from-blue-500 to-cyan-500 rounded-2xl px-6 py-3 border border-blue-400/40 shadow-xl"
+                class="absolute -bottom-4 left-1/2 transform -translate-x-1/2 z-20 bg-[#5386e4] rounded-2xl px-6 py-3 border border-blue-400/40 shadow-xl"
                 data-aos="fade up"
                 data-aos-delay="600"
               >
@@ -151,10 +151,10 @@ const aboutImage = [
     id: 1,
     src: about1,
     alt: "Pro",
-    gradient: `bg-linear-to-r from-blue-600 to-cyan-600 
+    gradient: `bg-linear-to-r from-[#5386e4]/40 to-[#2e3194]
          border-blue-400/40`,
     badge: "Developer",
-    badgeColor: "bg-blue-500",
+    badgeColor: "bg-[#b14aed]",
     animation: "fade-right",
     delay: 200,
   },
@@ -162,10 +162,10 @@ const aboutImage = [
     id: 2,
     src: about2,
     alt: "",
-    gradient: `bg-linear-to-r from-blue-500 to-cyan-500 
+    gradient: `bg-linear-to-r from-[#5386e4]/40 to-[#2e3194]
          border-blue-400/40`,
     badge: "Mobile Development",
-    badgeColor: "bg-cyan-500",
+    badgeColor: "bg-[#b14aed]",
     animation: "fade-left",
     delay: 200,
   },
@@ -173,10 +173,10 @@ const aboutImage = [
     id: 3,
     src: about3,
     alt: "Pro",
-    gradient: `bg-linear-to-r from-blue-500 to-cyan-500 
+    gradient: `bg-linear-to-r from-[#5386e4]/40 to-[#2e3194]
          border-blue-400/40`,
     badge: "Professional",
-    badgeColor: "bg-blue-600",
+    badgeColor: "bg-[#b14aed]",
     animation: "fade-right",
     delay: 400,
   },
@@ -184,10 +184,10 @@ const aboutImage = [
     id: 4,
     src: about4,
     alt: "Design",
-    gradient: `bg-linear-to-r from-blue-600 to-cyan-600 
+    gradient: `bg-linear-to-r from-[#5386e4]/40 to-[#2e3194]
          border-blue-400/40`,
     badge: "Designer",
-    badgeColor: "bg-cyan-600",
+    badgeColor: "bg-[#b14aed]",
     animation: "fade-left",
     delay: 400,
   },
