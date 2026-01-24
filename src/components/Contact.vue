@@ -5,7 +5,7 @@
         <h2 class="text-4xl md:text-5xl font-bold text-white mb-4">
           Get In
           <span
-            class="text-transparent bg-clip-text bg-linear-to-r from-blue-400 to-cyan-400"
+            class="text-transparent bg-clip-text bg-linear-to-r from-[#b14aed] to-[#454ade]"
           >
             Touch
           </span>

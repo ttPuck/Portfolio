@@ -13,12 +13,12 @@
         <p class="text-white text-lg max-w-2xl mx-auto">
           A Collection Of My Projects, With Both Public And Private Source Code
         </p>
-      </div>
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      </div> 
+      <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4  gap-8">
         <div
           v-for="(project, index) in projects"
           :key="project.id"
-          class="group relaive bg-linear-to-br from-gray-600/50 to-blue-900/30 rounded-3xl overflow-hidden border backdrop-blur-sm hover:border-blue-400/30 transition-all duration-500 hover:transform hover:-translate-y-2"
+          class="group relaive bg-linear-to-br from-gray-600/50 to-blue-900/30 rounded-3xl overflow-hidden border backdrop-blur-sm hover:border-[#a73ee4] transition-all duration-500 hover:transform hover:-translate-y-2"
           :class="project.bordColor"
           data-aos="fade-up"
           :data-aos-delay="(index + 1) * 100"
@@ -137,7 +137,7 @@ const projects = ref([
         name: "Website",
         url: "https://romansroad.netlify.app",
         icon: EyeIcon,
-        class: "text-white hover:text-blue-300",
+        class: "text-[#FDE800] hover:text-[#5386e4]",
       },
     ],
   },
@@ -183,17 +183,39 @@ const projects = ref([
         name: "Website (Sign-up and Login)",
         url: "#",
         icon: EyeIcon,
-        class: "text-white hover:text-blue-300",
+        class: "text-[#FDE800] hover:text-[#5386e4]",
       },
       {
         name: "Github Repo",
         url: "#",
         icon: CodeBracketIcon,
-        class: "text-white hover:text-blue-300",
+        class: "text-[#FDE800] hover:text-[#5386e4]",
       },
     ],
   },
-
+    {
+    id: 3,
+    title: "nvSIL",
+    desc: `A faithful replica of nvALT (a successor to Notational Velocity) for Apple Silicon. Built in Swift using StoryBoard UI.`,
+    image: "../public/project4.png",
+    category: "Frontend",
+    bordColor: "border-blue-500/30",
+    badgeColor: "bg-blue-500",
+    technolg: [
+      {
+        name: "Swift",
+        class: "bg-blue-500/20 border-blue-400/30 text-blue-200",
+      },
+    ],
+    links: [
+      {
+        name: "Github Repo & Packaged App",
+        url: "https://github.com/ptwees/nvSIL",
+        icon: ArrowDownTrayIcon,
+        class: "text-[#FDE800] hover:text-[#5386e4]",
+      },
+    ],
+  },
   {
     id: 3,
     title: "Dev Portfolio Template",
@@ -218,30 +240,7 @@ const projects = ref([
         name: "Github Repo",
         url: "#",
         icon: ArrowDownTrayIcon,
-        class: "text-white hover:text-blue-300",
-      },
-    ],
-  },
-    {
-    id: 1,
-    title: "nvSIL",
-    desc: `A faithful replica of nvALT (a successor to Notational Velocity) for Apple Silicon. Built in Swift using StoryBoard UI.`,
-    image: "../public/project4.png",
-    category: "Frontend",
-    bordColor: "border-blue-500/30",
-    badgeColor: "bg-blue-500",
-    technolg: [
-      {
-        name: "Swift",
-        class: "bg-blue-500/20 border-blue-400/30 text-blue-200",
-      },
-    ],
-    links: [
-      {
-        name: "Github Repo & Packaged App",
-        url: "https://github.com/ptwees/nvSIL",
-        icon: ArrowDownTrayIcon,
-        class: "text-white hover:text-blue-300",
+        class: "text-[#FDE800] hover:text-[#5386e4]",
       },
     ],
   },

@@ -4,16 +4,16 @@
     id="about"
   >
     <div
-      class="w-full px-5 sm:px-8 md:px-12 lg:px-8 max-w-5xl lg:max-w-7xl mx-auto relative z-10"
+      class="w-full px-5 sm:px-12 md:px-14 lg:px-18 max-w-7xl lg:max-w-10xl mx-auto relative z-10"
     >
       <div class="grid lg:grid-cols-2 gap-10 xl:gap-14 items-center">
         <div
           class="lg:h-full flex justify-center lg:justify-start order-2 lg:order-1"
         >
-          <div class="relative w-full max-w-md">
+          <div class="relative w-full max-w">
             <div
               data-aos="zoom-in"
-              class="relative bg-linear-to-br from-gray-800/60 to-blue-900/40 rounded-3xl p-6 backdrop-blur-sm border border-blue-500/30 shadow-2xl"
+              class="relative bg-linear-to-br from-[#111d41] to-[#5386e4] rounded-3xl p-6 backdrop-blur-sm border border-blue-500/30 shadow-2xl"
             >
               <div class="grid grid-cols-2 gap-4">
                 <div
@@ -154,7 +154,7 @@ const aboutImage = [
     gradient: `bg-linear-to-r from-[#5386e4]/40 to-[#2e3194]
          border-blue-400/40`,
     badge: "Developer",
-    badgeColor: "bg-[#b14aed]",
+    badgeColor: "bg-[#26c485]",
     animation: "fade-right",
     delay: 200,
   },
@@ -165,7 +165,7 @@ const aboutImage = [
     gradient: `bg-linear-to-r from-[#5386e4]/40 to-[#2e3194]
          border-blue-400/40`,
     badge: "Mobile Development",
-    badgeColor: "bg-[#b14aed]",
+    badgeColor: "bg-[#26c485]",
     animation: "fade-left",
     delay: 200,
   },
@@ -176,7 +176,7 @@ const aboutImage = [
     gradient: `bg-linear-to-r from-[#5386e4]/40 to-[#2e3194]
          border-blue-400/40`,
     badge: "Professional",
-    badgeColor: "bg-[#b14aed]",
+    badgeColor: "bg-[#26c485]",
     animation: "fade-right",
     delay: 400,
   },
@@ -187,7 +187,7 @@ const aboutImage = [
     gradient: `bg-linear-to-r from-[#5386e4]/40 to-[#2e3194]
          border-blue-400/40`,
     badge: "Designer",
-    badgeColor: "bg-[#b14aed]",
+    badgeColor: "bg-[#26c485]",
     animation: "fade-left",
     delay: 400,
   },

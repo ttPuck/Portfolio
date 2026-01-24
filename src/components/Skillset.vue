@@ -78,11 +78,11 @@
               :class="exp.borderColor"
             >
               <div
-                class="absolute -left-2 top-0 w-4 h-4 rounded-full group-hover:scale-150 transition-transform duration-300"
+                class="absolute -left-2 top-0 w-4 h-4 rounded-full group-hover:scale-150 group-hover:bg-[#a73ee4] transition-transform duration-300"
                 :class="exp.dotColor"
               ></div>
               <div
-                class="bg-linear-to-br from gray-800/50 to-blue-900/30 rounded-2xl p-6 border backdrop-blur-sm group-hover:border-blue-400/40 transition-all duration-300"
+                class="bg-linear-to-br from gray-800/50 to-blue-900/30 rounded-2xl p-6 border border-[#5386e4] backdrop-blur-sm group-hover:border-[#a73ee4] transition-all duration-300"
                 :class="exp.borderClass"
               >
                 <div
@@ -184,19 +184,19 @@ const experiences = [
     dotColor: "bg-blue-500",
     borderClass: "border-blue=500/20",
     dateColor: "text-cyan-400 text-sm font-semibold",
-    companyColor: "text-cyan-400",
+    companyColor: "text-[#fbff12]",
   },
   {
     id: 2,
     position: "Frontend Developer & Administrative Manager",
     company: "Faith Talent Services",
-    period: "2019 - 2025",
+    period: "2019 - 2025",  
     desc: "Frontend developer and UI/UX design for one recruiting website, and manager of all HR and administrative duties for the company. Duties included: Onboarding, Payroll, Calendar Management, Administrative Tasks, and Clerical Tasks.",
     borderColor: "border-blue-500/30",
-    dotColor: "bg-blue-500",
+    dotColor: "bg-blue-500 hover hover:bg-[#a73ee4]",
     borderClass: "border-blue=500/20",
     dateColor: "text-cyan-400 text-sm font-semibold",
-    companyColor: "text-cyan-400",
+    companyColor: "text-[#fbff12]",
   },
 ];
 </script>
