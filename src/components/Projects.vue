@@ -78,14 +78,14 @@
       <div class="text-center mt-16" data-aos="fade-up">
         <div class="inline-flex flex-col sm:flex-row gap-4 items-center">
           <button
-            class="px-8 py-4 rounded-xl bg-linear-to-r from-blue-500 to-cyan-500 text-white font-semibold hover:shadow-lg hover:shadow-blue-500/25 transition-all duration-300 hover:scale-105 flex items-center"
+            class="px-8 py-4 rounded-xl bg-linear-to-r from-blue-500 to-cyan-500 text-white font-semibold hover:shadow-lg hover:shadow-[#b14aed] transition-all duration-300 hover:scale-105 flex items-center"
           >
             View All Projects
             <ArrowRightIcon class="w-5 h-5 ml-2" />
           </button>
           <button
            @click="scrollToContact"
-            class="px-8 py-4 rounded-xl border-2 border-black text-blue-100 font-semibold hover:bg-blue-400/10 transition-all duration-300 flex items-center"
+            class="px-8 py-4 rounded-xl border-2 border-[#5386e4] text-blue-100 font-semibold hover:bg-[#0b132b] hover:shadow-lg hover:shadow-[#b14aed]/60 transition-all duration-300 flex items-center"
           >
             <ChatBubbleLeftRightIcon class="w-5 h-5 mr-2" />
             Discuss Project

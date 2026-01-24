@@ -102,7 +102,7 @@
             <button
               v-for="button in ctaButtons"
               :key="button.id"
-              class="px-8 py-3 rounded-xl font-semibold transition-all duration-300 flex items-center jusitfy-center"
+              class="px-8 py-3 rounded-xl font-semibold transition-all duration-300 flex items-center jusitfy-center hover:shadow-lg hover:shadow-[#b14aed]/60"
               :class="button.classes"
              @click="button.text === 'Contact Me' && scrollToContact() ; button.text === 'View Portfolio' ? scrollToProjects() : null"
 
@@ -232,7 +232,7 @@ const ctaButtons = [
     iconclass: `ml-2 group-hover:translate-x-1
         transition-transform`,
     classes: `bg-[#5386e4]
-        text-white hover:bg-[#0b132b]/50`,
+        text-white `,
         
   },
   {

@@ -66,7 +66,7 @@
             <button
               @click="scrollToContact"
               class="px-8 md:px-10 py-4 rounded-xl relative group w-full sm:w-max flex justify-center overflow-hidden 
-              bg-linear-to-r from-[#0b132b] to-[#0b132b] hover:from-[#b14aed] hover:to-[#454ade] transition-all duration-300 bg-gray-900"
+              bg-linear-to-r from-[#0b132b] to-[#0b132b] hover:from-[#b14aed] hover:to-[#454ade] cursor-pointer transition-all duration-300 bg-gray-900"
             >
             
               <span
@@ -84,7 +84,7 @@
 <div class="p-[2px] bg-gradient-to-r from-[#b14aed] to-[#454ade] rounded-xl w-full sm:w-max">
   <!-- Inner button -->
   <button class="px-8 md:px-10 py-4 rounded-xl relative group w-full flex justify-center hover:bg-blue-400/10 transition-all duration-300 bg-gray-900">
-    <div class="flex items-center justify-center relative">
+    <div class="flex items-center justify-center relative cursor-pointer">
       <ArrowDownTrayIcon class="w-5 h-5 text-white group-hover:translate-y-1 transition-transform" />
       <span class="pl-3 text-white font-semibold text-lg">
         Download CV

@@ -42,7 +42,7 @@
           <p class="text-white font-bold absolute bottom-6 left opacity-0 group-hover:opacity-100 transform translate-x-4 group-hover:translate-x-[-200] transition-all duration-300">See Projects With This Service!</p>
           <div class="relative z-10">
             <h3
-              class="text-xl font-bold text-white mb-3 group-hover:text-blue-400 transition-colors duratoin-300"
+              class="text-xl font-bold text-white mb-3 group-hover:text-[#b14aed] transition-colors duratoin-300"
             >
               {{ service.name }}
             </h3>
@@ -51,9 +51,9 @@
             </p>
           </div>
           <div
-            class="absolute bottom-6 right-6 opacity-0 group-hover:opacity-100 transform translate-x-4 group-hover:translate-x-0 transition-all duration-300"
+            class="absolute bottom-6 right-6 opacity-0 cursor-pointer group-hover:opacity-100 transform translate-x-4 group-hover:translate-x-0 transition-all duration-300"
           > <button @click="scrollToProjects">
-            <ArrowRightIcon class="w-6 h-6 text-cyan-400" />
+            <ArrowRightIcon  class="w-6 h-6 text-cyan-400 cursor-pointer" />
             </button>
           </div>
         </div>
@@ -62,7 +62,7 @@
         <div class="inline-flex flex-col sm:flex-row gap-4 items-center">
           <button
            @click="scrollToContact"
-            class="px-8 py-4 rounded-xl border-2 border-[#5386e4] text-white font-semibold hover:bg-[#0b132b]/50 transition-all duration-300 flex items-center"
+            class="px-8 py-4 rounded-xl border-2 border-[#5386e4] text-white font-semibold hover:bg-[#0b132b]/50 hover:shadow-lg hover:shadow-[#b14aed]/60 cursor-pointer transition-all duration-300 flex items-center"
           >
             Get In Touch
             <ChatBubbleLeftRightIcon class="w-5 h-5 ml-2" />

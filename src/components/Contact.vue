@@ -55,7 +55,7 @@
                 </label>
                 <input
                   type="text"
-                  class="w-full bg-gray500/20 border border-black rounded-xl px-4 py-3 text-white placeholder-blue-400 focus:border-cyan-200 focus:outline-none transition-all"
+                  class="w-full bg-gray500/20 border border-[#5386e4] rounded-xl px-4 py-3 text-white placeholder-blue-400 focus:border-cyan-200 focus:outline-none transition-all"
                 />
               </div>
               <div>
@@ -64,7 +64,7 @@
                 </label>
                 <input
                   type="email"
-                  class="w-full bg-gray500/20 border border-black rounded-xl px-4 py-3 text-white placeholder-blue-400 focus:border-cyan-200 focus:outline-none transition-all"
+                  class="w-full bg-gray500/20 border border-[#5386e4] rounded-xl px-4 py-3 text-white placeholder-blue-400 focus:border-cyan-200 focus:outline-none transition-all"
                 />
               </div>
               <div>
@@ -73,7 +73,7 @@
                 </label>
                 <input
                   type="text"
-                  class="w-full bg-gray500/20 border border-black rounded-xl px-4 py-3 text-white placeholder-blue-400 focus:border-cyan-200 focus:outline-none transition-all"
+                  class="w-full bg-gray500/20 border border-[#5386e4] rounded-xl px-4 py-3 text-white placeholder-blue-400 focus:border-cyan-200 focus:outline-none transition-all"
                 />
               </div>
             </div>
@@ -83,13 +83,13 @@
               </label>
               <textarea
                 rows="5"
-                class="w-full bg-gray500/20 border border-black rounded-xl px-4 py-3 text-white placeholder-blue-400 focus:border-cyan-200 focus:outline-none transition-all"
+                class="w-full bg-gray500/20 border border-[#5386e4] rounded-xl px-4 py-3 text-white placeholder-blue-400 focus:border-cyan-200 focus:outline-none transition-all"
               >
               </textarea>
             </div>
             <button
               type="submit"
-              class="w-full bg-linear-to-r from-blue-500 to-cyan-500 text-white font-semibold py-3 rounded-xl hover:shadow-lg hover:shadow-blue-500/25 transition-all duration-300"
+              class="w-full bg-linear-to-r from-[#5386e4] to-cyan-500 text-white font-semibold py-3 rounded-xl hover:shadow-lg hover:shadow-[#b14aed]/60 transition-all duration-300"
             >
               Send Message
             </button>
