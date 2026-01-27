@@ -79,7 +79,7 @@
               </span>
             </button>
             </div>
-            <a href="/Ian-CV.pdf" download>
+            <a href="/Ian.Portfolio.pdf" download>
           <!-- Gradient wrapper -->
 <div class="p-[2px] bg-gradient-to-r from-[#b14aed] to-[#454ade] rounded-xl w-full sm:w-max">
   <!-- Inner button -->

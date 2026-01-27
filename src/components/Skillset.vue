@@ -130,6 +130,9 @@ const tech = {
   tailwind: { name: "Tailwind CSS" },
   git: { name: "Git" },
   figma: { name: "Figma" },
+  github: { name: "GitHub"},
+  slack: {name: "Slack"},
+  teams: {name: "MS Teams"}
 };
 
 const skills = [
@@ -171,6 +174,7 @@ const skills = [
     percentage: 70,
     percentageColor: "text-blue-400 text-sm",
     gradient: "bg-linear-to-r from-blue-500 to-cyan-500",
+    tech: [tech.github, tech.slack, tech.teams]
   },
 ];
 const experiences = [

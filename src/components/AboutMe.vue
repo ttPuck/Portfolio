@@ -13,7 +13,7 @@
           <div class="relative w-full max-w">
             <div
               data-aos="zoom-in"
-              class="relative bg-linear-to-br from-[#111d41] to-[#5386e4] rounded-3xl p-6 backdrop-blur-sm border border-blue-500/30 shadow-2xl"
+              class="relative bg-linear-to-br from-[#0b132b] to-[#460742] rounded-3xl p-6 backdrop-blur-sm border border-blue-500/30 shadow-2xl"
             >
               <div class="grid grid-cols-2 gap-4">
                 <div

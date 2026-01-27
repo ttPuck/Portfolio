@@ -5,7 +5,7 @@
     <div
       class="text-3xl text-transparent bg-clip-text bg-linear-to-r from-[#eb9486] to-[#5386e4]"
     >
-      Dev <span class="font-bold">Portfolio</span>
+      Web Dev <span class="font-bold">Portfolio</span>
     </div>
     <div class="md:hidden z-30">
       <button
