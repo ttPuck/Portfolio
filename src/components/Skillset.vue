@@ -2,9 +2,9 @@
   <section class="relative py-20 overflow-hidden" id="skillset">
     <div class="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="text-center mb-16" data-aos="fade-up">
-        <h2 class="text-4xl md:text-5xl font-bold text-blue-200 mb-4">
+        <h2 class="text-4xl md:text-5xl font-bold text-white mb-4">
           <span
-            class="text-transparent bg-clip-text bg-linear-to-r from-blue-400 to-cyan-400"
+            class="text-transparent bg-clip-text bg-linear-to-r from-[#454ade] to-[#b14aed]"
           >
             Skills
           </span>
@@ -78,15 +78,15 @@
               :class="exp.borderColor"
             >
               <div
-                class="absolute -left-2 top-0 w-4 h-4 rounded-full group-hover:scale-150 transition-transform duration-300"
+                class="absolute -left-2 top-0 w-4 h-4 rounded-full group-hover:scale-150 group-hover:bg-[#a73ee4] transition-transform duration-300"
                 :class="exp.dotColor"
               ></div>
               <div
-                class="bg-linear-to-br from gray-800/50 to-blue-900/30 rounded-2xl p-6 border backdrop-blur-sm group-hover:border-blue-400/40 transition-all duration-300"
+                class="bg-linear-to-br from gray-800/50 to-blue-900/30 rounded-2xl p-6 border border-[#5386e4] backdrop-blur-sm group-hover:border-[#a73ee4] transition-all duration-300"
                 :class="exp.borderClass"
               >
                 <div
-                  class="flex flex-col sm:flex-row sm:items-center sm:jusitfy-between mb-3"
+                  class="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-3"
                 >
                   <h4 class="text-lg font-bold text-white">
                     {{ exp.position }}
@@ -98,7 +98,7 @@
                 <p :class="exp.companyColor" class="font-medium mb-3">
                   {{ exp.company }}
                 </p>
-                <p class="text-blue-100 text-sm leading-relaxed">
+                <p class="text-white text-sm leading-relaxed">
                   {{ exp.desc }}
                 </p>
               </div>
@@ -130,6 +130,9 @@ const tech = {
   tailwind: { name: "Tailwind CSS" },
   git: { name: "Git" },
   figma: { name: "Figma" },
+  github: { name: "GitHub"},
+  slack: {name: "Slack"},
+  teams: {name: "MS Teams"}
 };
 
 const skills = [
@@ -171,6 +174,7 @@ const skills = [
     percentage: 70,
     percentageColor: "text-blue-400 text-sm",
     gradient: "bg-linear-to-r from-blue-500 to-cyan-500",
+    tech: [tech.github, tech.slack, tech.teams]
   },
 ];
 const experiences = [
@@ -179,24 +183,24 @@ const experiences = [
     position: "Freelance Full-Stack Developer ",
     company: "Garbero Media",
     period: " 2025 - Present",
-    desc: "Full-stack developer and UI/UX design for multiple websites, the major being a photography portfolio and booking website built with Vue.js and a Node.js backend, featuring a MongoDB customer database and responsive UI. Integrated Plaid Link on the frontend with secure server-side Plaid API workflows for bank-linked payments. Implemented booking, scheduling, and transaction management using RESTful APIs.",
+    desc: "Full-stack developer and UI/UX design for a photography portfolio and booking website built with Vue.js and a Node.js backend, featuring a MongoDB customer database and responsive UI. Integrated Plaid Link on the frontend with secure server-side Plaid API workflows for bank-linked payments. Implemented booking, scheduling, and transaction management using RESTful APIs.",
     borderColor: "border-blue-500/30",
     dotColor: "bg-blue-500",
-    borderClass: "botder-blue=500/20",
-    dateColor: "text-blue-400 text-sm font-semibold",
-    companyColor: "text-cyan-400",
+    borderClass: "border-blue=500/20",
+    dateColor: "text-cyan-400 text-sm font-semibold",
+    companyColor: "text-[#fbff12]",
   },
   {
     id: 2,
     position: "Frontend Developer & Administrative Manager",
     company: "Faith Talent Services",
-    period: "2019 - 2025",
+    period: "2019 - 2025",  
     desc: "Frontend developer and UI/UX design for one recruiting website, and manager of all HR and administrative duties for the company. Duties included: Onboarding, Payroll, Calendar Management, Administrative Tasks, and Clerical Tasks.",
     borderColor: "border-blue-500/30",
-    dotColor: "bg-blue-500",
-    borderClass: "botder-blue=500/20",
-    dateColor: "text-blue-400 text-sm font-semibold",
-    companyColor: "text-cyan-400",
+    dotColor: "bg-blue-500 hover hover:bg-[#a73ee4]",
+    borderClass: "border-blue=500/20",
+    dateColor: "text-cyan-400 text-sm font-semibold",
+    companyColor: "text-[#fbff12]",
   },
 ];
 </script>

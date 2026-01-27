@@ -4,16 +4,16 @@
     id="about"
   >
     <div
-      class="w-full px-5 sm:px-8 md:px-12 lg:px-8 max-w-5xl lg:max-w-7xl mx-auto relative z-10"
+      class="w-full px-5 sm:px-12 md:px-14 lg:px-18 max-w-7xl lg:max-w-10xl mx-auto relative z-10"
     >
       <div class="grid lg:grid-cols-2 gap-10 xl:gap-14 items-center">
         <div
           class="lg:h-full flex justify-center lg:justify-start order-2 lg:order-1"
         >
-          <div class="relative w-full max-w-md">
+          <div class="relative w-full max-w">
             <div
               data-aos="zoom-in"
-              class="relative bg-linear-to-br from-gray-800/60 to-blue-900/40 rounded-3xl p-6 backdrop-blur-sm border border-blue-500/30 shadow-2xl"
+              class="relative bg-linear-to-br from-[#0b132b] to-[#460742] rounded-3xl p-6 backdrop-blur-sm border border-blue-500/30 shadow-2xl"
             >
               <div class="grid grid-cols-2 gap-4">
                 <div
@@ -42,7 +42,7 @@
                 </div>
               </div>
               <div
-                class="absolute -bottom-4 left-1/2 transform -translate-x-1/2 z-20 bg-linear-to-r from-blue-500 to-cyan-500 rounded-2xl px-6 py-3 border border-blue-400/40 shadow-xl"
+                class="absolute -bottom-4 left-1/2 transform -translate-x-1/2 z-20 bg-[#5386e4] rounded-2xl px-6 py-3 border border-blue-400/40 shadow-xl"
                 data-aos="fade up"
                 data-aos-delay="600"
               >
@@ -56,14 +56,14 @@
         <div class="flex flex-col justify-center order-1 lg:order-2">
           <div class="text-center lg:text-left" data-aos="fade-left">
             <h2
-              class="text-white font-bold text-4xl md:text-5xl lg:text-6xl leading-tight"
+              class="text-transparent bg-clip-text bg-linear-to-r from-[#454ade] to-[#b14aed] font-bold text-4xl md:text-5xl lg:text-6xl leading-tight"
             >
               About
-              <span
-                class="text-transparent bg-clip-text bg-linear-to-r from-blue-400 to-cyan-400"
+              <span 
+                class="text-white"
               >
                 Me</span
-              >
+              > 
             </h2>
             <p
               class="text-white font-medium text-lg md:text-xl mt-4"
@@ -73,14 +73,6 @@
               Full-Stack Developer
             </p>
           </div>
-          <p
-            class="text-white pt-4 text-center lg:text-left text-lg leading-relaxed"
-            data-aos="fade-left"
-            data-aos-delay="600"
-          >
-            Frontend and backend developer specializing 
-            in JS frameworks and app development for macOS and cross-platform desktop applications.
-          </p>
           <div
             class="grid grid-cols-1 sm:grid-cols-2 gap-6 pt-8"
             data-aos="fade-up"
@@ -97,7 +89,7 @@
                   {{ skill.title }}
                 </h3>
               </div>
-              <p class="text-blue-200 text-sm">
+              <p class="text-white text-sm">
                 {{ skill.desc }}
               </p>
             </div>
@@ -110,9 +102,9 @@
             <button
               v-for="button in ctaButtons"
               :key="button.id"
-              class="px-8 py-3 rounded-xl font-semibold transition-all duration-300 flex items-center jusitfy-center"
+              class="px-8 py-3 rounded-xl font-semibold transition-all duration-300 flex items-center jusitfy-center hover:shadow-lg hover:shadow-[#b14aed]/60"
               :class="button.classes"
-             @click="button.text === 'Contact Me' && scrollToContact()"
+             @click="button.text === 'Contact Me' && scrollToContact() ; button.text === 'View Portfolio' ? scrollToProjects() : null"
 
             >
               <component
@@ -120,7 +112,7 @@
                 class="w-4 h-4"
                 :class="button.iconclass"
               />
-              {{ button.text }}
+              {{ button.text }} 
             </button>
           </div>
         </div>
@@ -149,15 +141,20 @@ import about2 from "../../public/about2.jpeg";
 import about3 from "../../public/about3.png";
 import about4 from "../../public/about4.png";
 
+  const scrollToProjects = () => {
+  const el = document.getElementById("projects")
+  if (!el) return 
+  el.scrollIntoView({ behavior: "smooth" })
+  }
 const aboutImage = [
   {
     id: 1,
     src: about1,
     alt: "Pro",
-    gradient: `bg-linear-to-r from-blue-600 to-cyan-600 
+    gradient: `bg-linear-to-r from-[#5386e4]/40 to-[#2e3194]
          border-blue-400/40`,
     badge: "Developer",
-    badgeColor: "bg-blue-500",
+    badgeColor: "bg-[#26c485]",
     animation: "fade-right",
     delay: 200,
   },
@@ -165,10 +162,10 @@ const aboutImage = [
     id: 2,
     src: about2,
     alt: "",
-    gradient: `bg-linear-to-r from-blue-500 to-cyan-500 
+    gradient: `bg-linear-to-r from-[#5386e4]/40 to-[#2e3194]
          border-blue-400/40`,
     badge: "Mobile Development",
-    badgeColor: "bg-cyan-500",
+    badgeColor: "bg-[#26c485]",
     animation: "fade-left",
     delay: 200,
   },
@@ -176,10 +173,10 @@ const aboutImage = [
     id: 3,
     src: about3,
     alt: "Pro",
-    gradient: `bg-linear-to-r from-blue-500 to-cyan-500 
+    gradient: `bg-linear-to-r from-[#5386e4]/40 to-[#2e3194]
          border-blue-400/40`,
     badge: "Professional",
-    badgeColor: "bg-blue-600",
+    badgeColor: "bg-[#26c485]",
     animation: "fade-right",
     delay: 400,
   },
@@ -187,10 +184,10 @@ const aboutImage = [
     id: 4,
     src: about4,
     alt: "Design",
-    gradient: `bg-linear-to-r from-blue-600 to-cyan-600 
+    gradient: `bg-linear-to-r from-[#5386e4]/40 to-[#2e3194]
          border-blue-400/40`,
     badge: "Designer",
-    badgeColor: "bg-cyan-600",
+    badgeColor: "bg-[#26c485]",
     animation: "fade-left",
     delay: 400,
   },
@@ -200,7 +197,7 @@ const skills = [
   {
     id: 1,
     icon: CodeBracketSquareIcon,
-    iconColor: "text-blue-400",
+    iconColor: "text-cyan-400",
     title: "Frontend",
     desc: "JavaScript, Vue.js, React, Next.js, Typescript, Tailwind CSS",
   },
@@ -214,7 +211,7 @@ const skills = [
   {
     id: 3,
     icon: PaintBrushIcon,
-    iconColor: "text-blue-400",
+    iconColor: "text-cyan-400",
     title: "Design",
     desc: "UI/UX Design, Photoshop, Figma, Prototyping",
   },
@@ -234,16 +231,17 @@ const ctaButtons = [
     icon: ArrowRightIcon,
     iconclass: `ml-2 group-hover:translate-x-1
         transition-transform`,
-    classes: `bg-linear-to-r from-blue-600 to-cyan-600
-        text-white hover:from-blue-500 hover:to-cyan-500`,
+    classes: `bg-[#5386e4]
+        text-white `,
+        
   },
   {
     id: 2,
     text: "Contact Me",
     icon: ChatBubbleLeftRightIcon,
     iconclass: `mr-2`,
-    classes: `border border-blue-400 text-blue-400 
-        hover:bg-blue-400/10`,
+    classes: `border border-[#454ade] text-white
+        hover:bg-[#0b132b]/50 `,
   },
 ];
 </script>

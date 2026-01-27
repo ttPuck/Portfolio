@@ -9,7 +9,7 @@
             Ian.dev
           </div>
           <p class="text-blue-300 text-sm leading-relaxed max-w-md">
-           Thank you for checking out my porfolio!
+           Thank you for checking out my porfolio! If you have any questions, please feel free to reach out. I am always checking my email!
           </p>
         </div>
         <div>
@@ -30,7 +30,7 @@
           <ul class="space-y-2">
             <li v-for="service in services" :key="service">
               <a
-                href="#"
+                href="#services"
                 class="text-blue-200 hover:text-blue-400 text-sm transition-colors"
               >
                 {{ service }}
@@ -54,12 +54,11 @@ const quickLinks = [
   { name: "About", href: "#about" },
   { name: "Services", href: "#services" },
   { name: "Projects", href: "#projects" },
+    { name: "Contact", href: "#contact" },
   { name: "Testimonials", href: "#testimonials" },
-  { name: "Contact", href: "#contact" },
 ];
 const services = [
   "Web Development",
-  "Mobile Development",
   "UI/UX Design",
   "Technical Writing",
   "Content Specialist",

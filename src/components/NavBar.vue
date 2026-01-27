@@ -1,11 +1,11 @@
 <template>
   <header
-    class="flex justify-between items-center p-6 bg-opacity-50 relative z-20"
+    class="flex justify-between items-center p-6 bg-opacity-50 relative z-20" id="home"
   >
     <div
-      class="text-3xl font-bold bg-linear-to-r from-blue-430 to-cyan-400 bg-clip-text text-transparent"
+      class="text-3xl text-transparent bg-clip-text bg-linear-to-r from-[#eb9486] to-[#5386e4]"
     >
-      Dev <span class="font-black">Portfolio</span>
+      Web Dev <span class="font-bold">Portfolio</span>
     </div>
     <div class="md:hidden z-30">
       <button
@@ -52,7 +52,7 @@
         <li v-for="item in Menu" :key="item.name" class="group relative">
           <a
             :href="item.href"
-            class="relative block text-blue-100 hover:text-blue-400 transition-all duration-300 text-xl md:text-base font-medium group"
+            class="relative block text-white hover:text-blue-400 transition-all duration-300 text-xl md:text-base font-medium group"
             @click="scrollToSection(item.href)"
           >
             {{ item.name }}
@@ -65,9 +65,9 @@
       <div class="mt-8 md:mt-0 md:ml-8">
         <button
         @click="scrollToContact"
-          class="px-6 py-2.5 bg-linear-to-r from-blue-500 to-cyan-500 text-white rounded-full hover:shadow-lg hover:shadow-blue-500/25 transition-all duration-300 hover:scale-100"
+          class="px-6 py-2.5 bg-[#5386e4] text-[#e5f4e3] rounded-full hover:shadow-lg hover:shadow-[#b14aed]/60 transition-all duration-300 hover:scale-100"
         >
-          Talk With Me!
+          Message Me!
         </button>
       </div>
     </nav>
