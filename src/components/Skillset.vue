@@ -33,11 +33,11 @@
                   {{ skill.title }}
                 </span>
               </div>
-              <div class="flex flex-wrap gap-1">
+              <div class="flex flex-wrap  gap-1">
                 <span
                   v-for="t in skill.tech"
                   :key="t.name"
-                  class="px-2 py-2 bg-linear-to-r from-blue-500/20 border border-blue-400/30 rounded-full text-white text-sm font-medium hover:scale-105 transition-transform duration-300"
+                  class="px-2 py-2 border-pulse bg-linear-to-r from-blue-500/20 border border-blue-400/30 rounded-full text-white text-sm font-medium hover:scale-105 transition-transform duration-300"
                 >
                   {{ t.name }}
                 </span>
@@ -53,17 +53,17 @@
           </div>
           <div class="mt-12">
             <div class="flex flex-wrap gap-3">
-              <span
+              <span 
                 v-for="tech in techStack"
                 :key="tech"
-                class="px-4 py-2 bg-linear-to-r from-blue-500/20 border border-blue-400/30 rounded-full text-white text-sm font-medium hover:scale-105 transition-transform duration-300"
+                class="px-4 py-2 bg-[#5386e4] border border-blue-400/30 rounded-full text-white text-sm font-medium hover:scale-105 transition-transform duration-300"
               >
                 {{ tech }}
               </span>
             </div>
           </div>
         </div>
-        <div data-aos="fade-left">
+        <div data-aos="fade-left"> 
           <h3
             class="text-2xl font-bold text-white mb-8 flex items-center gap-3"
           >
@@ -114,10 +114,8 @@ import {
   BriefcaseIcon,
   CloudIcon,
   CodeBracketIcon,
-  DevicePhoneMobileIcon,
   PaintBrushIcon,
   ServerIcon,
-  Squares2X2Icon,
 } from "@heroicons/vue/16/solid";
 const tech = {
   vue: { name: "Vue.js" },

@@ -3,14 +3,15 @@
     class="relative w-full overflow-hidden min-h-screen flex items-center"
   >
     <div
-      class="w-full px-5 sm:px-8 md:px-12 lg:px-8 max-w-5xl lg:max-w-7xl mx-auto relative z-10"
+      class="w-full px-5 sm:px-8 md:px-12 lg:px-16 max-w-7xl lg:max-w-9xl mx-auto relative z-10"
     >
       <div class="grid lg:grid-cols-2 gap-10 xl:gap-14 items-center">
             <!-- Profile Image-->
           <div class="lg:h-full flex justify-center lg:justify-center">
+            
           <div class="relative w-full max-w-md lg:max-w-lg">
             <div
-              class="relative z-10 bg-linear-to-r from-[#501f6d] to-[#2e3194] shadow-2xl rounded-[40%_20%_30%_80%/10%_20%_30%_30%] p-4 backdrop-blur-sm border border-[#b14aed] -translate-y-6"
+              class="relative z-10 border-pulse bg-linear-to-r from-[#501f6d] to-[#2e3194] shadow-2xl rounded-[40%_20%_30%_80%/10%_20%_30%_30%] p-4 backdrop-blur-sm -translate-y-6"
               data-aos="zoom-in"
               data-aos-delay="450"
             >
@@ -23,9 +24,6 @@
                 />
               </div>
             </div>
-            <div
-              class="absolute -top-2 -right-4 w-10 h-10 bg-red-400 rounded-full blur-sm opacity-6 animate-pulse"
-            ></div>
           </div>
         </div>
         <div class="flex flex-col md:mt-0 mt-20 justify-center">

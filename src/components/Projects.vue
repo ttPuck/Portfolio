@@ -1,6 +1,6 @@
 <template>
   <section class="relative py-20 overflow-hidden" id="projects">
-    <div class="relative z-10 max-w-8xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="relative z-10 max-w-12xl mx-auto px-4 sm:px-6 lg:px-12">
       <div class="text-center mb-16" data-aos="fade-up">
         <h2 class="text-4xl md:text-5xl font-bold text-white mb-4">
           My
@@ -18,7 +18,7 @@
         <div
           v-for="(webproject, index) in webprojects"
           :key="webproject.id"
-          class="group relative bg-linear-to-br from-gray-600/50 to-blue-900/30 rounded-3xl overflow-hidden border backdrop-blur-sm hover:border-[#a73ee4] transition-all duration-500 hover:transform hover:-translate-y-2"
+          class="group relative blob-glow bg-linear-to-br from-gray-600/50 to-blue-900/30 rounded-3xl overflow-hidden border backdrop-blur-sm hover:border-[#a73ee4] transition-all duration-500 hover:transform hover:-translate-y-2"
           :class="webproject.bordColor"
           data-aos="fade-up"
           :data-aos-delay="(index + 1) * 100"
@@ -101,7 +101,7 @@
         <div
           v-for="(otherproject, index) in otherprojects"
           :key="otherproject.id"
-          class="group relative bg-linear-to-br from-gray-600/50 to-blue-900/30 rounded-3xl overflow-hidden border backdrop-blur-sm hover:border-[#a73ee4] transition-all duration-500 hover:transform hover:-translate-y-2"
+          class="group relative blob-glow bg-linear-to-br from-gray-600/50 to-blue-900/30 rounded-3xl overflow-hidden border backdrop-blur-sm hover:border-[#a73ee4] transition-all duration-500 hover:transform hover:-translate-y-2"
           :class="otherproject.bordColor"
           data-aos="fade-up"
           :data-aos-delay="(index + 1) * 100"
@@ -164,7 +164,7 @@
           <a
           href="https://github.com/ttPuck"
           target="_blank"
-            class="px-8 py-4 rounded-xl bg-[#5386e4] text-white font-semibold hover:shadow-lg hover:shadow-[#b14aed] transition-all duration-300 hover:scale-105 flex items-center"
+            class="px-8 py-4 border-pulse rounded-xl  text-white font-semibold hover:shadow-lg hover:shadow-[#b14aed] hover:bg-amber-50 blob-glow transition-all duration-300 hover:scale-105 flex items-center"
           >
             View GitHub!
           

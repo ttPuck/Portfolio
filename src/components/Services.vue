@@ -62,7 +62,7 @@
         <div class="inline-flex flex-col sm:flex-row gap-4 items-center">
           <button
            @click="scrollToContact"
-            class="px-8 py-4 rounded-xl border-2 border-[#5386e4] text-white font-semibold hover:bg-[#0b132b]/50 hover:shadow-lg hover:shadow-[#b14aed]/60 cursor-pointer transition-all duration-300 flex items-center"
+            class="px-8 py-4 rounded-xl border-pulse text-white font-semibold hover:bg-[#0b132b]/50 hover:shadow-lg hover:shadow-[#b14aed]/60 cursor-pointer transition-all duration-300 flex items-center"
           >
             Get In Touch
             <ChatBubbleLeftRightIcon class="w-5 h-5 ml-2" />
@@ -110,7 +110,7 @@ const services = ref([
     id: 4,
     icon: EnvelopeIcon,
     name: "Administrative Services",
-    desc: `With overwhelming experience, I am able to provide any form of administrative services, such as technical writing, copywriting, clerical and management tasks.`,
+    desc: `With overwhelming experience, I am able to provide any form of administrative services, such as technical writing, clerical and management tasks.`,
   },
 ]);
 </script>
