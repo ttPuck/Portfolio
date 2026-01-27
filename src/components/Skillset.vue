@@ -11,7 +11,7 @@
           & Experience
         </h2>
         <p class="text-white text-lg max-w-2xl mx-auto">
-          My Technical Cataloge And Professional Journey
+          My Technical Catalog And Professional Journey
         </p>
       </div>
       <div class="grid lg:grid-cols-2 gap-12 lg:gap-16">
@@ -63,7 +63,7 @@
             </div>
           </div>
         </div>
-        <div data-aos="fade left">
+        <div data-aos="fade-left">
           <h3
             class="text-2xl font-bold text-white mb-8 flex items-center gap-3"
           >
@@ -82,7 +82,7 @@
                 :class="exp.dotColor"
               ></div>
               <div
-                class="bg-linear-to-br from gray-800/50 to-blue-900/30 rounded-2xl p-6 border border-[#5386e4] backdrop-blur-sm group-hover:border-[#a73ee4] transition-all duration-300"
+                class="bg-linear-to-br from-gray-800/50 to-blue-900/30 rounded-2xl p-6 border border-[#5386e4] backdrop-blur-sm group-hover:border-[#a73ee4] transition-all duration-300"
                 :class="exp.borderClass"
               >
                 <div
@@ -186,7 +186,7 @@ const experiences = [
     desc: "Full-stack developer and UI/UX design for a photography portfolio and booking website built with Vue.js and a Node.js backend, featuring a MongoDB customer database and responsive UI. Integrated Plaid Link on the frontend with secure server-side Plaid API workflows for bank-linked payments. Implemented booking, scheduling, and transaction management using RESTful APIs.",
     borderColor: "border-blue-500/30",
     dotColor: "bg-blue-500",
-    borderClass: "border-blue=500/20",
+    borderClass: "border-blue-500/20",
     dateColor: "text-cyan-400 text-sm font-semibold",
     companyColor: "text-[#fbff12]",
   },
@@ -197,8 +197,8 @@ const experiences = [
     period: "2019 - 2025",  
     desc: "Frontend developer and UI/UX design for one recruiting website, and manager of all HR and administrative duties for the company. Duties included: Onboarding, Payroll, Calendar Management, Administrative Tasks, and Clerical Tasks.",
     borderColor: "border-blue-500/30",
-    dotColor: "bg-blue-500 hover hover:bg-[#a73ee4]",
-    borderClass: "border-blue=500/20",
+    dotColor: "bg-blue-500 hover:bg-[#a73ee4]",
+    borderClass: "border-blue-500/20",
     dateColor: "text-cyan-400 text-sm font-semibold",
     companyColor: "text-[#fbff12]",
   },

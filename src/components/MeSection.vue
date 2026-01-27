@@ -24,7 +24,7 @@
               </div>
             </div>
             <div
-              class="absolute -top-2 -right-4 w-10 h-10 bg:red-400 rounded-full blur-sm opacity-6 animate-pulse"
+              class="absolute -top-2 -right-4 w-10 h-10 bg-red-400 rounded-full blur-sm opacity-6 animate-pulse"
             ></div>
           </div>
         </div>

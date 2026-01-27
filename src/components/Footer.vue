@@ -9,7 +9,7 @@
             Ian.dev
           </div>
           <p class="text-blue-300 text-sm leading-relaxed max-w-md">
-           Thank you for checking out my porfolio! If you have any questions, please feel free to reach out. I am always checking my email!
+           Thank you for checking out my portfolio! If you have any questions, please feel free to reach out. I am always checking my email!
           </p>
         </div>
         <div>
