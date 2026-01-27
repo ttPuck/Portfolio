@@ -136,10 +136,10 @@ import {
   ArrowRightIcon,
   ServerIcon,
 } from "@heroicons/vue/16/solid";
-import about1 from "../../public/about1.png";
-import about2 from "../../public/about2.jpeg";
-import about3 from "../../public/about3.png";
-import about4 from "../../public/about4.png";
+import about1 from "/about1.png";
+import about2 from "/about2.jpeg";
+import about3 from "/about3.png";
+import about4 from "/about4.png";
 
   const scrollToProjects = () => {
   const el = document.getElementById("projects")
