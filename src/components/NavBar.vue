@@ -65,7 +65,7 @@
       <div class="mt-8 md:mt-0 md:ml-8">
         <button
         @click="scrollToContact"
-          class="px-6 py-2.5 bg-[#5386e4] text-[#e5f4e3] rounded-full hover:shadow-lg hover:shadow-[#b14aed]/60 transition-all duration-300 hover:scale-100"
+          class="px-6 py-2.5 bg-[#5386e4] text-[#e5f4e3] rounded-full hover:shadow-lg hover:shadow-[#b14aed]/60 transition-all duration-300 hover:scale-105"
         >
           Message Me!
         </button>

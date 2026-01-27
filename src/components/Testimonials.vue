@@ -17,7 +17,7 @@
           What People Say About Working With Me
         </p>
       </div> 
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-5 lg:grid-cols-2 gap-6">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6">
         <div
           v-for="(testimonial, index) in testimonials"
           :key="testimonial.id"

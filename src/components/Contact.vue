@@ -61,7 +61,7 @@
                 <input
                   type="text"
                   name="name"
-                  class="w-full bg-gray500/20 border border-[#5386e4] rounded-xl px-4 py-3 text-white"
+                  class="w-full bg-gray-500/20 border border-[#5386e4] rounded-xl px-4 py-3 text-white"
                 />
               </div>
 
@@ -72,7 +72,7 @@
                 <input
                   type="email"
                   name="email"
-                  class="w-full bg-gray500/20 border border-[#5386e4] rounded-xl px-4 py-3 text-white"
+                  class="w-full bg-gray-500/20 border border-[#5386e4] rounded-xl px-4 py-3 text-white"
                 />
               </div>
 
@@ -83,7 +83,7 @@
                 <input
                   type="text"
                   name="subject"
-                  class="w-full bg-gray500/20 border border-[#5386e4] rounded-xl px-4 py-3 text-white"
+                  class="w-full bg-gray-500/20 border border-[#5386e4] rounded-xl px-4 py-3 text-white"
                 />
               </div>
             </div>
@@ -95,7 +95,7 @@
               <textarea
                 name="body"
                 rows="5"
-                class="w-full bg-gray500/20 border border-[#5386e4] rounded-xl px-4 py-3 text-white"
+                class="w-full bg-gray-500/20 border border-[#5386e4] rounded-xl px-4 py-3 text-white"
               ></textarea>
             </div>
 

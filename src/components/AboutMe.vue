@@ -43,7 +43,7 @@
               </div>
               <div
                 class="absolute -bottom-4 left-1/2 transform -translate-x-1/2 z-20 bg-[#5386e4] rounded-2xl px-6 py-3 border border-blue-400/40 shadow-xl"
-                data-aos="fade up"
+                data-aos="fade-up"
                 data-aos-delay="600"
               >
                 <div class="text-center text-white text-xl font-bold">
@@ -102,7 +102,7 @@
             <button
               v-for="button in ctaButtons"
               :key="button.id"
-              class="px-8 py-3 rounded-xl font-semibold transition-all duration-300 flex items-center jusitfy-center hover:shadow-lg hover:shadow-[#b14aed]/60"
+              class="px-8 py-3 rounded-xl font-semibold transition-all duration-300 flex items-center justify-center hover:shadow-lg hover:shadow-[#b14aed]/60"
               :class="button.classes"
              @click="button.text === 'Contact Me' && scrollToContact() ; button.text === 'View Portfolio' ? scrollToProjects() : null"
 

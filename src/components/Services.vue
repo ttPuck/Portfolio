@@ -31,7 +31,7 @@
           ></div>
           <div class="relative z-10 mb-6">
             <div
-              class="inline-flex items-center justify-center w-16 h-16 rounded-xl bg-linear-to-r from-blue 500/20 to-cyan-500/20 border border-blue-400/30 group-hover:scale-110 transition-transform duration-300"
+              class="inline-flex items-center justify-center w-16 h-16 rounded-xl bg-linear-to-r from-blue-500/20 to-cyan-500/20 border border-blue-400/30 group-hover:scale-110 transition-transform duration-300"
             >
               <component
                 :is="service.icon"
@@ -42,7 +42,7 @@
           <p class="text-white font-bold absolute bottom-6 left opacity-0 group-hover:opacity-100 transform translate-x-4 group-hover:translate-x-[-200] transition-all duration-300">See Projects With This Service!</p>
           <div class="relative z-10">
             <h3
-              class="text-xl font-bold text-white mb-3 group-hover:text-[#b14aed] transition-colors duratoin-300"
+              class="text-xl font-bold text-white mb-3 group-hover:text-[#b14aed] transition-colors duration-300"
             >
               {{ service.name }}
             </h3>
@@ -96,7 +96,7 @@ const services = ref([
     id: 1,
     icon: CodeBracketIcon,
     name: "Web Development",
-    desc: `I am able to provide effcient and amazing websites and webapps with my experience in JavaScript 
+    desc: `I am able to provide efficient and amazing websites and webapps with my experience in JavaScript 
     frameworks and their backend complements such as MongoDB, Supabase, and Cloudflare.`,
   },
   {
