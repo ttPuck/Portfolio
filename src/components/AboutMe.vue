@@ -137,7 +137,7 @@ import {
   ServerIcon,
 } from "@heroicons/vue/16/solid";
 import about1 from "/about1.png";
-import about2 from "/about2.jpeg";
+import about2 from "/about2.png";
 import about3 from "/about3.png";
 import about4 from "/about4.png";
 
@@ -153,7 +153,7 @@ const aboutImage = [
     alt: "Pro",
     gradient: `bg-linear-to-r from-[#5386e4]/40 to-[#2e3194]
          border-blue-400/40`,
-    badge: "Developer",
+    badge: "Web Developer",
     badgeColor: "bg-[#26c485]",
     animation: "fade-right",
     delay: 200,
@@ -164,7 +164,7 @@ const aboutImage = [
     alt: "",
     gradient: `bg-linear-to-r from-[#5386e4]/40 to-[#2e3194]
          border-blue-400/40`,
-    badge: "Mobile Development",
+    badge: "App Developer",
     badgeColor: "bg-[#26c485]",
     animation: "fade-left",
     delay: 200,
