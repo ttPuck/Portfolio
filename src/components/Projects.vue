@@ -205,7 +205,7 @@ const webprojects = ref([
     desc: `A workout regiment web app insipred by Roman legionaries, with a focus on
         bodyweight and weight rucks. Built in Vue.js, and my handcrafted ManuCSS styling 
         for a worn down and aged greek manuscript appearance.`,
-    image: "/projects/project1.png",
+    image: "projects/project1.png",
     category: "Frontend",
     bordColor: "border-blue-500/30",
     badgeColor: "bg-blue-500",
@@ -235,7 +235,7 @@ const webprojects = ref([
           communication software like ATAK, built 
           with Next.js 13 and React, featuring real-time 
           messaging via Socket.io, a MySQL database managed with Prisma, and a responsive UI styled with Tailwind CSS.`,
-    image: "/projects/project2.png",
+    image: "projects/project2.png",
     category: "Full-stack",
     bordColor: "border-blue-500/30",
     badgeColor: "bg-blue-500",
@@ -285,7 +285,7 @@ const webprojects = ref([
     title: "Dev Portfolio Template",
     desc: `A Github repository of this very website, built in Vue.js! Supply your own information and images, and customize to your liking!
     to how you see fit. `,
-    image: "/projects/project4.png",
+    image: "projects/project4.png",
     category: "Frontend",
     bordColor: "border-blue-500/30",
     badgeColor: "bg-blue-500",
@@ -314,7 +314,7 @@ const otherprojects = ref([
     id: 1,
     title: "nvSIL",
     desc: `A faithful replica of nvALT (a successor to Notational Velocity) for Apple Silicon. Built in Swift using StoryBoard UI.`,
-    image: "/projects/project4.png",
+    image: "projects/project4.png",
     category: "App Development",
     bordColor: "border-blue-500/30",
     badgeColor: "bg-[#a600ff]",
@@ -338,7 +338,7 @@ const otherprojects = ref([
     title: "BREASTPLATE",
     desc: `A hyper realistic tactical, survival looter shooter in a apocalyptic world. Built in Godot, utilizing GDScript and C# and local hosting for multiplayer, it is a 3/4 shooter focusing on small unit tactics, CQB, and teambuilding.`,
     category: "Game Development",
-       image: "/projects/project5.png",
+       image: "projects/project5.png",
     bordColor: "border-blue-500/30",
     badgeColor: "bg-[#e67802]",
     technolg: [
