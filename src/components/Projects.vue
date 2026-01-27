@@ -336,7 +336,7 @@ const otherprojects = ref([
      {
     id: 2,
     title: "BREASTPLATE",
-    desc: `A hyper realistic tactical, survival looter shooter in a apocalyptic world. Built in Godot, utilizing GDScript and C# and local hosting for multiplayer, it is a 3/4 shooter focusing on small unit tactics, CQB, and teambuilding.`,
+    desc: `A hyper realistic tactical, survival looter shooter in a apocalyptic world. Built in Godot, utilizing GDScript and C# and local hosting for multiplayer, it is a 3/4 shooter focusing on small unit tactics, CQB, and base building.`,
     category: "Game Development",
        image: "projects/project5.png",
     bordColor: "border-blue-500/30",
