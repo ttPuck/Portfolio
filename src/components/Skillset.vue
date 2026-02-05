@@ -63,11 +63,7 @@
             </div>
           </div>
         </div>
-<<<<<<< Updated upstream
-        <div data-aos="fade-left"> 
-=======
         <div data-aos="fade-left">
->>>>>>> Stashed changes
           <h3
             class="text-2xl font-bold text-white mb-8 flex items-center gap-3"
           >
@@ -199,11 +195,7 @@ const experiences = [
     period: "2019 - 2025",  
     desc: "Frontend developer and UI/UX design for one recruiting website, and manager of all HR and administrative duties for the company. Duties included: Onboarding, Payroll, Calendar Management, Administrative Tasks, and Clerical Tasks.",
     borderColor: "border-blue-500/30",
-<<<<<<< Updated upstream
-    dotColor: "bg-blue-500 hover:bg-[#a73ee4]",
-=======
     dotColor: "bg-blue-500 hover hover:bg-[#a73ee4]",
->>>>>>> Stashed changes
     borderClass: "border-blue-500/20",
     dateColor: "text-cyan-400 text-sm font-semibold",
     companyColor: "text-[#fbff12]",
