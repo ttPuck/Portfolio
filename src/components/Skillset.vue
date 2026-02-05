@@ -63,7 +63,11 @@
             </div>
           </div>
         </div>
+<<<<<<< Updated upstream
         <div data-aos="fade-left"> 
+=======
+        <div data-aos="fade-left">
+>>>>>>> Stashed changes
           <h3
             class="text-2xl font-bold text-white mb-8 flex items-center gap-3"
           >
@@ -178,7 +182,7 @@ const skills = [
 const experiences = [
   {
     id: 1,
-    position: "Freelance Full-Stack Developer ",
+    position: "Freelance Full-Stack Developer",
     company: "Garbero Media",
     period: " 2025 - Present",
     desc: "Full-stack developer and UI/UX design for a photography portfolio and booking website built with Vue.js and a Node.js backend, featuring a MongoDB customer database and responsive UI. Integrated Plaid Link on the frontend with secure server-side Plaid API workflows for bank-linked payments. Implemented booking, scheduling, and transaction management using RESTful APIs.",
@@ -195,7 +199,11 @@ const experiences = [
     period: "2019 - 2025",  
     desc: "Frontend developer and UI/UX design for one recruiting website, and manager of all HR and administrative duties for the company. Duties included: Onboarding, Payroll, Calendar Management, Administrative Tasks, and Clerical Tasks.",
     borderColor: "border-blue-500/30",
+<<<<<<< Updated upstream
     dotColor: "bg-blue-500 hover:bg-[#a73ee4]",
+=======
+    dotColor: "bg-blue-500 hover hover:bg-[#a73ee4]",
+>>>>>>> Stashed changes
     borderClass: "border-blue-500/20",
     dateColor: "text-cyan-400 text-sm font-semibold",
     companyColor: "text-[#fbff12]",

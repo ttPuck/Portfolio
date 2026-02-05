@@ -50,7 +50,7 @@
             data-aos-delay="150"
           >
             I am an experienced frontend and backend developer of 2+ years, with
-            a handful of projects under my belt. I specialize in Vue.js, Next.js, React, along with their complimentary backend tools
+            a handful of projects under my belt. I specialize in Vue.js, Next.js, React, along with their complementary backend tools
             such as MongoDB, Supabase, and Cloudflare. I would love to be part of a team
             where I could deliver effective and efficient code and provide my
             gifts and skills to any project that may need them!

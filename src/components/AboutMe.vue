@@ -199,7 +199,7 @@ const skills = [
     icon: CodeBracketSquareIcon,
     iconColor: "text-cyan-400",
     title: "Frontend",
-    desc: "JavaScript, Vue.js, React, Next.js, Typescript, Tailwind CSS",
+    desc: "JavaScript, Vue.js, React, Next.js, TypeScript, Tailwind CSS",
   },
   {
     id: 2,

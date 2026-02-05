@@ -32,7 +32,7 @@
             <div class="flex justify-items-center gap-3">
               <img :src="githuboutline" class="w-6 h-6 text-blue-400" />
               <div>
-                <p class="text-white font-semibold">Github</p>
+                <p class="text-white font-semibold">GitHub</p>
                 <a
                   href="https://github.com/ttPuck"
                   target="_blank"
@@ -61,7 +61,11 @@
                 <input
                   type="text"
                   name="name"
+<<<<<<< Updated upstream
                   class="w-full bg-gray-500/20 border border-[#5386e4] rounded-xl px-4 py-3 text-white"
+=======
+                  class="w-full  border border-[#5386e4] rounded-xl px-4 py-3 text-white"
+>>>>>>> Stashed changes
                 />
               </div>
 

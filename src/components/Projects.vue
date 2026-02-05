@@ -1,6 +1,10 @@
 <template>
   <section class="relative py-20 overflow-hidden" id="projects">
+<<<<<<< Updated upstream
     <div class="relative z-10 max-w-12xl mx-auto px-4 sm:px-6 lg:px-12">
+=======
+    <div class="relative z-10 max-w-8xl mx-auto px-4 sm:px-6 lg:px-8">
+>>>>>>> Stashed changes
       <div class="text-center mb-16" data-aos="fade-up">
         <h2 class="text-4xl md:text-5xl font-bold text-white mb-4">
           My
@@ -18,7 +22,11 @@
         <div
           v-for="(webproject, index) in webprojects"
           :key="webproject.id"
+<<<<<<< Updated upstream
           class="group relative blob-glow bg-linear-to-br from-gray-600/50 to-blue-900/30 rounded-3xl overflow-hidden border backdrop-blur-sm hover:border-[#a73ee4] transition-all duration-500 hover:transform hover:-translate-y-2"
+=======
+          class="group relative bg-linear-to-br from-gray-600/50 to-blue-900/30 rounded-3xl overflow-hidden border backdrop-blur-sm hover:border-[#a73ee4] transition-all duration-500 hover:transform hover:-translate-y-2"
+>>>>>>> Stashed changes
           :class="webproject.bordColor"
           data-aos="fade-up"
           :data-aos-delay="(index + 1) * 100"
@@ -88,7 +96,11 @@
         <h2 class="text-2xl md:text-5xl font-bold text-white mb-4">
           My
           <span
+<<<<<<< Updated upstream
             class="text-transparent text-4xl md:text-6xl bg-clip-text bg-linear-to-r from-[#b14aed] to-[#454ade]"
+=======
+            class="text-transparent text-4xl md:text-6xl text bg-clip-text bg-linear-to-r from-[#b14aed] to-[#454ade]"
+>>>>>>> Stashed changes
           >
             Other Projects
           </span>
@@ -101,7 +113,11 @@
         <div
           v-for="(otherproject, index) in otherprojects"
           :key="otherproject.id"
+<<<<<<< Updated upstream
           class="group relative blob-glow bg-linear-to-br from-gray-600/50 to-blue-900/30 rounded-3xl overflow-hidden border backdrop-blur-sm hover:border-[#a73ee4] transition-all duration-500 hover:transform hover:-translate-y-2"
+=======
+          class="group relative bg-linear-to-br from-gray-600/50 to-blue-900/30 rounded-3xl overflow-hidden border backdrop-blur-sm hover:border-[#a73ee4] transition-all duration-500 hover:transform hover:-translate-y-2"
+>>>>>>> Stashed changes
           :class="otherproject.bordColor"
           data-aos="fade-up"
           :data-aos-delay="(index + 1) * 100"
@@ -202,10 +218,15 @@ const webprojects = ref([
   {
     id: 1,
     title: "Romans Road",
-    desc: `A workout regiment web app insipred by Roman legionaries, with a focus on
+    desc: `A workout regimen web app inspired by Roman legionaries, with a focus on
         bodyweight and weight rucks. Built in Vue.js, and my handcrafted ManuCSS styling 
+<<<<<<< Updated upstream
         for a worn down and aged greek manuscript appearance.`,
     image: "projects/project1.png",
+=======
+        for a worn down and aged Greek manuscript appearance.`,
+    image: "../public/project1.png",
+>>>>>>> Stashed changes
     category: "Frontend",
     bordColor: "border-blue-500/30",
     badgeColor: "bg-blue-500",
@@ -336,7 +357,11 @@ const otherprojects = ref([
      {
     id: 2,
     title: "BREASTPLATE",
+<<<<<<< Updated upstream
     desc: `A hyper realistic tactical, survival looter shooter in a apocalyptic world. Built in Godot, utilizing GDScript and C# and local hosting for multiplayer, it is a 3/4 shooter focusing on small unit tactics, CQB, and base building.`,
+=======
+    desc: `A hyper realistic tactical, survival looter shooter in an apocalyptic world. Built in Godot, utilizing GDScript and C# and local hosting for multiplayer, it is a 3/4 shooter focusing on small unit tactics, CQB, and teambuilding.`,
+>>>>>>> Stashed changes
     category: "Game Development",
        image: "projects/project5.png",
     bordColor: "border-blue-500/30",
