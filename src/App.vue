@@ -4,16 +4,16 @@
   </div>
   <div
     v-else
-    class="min-h-screen bg-linear-to-bl via-35% from-[#0b132b] to-[#a03e99] font-[Barlow,sans-serif]"
+    class="min-h-screen bg-(--color-bg) font-[Roboto,sans-serif]"
   >
     <NavBar />
     <MeSection />
+    <Projects />
     <Services />
     <AboutMe />
     <Skillset />
-    <Projects />
-    <Contact />
     <Testimonials />
+   <Contact />
     <Footer />
     <BackToTop />
   </div>

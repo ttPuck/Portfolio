@@ -13,7 +13,7 @@
           <div class="relative w-full max-w">
             <div
               data-aos="zoom-in"
-              class="relative bg-linear-to-br from-[#0b132b] to-[#460742] rounded-3xl p-6 backdrop-blur-sm border border-blue-500/30 shadow-2xl"
+              class="relative bg-(--color-secondaryalt)  rounded-3xl p-6 backdrop-blur-sm border border-blue-500/30 shadow-2xl"
             >
               <div class="grid grid-cols-2 gap-4">
                 <div
@@ -42,12 +42,12 @@
                 </div>
               </div>
               <div
-                class="absolute -bottom-4 left-1/2 transform -translate-x-1/2 z-20 bg-[#5386e4] rounded-2xl px-6 py-3 border border-blue-400/40 shadow-xl"
+                class="absolute -bottom-4 left-1/2 transform -translate-x-1/2 z-20 bg-(--color-side)  rounded-2xl px-6 py-3 border border-blue-400/40 shadow-xl"
                 data-aos="fade-up"
                 data-aos-delay="600"
               >
-                <div class="text-center text-white text-xl font-bold">
-                  3+ Years Experience
+                <div class="text-center text-black text-xl font-bold">
+                  2+ Years Experience
                 </div>
               </div>
             </div>
@@ -60,13 +60,13 @@
             >
               About
               <span 
-                class="text-white"
+                class="text-black"
               >
                 Me</span
               > 
             </h2>
             <p
-              class="text-white font-medium text-lg md:text-xl mt-4"
+              class="text-black font-medium text-lg md:text-xl mt-4"
               data-aos="fade-left"
               data-aos-delay="400"
             >
@@ -85,11 +85,11 @@
                   class="w-6 h-6"
                   :class="skill.iconColor"
                 ></component>
-                <h3 class="text-lg font-bold text-white">
+                <h3 class="text-lg font-bold text-black">
                   {{ skill.title }}
                 </h3>
               </div>
-              <p class="text-white text-sm">
+              <p class="text-black text-sm">
                 {{ skill.desc }}
               </p>
             </div>
@@ -102,7 +102,7 @@
             <button
               v-for="button in ctaButtons"
               :key="button.id"
-              class="px-8 py-3 rounded-xl font-semibold transition-all duration-300 flex items-center justify-center hover:shadow-lg hover:shadow-[#b14aed]/60"
+              class="px-8 py-3 rounded-xl bg-(--color-primaryalt) font-semibold transition-all duration-300 flex items-center justify-center hover:shadow-lg hover:shadow-[#b14aed]/60"
               :class="button.classes"
              @click="button.text === 'Contact Me' && scrollToContact() ; button.text === 'View Portfolio' ? scrollToProjects() : null"
 
@@ -151,10 +151,10 @@ const aboutImage = [
     id: 1,
     src: about1,
     alt: "Pro",
-    gradient: `bg-linear-to-r from-[#5386e4]/40 to-[#2e3194]
+    gradient: `bg-black
          border-blue-400/40`,
     badge: "Web Developer",
-    badgeColor: "bg-[#26c485]",
+    badgeColor: "bg-[var(--color-primary)]",
     animation: "fade-right",
     delay: 200,
   },
@@ -162,10 +162,10 @@ const aboutImage = [
     id: 2,
     src: about2,
     alt: "",
-    gradient: `bg-linear-to-r from-[#5386e4]/40 to-[#2e3194]
+    gradient: `bg-black
          border-blue-400/40`,
     badge: "App Developer",
-    badgeColor: "bg-[#26c485]",
+    badgeColor: "bg-[var(--color-primary)]",
     animation: "fade-left",
     delay: 200,
   },
@@ -173,10 +173,10 @@ const aboutImage = [
     id: 3,
     src: about3,
     alt: "Pro",
-    gradient: `bg-linear-to-r from-[#5386e4]/40 to-[#2e3194]
+    gradient: `bg-black
          border-blue-400/40`,
     badge: "Professional",
-    badgeColor: "bg-[#26c485]",
+    badgeColor: "bg-[var(--color-primary)]",
     animation: "fade-right",
     delay: 400,
   },
@@ -184,10 +184,10 @@ const aboutImage = [
     id: 4,
     src: about4,
     alt: "Design",
-    gradient: `bg-linear-to-r from-[#5386e4]/40 to-[#2e3194]
+    gradient: `bg-black
          border-blue-400/40`,
     badge: "Designer",
-    badgeColor: "bg-[#26c485]",
+    badgeColor: "bg-[var(--color-primary)]",
     animation: "fade-left",
     delay: 400,
   },
@@ -197,28 +197,28 @@ const skills = [
   {
     id: 1,
     icon: CodeBracketSquareIcon,
-    iconColor: "text-cyan-400",
+    iconColor: "text-[var(--color-secondaryalt)]",
     title: "Frontend",
     desc: "JavaScript, Vue.js, React, Next.js, TypeScript, Tailwind CSS",
   },
   {
     id: 2,
     icon: ServerIcon,
-    iconColor: "text-cyan-400",
+    iconColor: "text-[var(--color-secondaryalt)]",
     title: "Backend",
     desc: "Node.js, MongoDB, Supabase, Cloudflare, SQL",
   },
   {
     id: 3,
     icon: PaintBrushIcon,
-    iconColor: "text-cyan-400",
+    iconColor: "text-[var(--color-secondaryalt)]",
     title: "Design",
     desc: "UI/UX Design, Photoshop, Figma, Prototyping",
   },
   {
     id: 4,
     icon: CubeIcon,
-    iconColor: "text-cyan-400",
+    iconColor: "text-[var(--color-secondaryalt)]",
     title: "Tools Used",
     desc: "Git, VSCode, Xcode, Vite, Hosting Services ",
   },
@@ -231,8 +231,8 @@ const ctaButtons = [
     icon: ArrowRightIcon,
     iconclass: `ml-2 group-hover:translate-x-1
         transition-transform`,
-    classes: `bg-[#5386e4]
-        text-white `,
+    classes: `bg-[var(--color-secondary)]
+        text-white hover:bg-[var(--color-primary)] cursor-pointer`,
         
   },
   {
@@ -240,8 +240,8 @@ const ctaButtons = [
     text: "Contact Me",
     icon: ChatBubbleLeftRightIcon,
     iconclass: `mr-2`,
-    classes: `border border-[#454ade] text-white
-        hover:bg-[#0b132b]/50 `,
+    classes: `border border-[#454ade] text-white cursor-pointer
+        hover:bg-[var(--color-secondary)] `,
   },
 ];
 </script>

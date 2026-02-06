@@ -2,16 +2,16 @@
   <section class="relative py-20 overflow-hidden" id="services">
     <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="text-center m-16" data-aos="fade-up">
-        <h2 class="text-4xl md:text-5xl font-bold text-white mb-4">
+        <h2 class="text-4xl md:text-5xl font-bold text-black mb-4">
           My
           <span
-            class="text-transparent bg-clip-text bg-linear-to-r from-[#b14aed] to-[#454ade]"
+            class="text-transparent bg-clip-text bg-linear-to-r from-[#454ade] to-[#b14aed]"
           >
             Services
           </span>
         </h2>
         <p
-          class="text-white text-lg max-w-2xl mx-auto"
+          class="text-black text-lg max-w-2xl mx-auto"
           data-aos="fade-up"
           data-aos-delay="80"
         >
@@ -24,25 +24,25 @@
           :key="service.id"
           :data-aos="'fade-up'"
           :data-aos-delay="index * 100 + 200"
-          class="group relative p-14 rounded-2xl bg-linear-to-br from-gray-800/50 to-blue-900/30 backdrop-blur-sm border border-[#5386e4] hover:border-[#a73ee4] transition-all duration-500 hover:transform hover:-translate-y-2"
+          class="group relative p-14 rounded-2xl bg-(--color-secondaryalt) backdrop-blur-sm  hover:border-[#a73ee4] transition-all duration-500 hover:transform hover:-translate-y-2"
         >
           <div
             class="absolute inset-0 bg-linear-to-r from-blue-500/5 to-cyan-500/5 rounded-2xl opacity-0 duration-500 group-hover:opacity-100 transition-opacity"
           ></div>
           <div class="relative z-10 mb-6">
             <div
-              class="inline-flex items-center justify-center w-16 h-16 rounded-xl bg-linear-to-r from-blue-500/20 to-cyan-500/20 border border-blue-400/30 group-hover:scale-110 transition-transform duration-300"
+              class="inline-flex items-center justify-center w-16 h-16 rounded-xl bg-(--color-secondary) border border-black group-hover:scale-110 transition-transform duration-300"
             >
               <component
                 :is="service.icon"
-                class="w-8 h-8 text-[#5386e4]"
+                class="w-8 h-8 text-(--color-side)"
               ></component>
             </div>
           </div>
-          <p class="text-white font-bold absolute bottom-6 left opacity-0 group-hover:opacity-100 transform translate-x-4 group-hover:translate-x-[-200] transition-all duration-300">See Projects With This Service!</p>
+          <p class="text-white font-bold absolute bottom-6 left opacity-0 group-hover:opacity-100 transform translate-x-4 group-hover:translate-x-[-200] group-hover:text-(--color-side)  transition-all duration-300">See Projects With This Service!</p>
           <div class="relative z-10">
             <h3
-              class="text-xl font-bold text-white mb-3 group-hover:text-[#b14aed] transition-colors duration-300"
+              class="text-xl font-bold text-white mb-3 group-hover:text-(--color-side) transition-colors duration-300"
             >
               {{ service.name }}
             </h3>
@@ -53,7 +53,7 @@
           <div
             class="absolute bottom-6 right-6 opacity-0 cursor-pointer group-hover:opacity-100 transform translate-x-4 group-hover:translate-x-0 transition-all duration-300"
           > <button @click="scrollToProjects">
-            <ArrowRightIcon  class="w-6 h-6 text-cyan-400 cursor-pointer" />
+            <ArrowRightIcon  class="w-6 h-6 text-white cursor-pointer" />
             </button>
           </div>
         </div>
@@ -62,7 +62,7 @@
         <div class="inline-flex flex-col sm:flex-row gap-4 items-center">
           <button
            @click="scrollToContact"
-            class="px-8 py-4 rounded-xl border-pulse text-white font-semibold hover:bg-[#0b132b]/50 hover:shadow-lg hover:shadow-[#b14aed]/60 cursor-pointer transition-all duration-300 flex items-center"
+            class="px-8 py-4 rounded-xl bg-(--color-primaryalt) border-2 border-(--color-secondary) text-white font-semibold hover:bg-(--color-secondary) hover:shadow-lg hover:shadow-[#b14aed]/60 cursor-pointer transition-all duration-300 flex items-center"
           >
             Get In Touch
             <ChatBubbleLeftRightIcon class="w-5 h-5 ml-2" />

@@ -1,8 +1,21 @@
 @import "tailwindcss";
 @import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100..900;1,100..900&display=swap');
+:root {
+  --color-primary: #ff0000; 
+   --color-primaryalt: #f43838;
+  --color-secondary: #007AFF;
+  --color-secondaryalt: #3390f3;
+  --color-bg: #d7d7d7;
+  --color-side: #ff9500;
+  --color-sidealt: #ffbf65;
+  --color-head: #00ffff;
+
+}
+
+
 
 @theme {
-  --font-barlow: 'Barlow', sans-serif;
+  --font-roboto: 'Roboto', sans-serif;
 }
 
 body {
@@ -18,7 +31,6 @@ body {
   opacity: 0.9;
   z-index: -1;
 }
-
 .border-pulse {
   position: relative;
 }
@@ -28,12 +40,36 @@ body {
   position: absolute;
   inset: -3px;            
   border-radius: inherit;
-  border: 2px solid #b14aed;
+  border: 2px solid var(--color-secondary);
   opacity: 0.6;
   animation: borderPulse 2s ease-in-out infinite;
   pointer-events: none;
 }
 @keyframes borderPulse {
+  0% {
+    opacity: 0.4;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.02);
+  }
+  100% {
+    opacity: 0.4;
+    transform: scale(1);
+  }
+}
+.border-pulse-2::before {
+  content: "";
+  position: absolute;
+  inset: -3px;            
+  border-radius: inherit;
+  border: 2px solid var(--color-primary);
+  opacity: 0.6;
+  animation: borderPulse2 2s ease-in-out infinite;
+  pointer-events: none;
+}
+@keyframes borderPulse2 {
   0% {
     opacity: 0.4;
     transform: scale(1);

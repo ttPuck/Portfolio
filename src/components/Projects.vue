@@ -2,7 +2,7 @@
   <section class="relative py-20 overflow-hidden" id="projects">
     <div class="relative z-10 max-w-8xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="text-center mb-16" data-aos="fade-up">
-        <h2 class="text-4xl md:text-5xl font-bold text-white mb-4">
+        <h2 class="text-4xl md:text-5xl font-bold text-black mb-4">
           My
           <span
             class="text-transparent bg-clip-text bg-linear-to-r from-[#b14aed] to-[#454ade]"
@@ -10,7 +10,7 @@
             Web Development Projects
           </span>
         </h2>
-        <p class="text-white text-lg max-w-2xl mx-auto">
+        <p class="text-black text-lg max-w-2xl mx-auto">
           A Collection Of My Web Development Projects
         </p>
       </div> 
@@ -18,7 +18,7 @@
         <div
           v-for="(webproject, index) in webprojects"
           :key="webproject.id"
-          class="group relative blob-glow bg-linear-to-br from-gray-600/50 to-blue-900/30 rounded-3xl overflow-hidden border backdrop-blur-sm hover:border-[#a73ee4] transition-all duration-500 hover:transform hover:-translate-y-2"
+          class="group relative bg-(--color-secondaryalt) rounded-3xl overflow-hidden border backdrop-blur-sm hover:border-[#a73ee4] transition-all duration-500 hover:transform hover:-translate-y-2"
           :class="webproject.bordColor"
           data-aos="fade-up"
           :data-aos-delay="(index + 1) * 100"
@@ -43,7 +43,7 @@
           </div>
           <div class="p-6">
             <h3
-              class="text-xl font-bold text-white group-hover:text-blue-400 transition-colors duration-300"
+              class="text-xl font-bold text-white group-hover:text-(--color-sidealt)  transition-colors duration-300"
             >
               {{ webproject.title }}
             </h3>
@@ -85,15 +85,15 @@
    <section class="relative py-20 overflow-hidden" id="projects">
     <div class="relative z-10 max-w-8xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="text-center mb-16" data-aos="fade-up">
-        <h2 class="text-2xl md:text-5xl font-bold text-white mb-4">
+        <h2 class="text-4xl md:text-5xl font-bold text-black mb-4">
           My
           <span
-            class="text-transparent text-4xl md:text-6xl text bg-clip-text bg-linear-to-r from-[#b14aed] to-[#454ade]"
+            class="text-transparent text bg-clip-text bg-linear-to-r from-[#b14aed] to-[#454ade]"
           >
             Other Projects
           </span>
         </h2>
-        <p class="text-white text-lg max-w-2xl mx-auto">
+        <p class="text-black text-lg max-w-2xl mx-auto">
           A Collection Of My App & Game Projects, All Open Source!
         </p>
       </div> 
@@ -101,7 +101,7 @@
         <div
           v-for="(otherproject, index) in otherprojects"
           :key="otherproject.id"
-          class="group relative bg-linear-to-br from-gray-600/50 to-blue-900/30 rounded-3xl overflow-hidden border backdrop-blur-sm hover:border-[#a73ee4] transition-all duration-500 hover:transform hover:-translate-y-2"
+          class="group relative bg-(--color-secondaryalt) rounded-3xl overflow-hidden border backdrop-blur-sm hover:border-[#a73ee4] transition-all duration-500 hover:transform hover:-translate-y-2"
           :class="otherproject.bordColor"
           data-aos="fade-up"
           :data-aos-delay="(index + 1) * 100"
@@ -126,7 +126,7 @@
           </div>
           <div class="p-6">
             <h3
-              class="text-xl font-bold text-white group-hover:text-blue-400 transition-colors duration-300"
+              class="text-xl font-bold text-white group-hover:text-(--color-sidealt) transition-colors duration-300"
             >
               {{ otherproject.title }}
             </h3>
@@ -172,7 +172,7 @@
           </a>
           <button
            @click="scrollToContact"
-            class="px-8 py-4 rounded-xl border-2 border-[#5386e4] text-blue-100 font-semibold hover:bg-[#0b132b] hover:shadow-lg hover:shadow-[#b14aed]/60 transition-all duration-300 flex items-center"
+            class="px-8 py-4 bg-(--color-primaryalt) cursor-pointer rounded-xl border-2 border-[#5386e4] text-white font-semibold hover:bg-text-white hover:bg-(--color-secondary) hover:shadow-lg hover:shadow-[#b14aed]/60 transition-all duration-300 flex items-center"
           >
             <ChatBubbleLeftRightIcon class="w-5 h-5 mr-2" />
             Discuss Project
@@ -205,7 +205,7 @@ const webprojects = ref([
     desc: `A workout regimen web app inspired by Roman legionaries, with a focus on
         bodyweight and weight rucks. Built in Vue.js, and my handcrafted ManuCSS styling 
         for a worn down and aged Greek manuscript appearance.`,
-    image: "../public/project1.png",
+    image: "../projects/project1.png",
     category: "Frontend",
     bordColor: "border-blue-500/30",
     badgeColor: "bg-blue-500",
@@ -224,7 +224,7 @@ const webprojects = ref([
         name: "Website",
         url: "https://romansroad.netlify.app",
         icon: EyeIcon,
-        class: "text-[#ffb700] hover:text-[#5386e4]",
+        class: "text-white hover:text-[var(--color-side)]",
       },
     ],
   },
@@ -270,13 +270,13 @@ const webprojects = ref([
         name: "Website (Sign-up and Login)",
         url: "#",
         icon: EyeIcon,
-        class: "text-[#ffb700] hover:text-[#5386e4]",
+        class: "text-white hover:text-[var(--color-side)]",
       },
       {
         name: "Github Repo",
         url: "https://github.com/ttPuck/c2socket",
         icon: CodeBracketIcon,
-        class: "text-[#ffb700] hover:text-[#5386e4]",
+        class: "text-white hover:text-[var(--color-side)]",
       },
     ],
   },
@@ -304,7 +304,7 @@ const webprojects = ref([
         name: "Github Repo",
         url: "#",
         icon: ArrowDownTrayIcon,
-        class: "text-[#ffb700] hover:text-[#5386e4]",
+        class: "text-white hover:text-[var(--color-side)]",
       },
     ],
   },
@@ -329,12 +329,35 @@ const otherprojects = ref([
         name: "Github Repo & Packaged App",
         url: "https://github.com/ptwees/nvSIL",
         icon: ArrowDownTrayIcon,
-        class: "text-[#ffb700] hover:text-[#5386e4]",
+        class: "text-white hover:text-[var(--color-side)]",
+      },
+    ],
+  },
+      {
+    id: 2,
+    title: "nvSIL 2",
+    desc: `A successor to my app, nvSIL. It features a new tab (subfolder) feature, allowing notes to be stored in subfolders, and a .md and TODO.txt syntax parser to enable a user to access all TODO's via a TODO tab.`,
+    image: "projects/project6.png",
+    category: "App Development",
+    bordColor: "border-blue-500/30",
+    badgeColor: "bg-[#a600ff]",
+    technolg: [
+      {
+        name: "Swift",
+        class: "bg-blue-500/20 border-blue-400/30 text-blue-200",
+      },
+    ],
+    links: [
+      {
+        name: "Github Repo & Packaged App",
+        url: "https://github.com/ptwees/nvSIL",
+        icon: ArrowDownTrayIcon,
+        class: "text-white hover:text-[var(--color-side)]",
       },
     ],
   },
      {
-    id: 2,
+    id: 3,
     title: "BREASTPLATE",
     desc: `A hyper realistic tactical, survival looter shooter in an apocalyptic world. Built in Godot, utilizing GDScript and C# and local hosting for multiplayer, it is a 3/4 shooter focusing on small unit tactics, CQB, and teambuilding.`,
     category: "Game Development",
@@ -356,7 +379,7 @@ const otherprojects = ref([
         name: "Github Repo & Links To Game",
         url: "https://github.com/ttPuck/BREASTPLATE",
         icon: ArrowDownTrayIcon,
-        class: "text-[#ffb700] hover:text-[#5386e4]",
+        class: "text-white hover:text-[var(--color-side)]",
       },
     ],
   },

@@ -2,10 +2,12 @@
   <button
     v-if="isVisible"
     @click="scrollToTop"
-    class="fixed bottom-4 right-4 bg-linear-to-r from-[#5386e4] to-[#a7bfec] text-white rounded-full w-12 h-12 items-center justify-center text-xl cursor-pointer transition-opacity duration-300 hover:bg-blue-600">
+    class="fixed bottom-4 z-[99999] right-4 bg-(--color-primary) text-white rounded-full w-12 h-12 flex items-center justify-center text-xl cursor-pointer transition-opacity duration-300 hover:bg-(--color-secondaryalt)">
+    <ArrowUpCircleIcon class="w-full h-full text-white" />
   </button>
 </template>
 <script setup>
+import { ArrowUpCircleIcon } from "@heroicons/vue/16/solid";
 import { ref, onMounted, onUnmounted } from "vue";
 
 const isVisible = ref(false);

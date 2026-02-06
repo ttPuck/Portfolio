@@ -1,16 +1,16 @@
 <template>
   <header
-    class="flex justify-between items-center p-6 bg-opacity-50 relative z-20" id="home"
+    class="flex justify-between items-center p-6 bg-(--color-secondary) relative z-20" id="home"
   >
     <div
-      class="text-3xl text-transparent bg-clip-text bg-linear-to-r from-[#eb9486] to-[#5386e4]"
+      class="text-3xl text-white"
     >
-      Web Dev <span class="font-bold">Portfolio</span>
+      Web Dev <span class="font-bold text-(--color-side)">Portfolio</span>
     </div>
     <div class="md:hidden z-30">
       <button
         type="button"
-        class="block focus:outline-none p-2 rounded-lg bg-blue-800/50 hover:bg-blue-700/50 transition-all duration-300"
+        class="block focus:outline-none p-2 rounded-lg bg-(--color-side) hover:bg-blue-700/50 transition-all duration-300"
         @click="isMenuOpen = !isMenuOpen"
       >
         <div class="relative w-6 h-6">
@@ -41,7 +41,7 @@
     <nav
       :class="[
         `fixed inset-0 z-20 flex flex-col items-center justify-center
-    bg-[#111827] md:relative md:bg-transparent md:flex
+    bg-(--color-bg) md:relative md:bg-transparent md:flex
     md:justify-between md:flex-row`,
         isMenuOpen ? 'block' : 'hidden',
       ]"
@@ -52,7 +52,7 @@
         <li v-for="item in Menu" :key="item.name" class="group relative">
           <a
             :href="item.href"
-            class="relative block text-white hover:text-blue-400 transition-all duration-300 text-xl md:text-base font-medium group"
+            class="relative block text-white hover:text-(--color-sidealt) transition-all duration-300 text-xl md:text-base font-medium group"
             @click="scrollToSection(item.href)"
           >
             {{ item.name }}
@@ -65,7 +65,7 @@
       <div class="mt-8 md:mt-0 md:ml-8">
         <button
         @click="scrollToContact"
-          class="px-6 py-2.5 bg-[#5386e4] text-[#e5f4e3] rounded-full hover:shadow-lg hover:shadow-[#b14aed]/60 transition-all duration-300 hover:scale-105"
+          class="px-6 py-2.5 bg-(--color-primary) cursor-pointer text-white rounded-full hover:shadow-lg hover:shadow-[#b14aed]/60 transition-all duration-300 hover:scale-105"
         >
           Message Me!
         </button>
@@ -76,10 +76,10 @@
 <script setup>
 import { ref } from "vue";
 const Menu = ref([
+  { name: "Projects", href: "#projects" },
   { name: "Services", href: "#services" },
   { name: "About", href: "#about" },
   { name: "Skillset", href: "#skillset" },
-  { name: "Projects", href: "#projects" },
   { name: "Testimonials", href: "#testimonials" },
 ]);
 const isMenuOpen = ref(false);

@@ -2,7 +2,7 @@
   <section class="relative py-20 overflow-hidden" id="skillset">
     <div class="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="text-center mb-16" data-aos="fade-up">
-        <h2 class="text-4xl md:text-5xl font-bold text-white mb-4">
+        <h2 class="text-4xl md:text-5xl font-bold text-black mb-4">
           <span
             class="text-transparent bg-clip-text bg-linear-to-r from-[#454ade] to-[#b14aed]"
           >
@@ -10,21 +10,21 @@
           </span>
           & Experience
         </h2>
-        <p class="text-white text-lg max-w-2xl mx-auto">
+        <p class="text-black text-lg max-w-2xl mx-auto">
           My Technical Catalog And Professional Journey
         </p>
       </div>
       <div class="grid lg:grid-cols-2 gap-12 lg:gap-16">
         <div data-aos="fade-right">
           <h3
-            class="text-2xl font-bold text-white mb-8 flex items-center gap-3"
+            class="text-2xl font-bold text-black mb-8 flex items-center gap-3"
           >
             Technical Skills
           </h3>
           <div class="space-y-6">
             <div v-for="skill in skills" :key="skill.id" class="group">
               <div class="flex items-center justify-between mb-3">
-                <span class="text-white font-semibold flex items-center gap-2">
+                <span class="text-black font-semibold flex items-center gap-2">
                   <component
                     :is="skill.icon"
                     class="w-5 h-5"
@@ -37,7 +37,7 @@
                 <span
                   v-for="t in skill.tech"
                   :key="t.name"
-                  class="px-2 py-2 border-pulse bg-linear-to-r from-blue-500/20 border border-blue-400/30 rounded-full text-white text-sm font-medium hover:scale-105 transition-transform duration-300"
+                  class="px-2 py-2 border-pulse bg-linear-to-r from-blue-500/20 border border-blue-400/30 rounded-full text-black text-sm font-medium hover:scale-105 transition-transform duration-300"
                 >
                   {{ t.name }}
                 </span>
@@ -65,9 +65,9 @@
         </div>
         <div data-aos="fade-left">
           <h3
-            class="text-2xl font-bold text-white mb-8 flex items-center gap-3"
+            class="text-2xl font-bold text-black mb-8 flex items-center gap-3"
           >
-            <BriefcaseIcon class="w-8 h-8 text-cyan-400" />
+            <BriefcaseIcon class="w-8 h-8 text-(--color-secondary)" />
             Work Experience
           </h3>
           <div class="space-y-8">
@@ -78,11 +78,11 @@
               :class="exp.borderColor"
             >
               <div
-                class="absolute -left-2 top-0 w-4 h-4 rounded-full group-hover:scale-150 group-hover:bg-[#a73ee4] transition-transform duration-300"
+                class="absolute -left-2 top-0 w-4 h-4 rounded-full group-hover:scale-150 group-hover:bg-(--color-primary) transition-transform duration-300"
                 :class="exp.dotColor"
               ></div>
               <div
-                class="bg-linear-to-br from-gray-800/50 to-blue-900/30 rounded-2xl p-6 border border-[#5386e4] backdrop-blur-sm group-hover:border-[#a73ee4] transition-all duration-300"
+                class="bg-(--color-secondaryalt) rounded-2xl p-6 border border-[#5386e4] backdrop-blur-sm group-hover:border-[#a73ee4] transition-all duration-300"
                 :class="exp.borderClass"
               >
                 <div
@@ -138,40 +138,36 @@ const skills = [
     id: 1,
     title: "Frontend Development",
     icon: CodeBracketIcon,
-    iconColor: "text-blue-400",
+    iconColor: "text-[var(--color-secondary)]",
     percentage: 95,
-    percentageColor: "text-blue-400 text-sm",
-    gradient: "bg-linear-to-r from-blue-500 to-cyan-500",
+    gradient: "bg-linear-to-r from-[var(--color-sidealt)] to-[var(--color-side)]",
     tech: [tech.vue, tech.react, tech.next,],
   },
   {
     id: 2,
     title: "Backend Development",
     icon: ServerIcon,
-    iconColor: "text-cyan-400",
+    iconColor: "text-[var(--color-secondaryalt)]",
     percentage: 85,
-    percentageColor: "text-blue-400 text-sm",
-    gradient: "bg-linear-to-r from-blue-500 to-cyan-500",
+    gradient: "bg-linear-to-r from-[var(--color-sidealt)] to-[var(--color-side)]",
     tech: [tech.mongo, tech.supabase, tech.node, tech.postgres],
   },
   {
     id: 3,
     title: "UI/UX Design",
     icon: PaintBrushIcon,
-    iconColor: "text-cyan-400",
+    iconColor: "text-[var(--color-secondaryalt)]",
     percentage: 70,
-    percentageColor: "text-blue-400 text-sm",
-    gradient: "bg-linear-to-r from-blue-500 to-cyan-500",
+    gradient: "bg-linear-to-r from-[var(--color-sidealt)] to-[var(--color-side)]",
     tech: [tech.tailwind, tech.figma],
   },
   {
     id: 4,
     title: "Team Development & Remote Operations",
     icon: CloudIcon,
-    iconColor: "text-cyan-400",
+    iconColor: "text-[var(--color-secondaryalt)]",
     percentage: 70,
-    percentageColor: "text-blue-400 text-sm",
-    gradient: "bg-linear-to-r from-blue-500 to-cyan-500",
+    gradient: "bg-linear-to-r from-[var(--color-sidealt)] to-[var(--color-side)]",
     tech: [tech.github, tech.slack, tech.teams]
   },
 ];
@@ -183,10 +179,10 @@ const experiences = [
     period: " 2025 - Present",
     desc: "Full-stack developer and UI/UX design for a photography portfolio and booking website built with Vue.js and a Node.js backend, featuring a MongoDB customer database and responsive UI. Integrated Plaid Link on the frontend with secure server-side Plaid API workflows for bank-linked payments. Implemented booking, scheduling, and transaction management using RESTful APIs.",
     borderColor: "border-blue-500/30",
-    dotColor: "bg-blue-500",
-    borderClass: "border-blue-500/20",
-    dateColor: "text-cyan-400 text-sm font-semibold",
-    companyColor: "text-[#fbff12]",
+    dotColor: "bg-[var(--color-secondaryalt)]",
+    borderClass: "border-pulse-2",
+    dateColor: "text-white text-sm font-semibold",
+    companyColor: "text-[var(--color-sidealt)]",
   },
   {
     id: 2,
@@ -195,10 +191,10 @@ const experiences = [
     period: "2019 - 2025",  
     desc: "Frontend developer and UI/UX design for one recruiting website, and manager of all HR and administrative duties for the company. Duties included: Onboarding, Payroll, Calendar Management, Administrative Tasks, and Clerical Tasks.",
     borderColor: "border-blue-500/30",
-    dotColor: "bg-blue-500 hover hover:bg-[#a73ee4]",
+    dotColor: "bg-[var(--color-secondaryalt)]",
     borderClass: "border-blue-500/20",
-    dateColor: "text-cyan-400 text-sm font-semibold",
-    companyColor: "text-[#fbff12]",
+    dateColor: "text-white text-sm font-semibold",
+    companyColor: "text-[var(--color-sidealt)]",
   },
 ];
 </script>
