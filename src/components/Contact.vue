@@ -61,7 +61,7 @@
                 <input
                   type="text"
                   name="name"
-                  class="w-full bg-gray-500/20  border border-[#5386e4] rounded-xl px-4 py-3 text-black"
+                  class="w-full bg-gray-500/20 border border-[#5386e4] rounded-xl px-4 py-3 text-black"
                 />
               </div>
 

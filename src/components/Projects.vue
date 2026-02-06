@@ -13,8 +13,8 @@
         <p class="text-black text-lg max-w-2xl mx-auto">
           A Collection Of My Web Development Projects
         </p>
-      </div> 
-      <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3  gap-8">
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-8">
         <div
           v-for="(webproject, index) in webprojects"
           :key="webproject.id"
@@ -43,7 +43,7 @@
           </div>
           <div class="p-6">
             <h3
-              class="text-xl font-bold text-white group-hover:text-(--color-sidealt)  transition-colors duration-300"
+              class="text-xl font-bold text-white group-hover:text-(--color-sidealt) transition-colors duration-300"
             >
               {{ webproject.title }}
             </h3>
@@ -65,7 +65,7 @@
                 v-for="link in webproject.links"
                 :key="link.name"
                 :href="link.url"
-                 target="_blank"
+                target="_blank"
                 :class="link.class"
                 class="flex items-center gap-3 transition-colors duration-300 text-sm font-medium"
               >
@@ -76,13 +76,11 @@
           </div>
         </div>
       </div>
-      <div class="text-center mt-16" data-aos="fade-up">
-        
-      </div>
+      <div class="text-center mt-16" data-aos="fade-up"></div>
     </div>
   </section>
-<!-- BREAKER -->
-   <section class="relative py-20 overflow-hidden" id="projects">
+  <!-- BREAKER -->
+  <section class="relative py-20 overflow-hidden" id="projects">
     <div class="relative z-10 max-w-8xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="text-center mb-16" data-aos="fade-up">
         <h2 class="text-4xl md:text-5xl font-bold text-black mb-4">
@@ -96,8 +94,8 @@
         <p class="text-black text-lg max-w-2xl mx-auto">
           A Collection Of My App & Game Projects, All Open Source!
         </p>
-      </div> 
-      <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3  gap-8">
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-8">
         <div
           v-for="(otherproject, index) in otherprojects"
           :key="otherproject.id"
@@ -148,7 +146,7 @@
                 v-for="link in otherproject.links"
                 :key="link.name"
                 :href="link.url"
-                 target="_blank"
+                target="_blank"
                 :class="link.class"
                 class="flex items-center gap-3 transition-colors duration-300 text-sm font-medium"
               >
@@ -162,16 +160,16 @@
       <div class="text-center mt-16" data-aos="fade-up">
         <div class="inline-flex flex-col sm:flex-row gap-4 items-center">
           <a
-          href="https://github.com/ttPuck"
-          target="_blank"
-            class="px-8 py-4 border-pulse rounded-xl  text-white font-semibold hover:shadow-lg hover:shadow-[#b14aed] hover:bg-amber-50 blob-glow transition-all duration-300 hover:scale-105 flex items-center"
+            href="https://github.com/ttPuck"
+            target="_blank"
+            class="px-8 py-4 border-pulse rounded-xl text-white font-semibold hover:shadow-lg hover:shadow-[#b14aed] hover:bg-amber-50 blob-glow transition-all duration-300 hover:scale-105 flex items-center"
           >
             View GitHub!
-          
+
             <ArrowRightIcon class="w-5 h-5 ml-2" />
           </a>
           <button
-           @click="scrollToContact"
+            @click="scrollToContact"
             class="px-8 py-4 bg-(--color-primaryalt) cursor-pointer rounded-xl border-2 border-[#5386e4] text-white font-semibold hover:bg-text-white hover:bg-(--color-secondary) hover:shadow-lg hover:shadow-[#b14aed]/60 transition-all duration-300 flex items-center"
           >
             <ChatBubbleLeftRightIcon class="w-5 h-5 mr-2" />
@@ -192,11 +190,11 @@ import {
 } from "@heroicons/vue/16/solid";
 import { ref } from "vue";
 const scrollToContact = () => {
-  const el = document.getElementById("contact")
-  if (!el) return
+  const el = document.getElementById("contact");
+  if (!el) return;
 
-  el.scrollIntoView({ behavior: "smooth" })
-}
+  el.scrollIntoView({ behavior: "smooth" });
+};
 
 const webprojects = ref([
   {
@@ -231,7 +229,7 @@ const webprojects = ref([
   {
     id: 2,
     title: "C2 - A Discord inspired team communications web app",
-   desc: `Full-stack Discord-style web application inspired by military
+    desc: `Full-stack Discord-style web application inspired by military
           communication software like ATAK, built 
           with Next.js 13 and React, featuring real-time 
           messaging via Socket.io, a MySQL database managed with Prisma, and a responsive UI styled with Tailwind CSS.`,
@@ -310,7 +308,7 @@ const webprojects = ref([
   },
 ]);
 const otherprojects = ref([
-    {
+  {
     id: 1,
     title: "nvSIL",
     desc: `A faithful replica of nvALT (a successor to Notational Velocity) for Apple Silicon. Built in Swift using StoryBoard UI.`,
@@ -333,7 +331,7 @@ const otherprojects = ref([
       },
     ],
   },
-      {
+  {
     id: 2,
     title: "nvSIL 2",
     desc: `A successor to my app, nvSIL. It features a new tab (subfolder) feature, allowing notes to be stored in subfolders, and a .md and TODO.txt syntax parser to enable a user to access all TODO's via a TODO tab.`,
@@ -356,21 +354,21 @@ const otherprojects = ref([
       },
     ],
   },
-     {
+  {
     id: 3,
     title: "BREASTPLATE",
     desc: `A hyper realistic tactical, survival looter shooter in an apocalyptic world. Built in Godot, utilizing GDScript and C# and local hosting for multiplayer, it is a 3/4 shooter focusing on small unit tactics, CQB, and teambuilding.`,
     category: "Game Development",
-       image: "projects/project5.png",
+    image: "projects/project5.png",
     bordColor: "border-blue-500/30",
     badgeColor: "bg-[#e67802]",
     technolg: [
       {
         name: "Godot (GDScript)",
         class: "bg-blue-500/20 border-blue-400/30 text-blue-200",
-        },
-        {
-          name: "C#",
+      },
+      {
+        name: "C#",
         class: "bg-blue-500/20 border-blue-400/30 text-blue-200",
       },
     ],

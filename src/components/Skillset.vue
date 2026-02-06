@@ -33,7 +33,7 @@
                   {{ skill.title }}
                 </span>
               </div>
-              <div class="flex flex-wrap  gap-1">
+              <div class="flex flex-wrap gap-1">
                 <span
                   v-for="t in skill.tech"
                   :key="t.name"
@@ -53,7 +53,7 @@
           </div>
           <div class="mt-12">
             <div class="flex flex-wrap gap-3">
-              <span 
+              <span
                 v-for="tech in techStack"
                 :key="tech"
                 class="px-4 py-2 bg-[#5386e4] border border-blue-400/30 rounded-full text-white text-sm font-medium hover:scale-105 transition-transform duration-300"
@@ -128,9 +128,9 @@ const tech = {
   tailwind: { name: "Tailwind CSS" },
   git: { name: "Git" },
   figma: { name: "Figma" },
-  github: { name: "GitHub"},
-  slack: {name: "Slack"},
-  teams: {name: "MS Teams"}
+  github: { name: "GitHub" },
+  slack: { name: "Slack" },
+  teams: { name: "MS Teams" },
 };
 
 const skills = [
@@ -140,8 +140,9 @@ const skills = [
     icon: CodeBracketIcon,
     iconColor: "text-[var(--color-secondary)]",
     percentage: 95,
-    gradient: "bg-linear-to-r from-[var(--color-sidealt)] to-[var(--color-side)]",
-    tech: [tech.vue, tech.react, tech.next,],
+    gradient:
+      "bg-linear-to-r from-[var(--color-sidealt)] to-[var(--color-side)]",
+    tech: [tech.vue, tech.react, tech.next],
   },
   {
     id: 2,
@@ -149,7 +150,8 @@ const skills = [
     icon: ServerIcon,
     iconColor: "text-[var(--color-secondaryalt)]",
     percentage: 85,
-    gradient: "bg-linear-to-r from-[var(--color-sidealt)] to-[var(--color-side)]",
+    gradient:
+      "bg-linear-to-r from-[var(--color-sidealt)] to-[var(--color-side)]",
     tech: [tech.mongo, tech.supabase, tech.node, tech.postgres],
   },
   {
@@ -158,7 +160,8 @@ const skills = [
     icon: PaintBrushIcon,
     iconColor: "text-[var(--color-secondaryalt)]",
     percentage: 70,
-    gradient: "bg-linear-to-r from-[var(--color-sidealt)] to-[var(--color-side)]",
+    gradient:
+      "bg-linear-to-r from-[var(--color-sidealt)] to-[var(--color-side)]",
     tech: [tech.tailwind, tech.figma],
   },
   {
@@ -167,8 +170,9 @@ const skills = [
     icon: CloudIcon,
     iconColor: "text-[var(--color-secondaryalt)]",
     percentage: 70,
-    gradient: "bg-linear-to-r from-[var(--color-sidealt)] to-[var(--color-side)]",
-    tech: [tech.github, tech.slack, tech.teams]
+    gradient:
+      "bg-linear-to-r from-[var(--color-sidealt)] to-[var(--color-side)]",
+    tech: [tech.github, tech.slack, tech.teams],
   },
 ];
 const experiences = [
@@ -188,7 +192,7 @@ const experiences = [
     id: 2,
     position: "Frontend Developer & Administrative Manager",
     company: "Faith Talent Services",
-    period: "2019 - 2025",  
+    period: "2019 - 2025",
     desc: "Frontend developer and UI/UX design for one recruiting website, and manager of all HR and administrative duties for the company. Duties included: Onboarding, Payroll, Calendar Management, Administrative Tasks, and Clerical Tasks.",
     borderColor: "border-blue-500/30",
     dotColor: "bg-[var(--color-secondaryalt)]",

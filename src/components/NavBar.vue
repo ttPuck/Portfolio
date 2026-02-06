@@ -1,10 +1,9 @@
 <template>
   <header
-    class="flex justify-between items-center p-6 bg-(--color-secondary) relative z-20" id="home"
+    class="flex justify-between items-center p-6 bg-(--color-secondary) relative z-20"
+    id="home"
   >
-    <div
-      class="text-3xl text-white"
-    >
+    <div class="text-3xl text-white">
       Web Dev <span class="font-bold text-(--color-side)">Portfolio</span>
     </div>
     <div class="md:hidden z-30">
@@ -64,7 +63,7 @@
       </ul>
       <div class="mt-8 md:mt-0 md:ml-8">
         <button
-        @click="scrollToContact"
+          @click="scrollToContact"
           class="px-6 py-2.5 bg-(--color-primary) cursor-pointer text-white rounded-full hover:shadow-lg hover:shadow-[#b14aed]/60 transition-all duration-300 hover:scale-105"
         >
           Message Me!
@@ -84,11 +83,11 @@ const Menu = ref([
 ]);
 const isMenuOpen = ref(false);
 const scrollToContact = () => {
-  const el = document.getElementById("contact")
-  if (!el) return
+  const el = document.getElementById("contact");
+  if (!el) return;
 
-  el.scrollIntoView({ behavior: "smooth" })
-}
+  el.scrollIntoView({ behavior: "smooth" });
+};
 const scrollToSection = (href) => {
   isMenuOpen.value = false;
   const section = document.querySelector(href);

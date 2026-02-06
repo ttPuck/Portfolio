@@ -13,7 +13,7 @@
           <div class="relative w-full max-w">
             <div
               data-aos="zoom-in"
-              class="relative bg-(--color-secondaryalt)  rounded-3xl p-6 backdrop-blur-sm border border-blue-500/30 shadow-2xl"
+              class="relative bg-(--color-secondaryalt) rounded-3xl p-6 backdrop-blur-sm border border-blue-500/30 shadow-2xl"
             >
               <div class="grid grid-cols-2 gap-4">
                 <div
@@ -42,7 +42,7 @@
                 </div>
               </div>
               <div
-                class="absolute -bottom-4 left-1/2 transform -translate-x-1/2 z-20 bg-(--color-side)  rounded-2xl px-6 py-3 border border-blue-400/40 shadow-xl"
+                class="absolute -bottom-4 left-1/2 transform -translate-x-1/2 z-20 bg-(--color-side) rounded-2xl px-6 py-3 border border-blue-400/40 shadow-xl"
                 data-aos="fade-up"
                 data-aos-delay="600"
               >
@@ -59,11 +59,7 @@
               class="text-transparent bg-clip-text bg-linear-to-r from-[#454ade] to-[#b14aed] font-bold text-4xl md:text-5xl lg:text-6xl leading-tight"
             >
               About
-              <span 
-                class="text-black"
-              >
-                Me</span
-              > 
+              <span class="text-black"> Me</span>
             </h2>
             <p
               class="text-black font-medium text-lg md:text-xl mt-4"
@@ -104,15 +100,17 @@
               :key="button.id"
               class="px-8 py-3 rounded-xl bg-(--color-primaryalt) font-semibold transition-all duration-300 flex items-center justify-center hover:shadow-lg hover:shadow-[#b14aed]/60"
               :class="button.classes"
-             @click="button.text === 'Contact Me' && scrollToContact() ; button.text === 'View Portfolio' ? scrollToProjects() : null"
-
+              @click="
+                button.text === 'Contact Me' && scrollToContact();
+                button.text === 'View Portfolio' ? scrollToProjects() : null;
+              "
             >
               <component
                 :is="button.icon"
                 class="w-4 h-4"
                 :class="button.iconclass"
               />
-              {{ button.text }} 
+              {{ button.text }}
             </button>
           </div>
         </div>
@@ -122,12 +120,12 @@
 </template>
 
 <script setup>
-  const scrollToContact = () => {
-  const el = document.getElementById("contact")
+const scrollToContact = () => {
+  const el = document.getElementById("contact");
   if (el) {
-    el.scrollIntoView({ behavior: "smooth" })
+    el.scrollIntoView({ behavior: "smooth" });
   }
-}
+};
 import {
   ChatBubbleLeftRightIcon,
   CodeBracketSquareIcon,
@@ -141,11 +139,11 @@ import about2 from "/about2.png";
 import about3 from "/about3.png";
 import about4 from "/about4.png";
 
-  const scrollToProjects = () => {
-  const el = document.getElementById("projects")
-  if (!el) return 
-  el.scrollIntoView({ behavior: "smooth" })
-  }
+const scrollToProjects = () => {
+  const el = document.getElementById("projects");
+  if (!el) return;
+  el.scrollIntoView({ behavior: "smooth" });
+};
 const aboutImage = [
   {
     id: 1,
@@ -233,7 +231,6 @@ const ctaButtons = [
         transition-transform`,
     classes: `bg-[var(--color-secondary)]
         text-white hover:bg-[var(--color-primary)] cursor-pointer`,
-        
   },
   {
     id: 2,

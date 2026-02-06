@@ -15,7 +15,7 @@
           data-aos="fade-up"
           data-aos-delay="80"
         >
-         My Skill Sets To Provide You And Your Team With Amazing Services
+          My Skill Sets To Provide You And Your Team With Amazing Services
         </p>
       </div>
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
@@ -24,7 +24,7 @@
           :key="service.id"
           :data-aos="'fade-up'"
           :data-aos-delay="index * 100 + 200"
-          class="group relative p-14 rounded-2xl bg-(--color-secondaryalt) backdrop-blur-sm  hover:border-[#a73ee4] transition-all duration-500 hover:transform hover:-translate-y-2"
+          class="group relative p-14 rounded-2xl bg-(--color-secondaryalt) backdrop-blur-sm hover:border-[#a73ee4] transition-all duration-500 hover:transform hover:-translate-y-2"
         >
           <div
             class="absolute inset-0 bg-linear-to-r from-blue-500/5 to-cyan-500/5 rounded-2xl opacity-0 duration-500 group-hover:opacity-100 transition-opacity"
@@ -39,7 +39,11 @@
               ></component>
             </div>
           </div>
-          <p class="text-white font-bold absolute bottom-6 left opacity-0 group-hover:opacity-100 transform translate-x-4 group-hover:translate-x-[-200] group-hover:text-(--color-side)  transition-all duration-300">See Projects With This Service!</p>
+          <p
+            class="text-white font-bold absolute bottom-6 left opacity-0 group-hover:opacity-100 transform translate-x-4 group-hover:translate-x-[-200] group-hover:text-(--color-side) transition-all duration-300"
+          >
+            See Projects With This Service!
+          </p>
           <div class="relative z-10">
             <h3
               class="text-xl font-bold text-white mb-3 group-hover:text-(--color-side) transition-colors duration-300"
@@ -52,8 +56,9 @@
           </div>
           <div
             class="absolute bottom-6 right-6 opacity-0 cursor-pointer group-hover:opacity-100 transform translate-x-4 group-hover:translate-x-0 transition-all duration-300"
-          > <button @click="scrollToProjects">
-            <ArrowRightIcon  class="w-6 h-6 text-white cursor-pointer" />
+          >
+            <button @click="scrollToProjects">
+              <ArrowRightIcon class="w-6 h-6 text-white cursor-pointer" />
             </button>
           </div>
         </div>
@@ -61,7 +66,7 @@
       <div class="text-center mt-16" data-aos="fade-up" data-aos-delay="200">
         <div class="inline-flex flex-col sm:flex-row gap-4 items-center">
           <button
-           @click="scrollToContact"
+            @click="scrollToContact"
             class="px-8 py-4 rounded-xl bg-(--color-primaryalt) border-2 border-(--color-secondary) text-white font-semibold hover:bg-(--color-secondary) hover:shadow-lg hover:shadow-[#b14aed]/60 cursor-pointer transition-all duration-300 flex items-center"
           >
             Get In Touch
@@ -73,15 +78,16 @@
   </section>
 </template>
 <script setup>
-  const scrollToContact = () => {
-  const el = document.getElementById("contact")
-  if (!el) return
-   el.scrollIntoView({ behavior: "smooth" })}
-  const scrollToProjects = () => {
-  const el = document.getElementById("projects")
-  if (!el) return 
-  el.scrollIntoView({ behavior: "smooth" })
-  }
+const scrollToContact = () => {
+  const el = document.getElementById("contact");
+  if (!el) return;
+  el.scrollIntoView({ behavior: "smooth" });
+};
+const scrollToProjects = () => {
+  const el = document.getElementById("projects");
+  if (!el) return;
+  el.scrollIntoView({ behavior: "smooth" });
+};
 import {
   ArrowRightIcon,
   ChatBubbleLeftRightIcon,

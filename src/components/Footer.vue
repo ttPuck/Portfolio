@@ -9,7 +9,8 @@
             Ian.dev
           </div>
           <p class="text-white text-sm leading-relaxed max-w-md">
-           Thank you for checking out my portfolio! If you have any questions, please feel free to reach out. I am always checking my email!
+            Thank you for checking out my portfolio! If you have any questions,
+            please feel free to reach out. I am always checking my email!
           </p>
         </div>
         <div>
@@ -48,13 +49,12 @@
   </footer>
 </template>
 <script setup>
-
 const quickLinks = [
   { name: "Home", href: "#home" },
   { name: "About", href: "#about" },
   { name: "Services", href: "#services" },
   { name: "Projects", href: "#projects" },
-    { name: "Contact", href: "#contact" },
+  { name: "Contact", href: "#contact" },
   { name: "Testimonials", href: "#testimonials" },
 ];
 const services = [

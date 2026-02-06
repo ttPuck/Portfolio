@@ -2,10 +2,7 @@
   <div v-if="loading">
     <LoadingSpinner />
   </div>
-  <div
-    v-else
-    class="min-h-screen bg-(--color-bg) font-[Roboto,sans-serif]"
-  >
+  <div v-else class="min-h-screen bg-(--color-bg) font-[Roboto,sans-serif]">
     <NavBar />
     <MeSection />
     <Projects />
@@ -13,7 +10,7 @@
     <AboutMe />
     <Skillset />
     <Testimonials />
-   <Contact />
+    <Contact />
     <Footer />
     <BackToTop />
   </div>
@@ -66,4 +63,3 @@ export default {
   },
 };
 </script>
-

@@ -6,12 +6,11 @@
       class="w-full px-5 sm:px-8 md:px-12 lg:px-16 max-w-7xl lg:max-w-10xl mx-auto relative z-10"
     >
       <div class="grid lg:grid-cols-2 gap-10 xl:gap-14 items-center">
-            <!-- Profile Image-->
-          <div class="lg:h-full flex justify-center lg:justify-center">
-            
+        <!-- Profile Image-->
+        <div class="lg:h-full flex justify-center lg:justify-center">
           <div class="relative w-full max-w-md lg:max-w-lg">
             <div
-              class="relative z-10 border-pulse bg-linear-to-r from-(--color-side)  to-(--color-primary)  shadow-2xl rounded-[10%_10%_10%_15%/10%_10%_10%_10%] p-4 backdrop-blur-sm -translate-y-6"
+              class="relative z-10 border-pulse bg-linear-to-r from-(--color-side) to-(--color-primary) shadow-2xl rounded-[10%_10%_10%_15%/10%_10%_10%_10%] p-4 backdrop-blur-sm -translate-y-6"
               data-aos="zoom-in"
               data-aos-delay="450"
             >
@@ -32,7 +31,7 @@
               class="text-black font-bold text-4xl md:text-5xl lg:text-6xl leading-tight"
             >
               Hey, I'm
-              <span 
+              <span
                 class="text-transparent bg-clip-text bg-linear-to-r from-[#b14aed] to-[#454ade]"
                 >Ian </span
               >😀
@@ -50,47 +49,56 @@
             data-aos-delay="150"
           >
             I am an experienced frontend and backend developer of 2+ years, with
-            a handful of projects under my belt. I specialize in JavaScript and its extended frameworks like React, Next.js and Vue.js, along with their complementary backend tools
-            such as MongoDB, Supabase, and Cloudflare. I would love to be part of a team
-            where I could deliver effective and efficient code and provide my
-            gifts and skills to any project that may need them!
+            a handful of projects under my belt. I specialize in JavaScript and
+            its extended frameworks like React, Next.js and Vue.js, along with
+            their complementary backend tools such as MongoDB, Supabase, and
+            Cloudflare. I would love to be part of a team where I could deliver
+            effective and efficient code and provide my gifts and skills to any
+            project that may need them!
           </p>
           <div
             class="flex items-center gap-4 pt-8 flex-col sm:flex-row sm:w-max sm:mx-auto lg:mx-0"
             data-aos="fade-up"
             data-aos-delay="450"
           >
-          <div class="p-[2px] bg-linear-to-r from-(--color-primary) to-(--color-secondary)  rounded-xl w-full sm:w-max">
-            <button
-              @click="scrollToContact"
-              class="px-8 md:px-10 py-4 rounded-xl relative group w-full sm:w-max flex justify-center overflow-hidden 
-              bg-(--color-primary) hover:bg-(--color-secondary) cursor-pointer transition-all duration-300"
+            <div
+              class="p-[2px] bg-linear-to-r from-(--color-primary) to-(--color-secondary) rounded-xl w-full sm:w-max"
             >
-            
-              <span
-                class="relative flex items-center justify-center text-white font-semibold text-lg"
+              <button
+                @click="scrollToContact"
+                class="px-8 md:px-10 py-4 rounded-xl relative group w-full sm:w-max flex justify-center overflow-hidden bg-(--color-primary) hover:bg-(--color-secondary) cursor-pointer transition-all duration-300"
               >
-                Reach out to me
-                <ArrowRightIcon
-                  class="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform"
-                />
-              </span>
-            </button>
+                <span
+                  class="relative flex items-center justify-center text-white font-semibold text-lg"
+                >
+                  Reach out to me
+                  <ArrowRightIcon
+                    class="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform"
+                  />
+                </span>
+              </button>
             </div>
             <a href="/Ian.Portfolio.pdf" download>
-              
-          <!-- Gradient wrapper -->
-<div class="p-[2px] bg-linear-to-r from-(--color-primary)  to-(--color-secondaryalt)  rounded-xl w-full sm:w-max">
-  <!-- Inner button -->
-  <button class="px-8 md:px-10 py-4 rounded-xl relative group w-full flex justify-center bg-(--color-primary) hover:bg-(--color-secondary) transition-all duration-300">
-    <div class="flex items-center justify-center relative cursor-pointer">
-      <ArrowDownTrayIcon class="w-5 h-5 text-white group-hover:translate-y-1 transition-transform" />
-      <span class="pl-3 text-white font-semibold text-lg">
-        Download CV
-      </span>
-    </div>
-  </button>
-</div>
+              <!-- Gradient wrapper -->
+              <div
+                class="p-[2px] bg-linear-to-r from-(--color-primary) to-(--color-secondaryalt) rounded-xl w-full sm:w-max"
+              >
+                <!-- Inner button -->
+                <button
+                  class="px-8 md:px-10 py-4 rounded-xl relative group w-full flex justify-center bg-(--color-primary) hover:bg-(--color-secondary) transition-all duration-300"
+                >
+                  <div
+                    class="flex items-center justify-center relative cursor-pointer"
+                  >
+                    <ArrowDownTrayIcon
+                      class="w-5 h-5 text-white group-hover:translate-y-1 transition-transform"
+                    />
+                    <span class="pl-3 text-white font-semibold text-lg">
+                      Download CV
+                    </span>
+                  </div>
+                </button>
+              </div>
             </a>
           </div>
           <div
@@ -112,21 +120,22 @@
             </div>
           </div>
         </div>
- 
       </div>
     </div>
-    
   </section>
 </template>
 
 <script setup>
-
-import { ArrowDownTrayIcon, ArrowRightIcon, EyeIcon, CodeBracketIcon, } from "@heroicons/vue/16/solid";
+import {
+  ArrowDownTrayIcon,
+  ArrowRightIcon,
+  EyeIcon,
+  CodeBracketIcon,
+} from "@heroicons/vue/16/solid";
 import { ref } from "vue";
 const scrollToContact = () => {
-  const el = document.getElementById("contact")
-  if (!el) return
-  el.scrollIntoView({ behavior: "smooth" })
-}
-
+  const el = document.getElementById("contact");
+  if (!el) return;
+  el.scrollIntoView({ behavior: "smooth" });
+};
 </script>
