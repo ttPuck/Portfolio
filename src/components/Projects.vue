@@ -281,9 +281,8 @@ const webprojects = ref([
   {
     id: 3,
     title: "Dev Portfolio Template",
-    desc: `A Github repository of this very website, built in Vue.js! Supply your own information and images, and customize to your liking!
-    to how you see fit. `,
-    image: "projects/project4.png",
+    desc: `A Github repository of this very website, built in Vue.js! Simply fork or download, and supply your own information and images, and customize to your liking! `,
+    image: "projects/project7.png",
     category: "Frontend",
     bordColor: "border-blue-500/30",
     badgeColor: "bg-blue-500",
@@ -300,7 +299,7 @@ const webprojects = ref([
     links: [
       {
         name: "Github Repo",
-        url: "#",
+        url: "https://github.com/ttPuck/Portfolio",
         icon: ArrowDownTrayIcon,
         class: "text-white hover:text-[var(--color-side)]",
       },
