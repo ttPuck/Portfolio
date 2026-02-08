@@ -299,7 +299,7 @@ const webprojects = ref([
     links: [
       {
         name: "Github Repo",
-        url: "https://github.com/ttPuck/Portfolio",
+        url: "https://github.com/ttPuck/portfolio-clone",
         icon: ArrowDownTrayIcon,
         class: "text-white hover:text-[var(--color-side)]",
       },
