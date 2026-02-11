@@ -7,24 +7,7 @@
     >
       <div class="grid lg:grid-cols-2 gap-10 xl:gap-14 items-center">
         <!-- Profile Image-->
-        <div class="lg:min-h-20px flex justify-center">
-          <div class="relative w-100 max-w-md lg:max-w-lg">
-            <div
-              class="relative z-10 border-pulse bg-linear-to-r from-(--color-side) to-(--color-primary) shadow-2xl rounded-[10%_10%_10%_15%/10%_10%_10%_10%] p-4 backdrop-blur-sm -translate-y-6"
-              data-aos="zoom-in"
-              data-aos-delay="450"
-            >
-              <div class="rounded-xl overflow-hidden">
-                <img
-                  src="../../public/Ian.png"
-                  alt="Ian - Profile Image"
-                  loading="lazy"
-                  class="w-[300px] h-[300px] object-contain -translate-y-3 translate-x-8 rounded-[20%]"
-                />
-              </div>
-            </div>
-          </div>
-        </div>
+    
         <div class="flex flex-col md:mt-0 mt-20 justify-center">
           <div class="text-white lg:text-center" data-aos="fade-right">
             <h1
@@ -56,7 +39,27 @@
             effective and efficient code and provide my gifts and skills to any
             project that may need them!
           </p>
+          
           <div
+            class="flex items-center justify-center lg:justify-center gap-7 pt-12"
+            data-aos="fade-up"
+            data-aos-delay="300"
+          >
+            <div class="text-center">
+              <div class="text-2xl font-bold text-white">4</div>
+              <div class="text-white text-sm">Projects</div>
+            </div>
+            <div class="text-center">
+              <div class="text-2xl font-bold text-white">2+</div>
+              <div class="text-white text-sm">Years</div>
+            </div>
+            <div class="text-center">
+              <div class="text-2xl font-bold text-white">2+</div>
+              <div class="text-white text-sm">Clients</div>
+            </div>
+          </div>
+        </div>
+        <div
     class="flex items-end gap-4 pt-8 flex-col sm:flex-row w-full justify-center lg:justify-center"
             data-aos="fade-up"
             data-aos-delay="450"
@@ -101,25 +104,6 @@
               </div>
             </a>
           </div>
-          <div
-            class="flex items-center justify-center lg:justify-center gap-7 pt-12"
-            data-aos="fade-up"
-            data-aos-delay="300"
-          >
-            <div class="text-center">
-              <div class="text-2xl font-bold text-white">4</div>
-              <div class="text-white text-sm">Projects</div>
-            </div>
-            <div class="text-center">
-              <div class="text-2xl font-bold text-white">2+</div>
-              <div class="text-white text-sm">Years</div>
-            </div>
-            <div class="text-center">
-              <div class="text-2xl font-bold text-white">2+</div>
-              <div class="text-white text-sm">Clients</div>
-            </div>
-          </div>
-        </div>
       </div>
     </div>
   </section>
