@@ -1,14 +1,14 @@
 <template>
   <section
-    class="relative w-full overflow-hidden min-h-screen flex items-center"
+    class="relative w-full overflow-hidden min-h-50px flex items-center"
   >
     <div
-      class="w-full px-5 sm:px-8 md:px-12 lg:px-16 max-w-7xl lg:max-w-10xl mx-auto relative z-10"
+      class="min-w-screen px-3 sm:px-5 md:px-8 lg:px-12 max-w-5xl lg:max-w-6xl mx-auto relative z-10"
     >
       <div class="grid lg:grid-cols-2 gap-10 xl:gap-14 items-center">
         <!-- Profile Image-->
-        <div class="lg:h-full flex justify-center lg:justify-center">
-          <div class="relative w-full max-w-md lg:max-w-lg">
+        <div class="lg:min-h-20px flex justify-center">
+          <div class="relative w-100 max-w-md lg:max-w-lg">
             <div
               class="relative z-10 border-pulse bg-linear-to-r from-(--color-side) to-(--color-primary) shadow-2xl rounded-[10%_10%_10%_15%/10%_10%_10%_10%] p-4 backdrop-blur-sm -translate-y-6"
               data-aos="zoom-in"
@@ -19,32 +19,32 @@
                   src="../../public/Ian.png"
                   alt="Ian - Profile Image"
                   loading="lazy"
-                  class="w-[400px] h-[500px] object-contain -translate-y-3 translate-x-8 rounded-[20%]"
+                  class="w-[300px] h-[300px] object-contain -translate-y-3 translate-x-8 rounded-[20%]"
                 />
               </div>
             </div>
           </div>
         </div>
         <div class="flex flex-col md:mt-0 mt-20 justify-center">
-          <div class="text-black lg:text-left" data-aos="fade-right">
+          <div class="text-white lg:text-center" data-aos="fade-right">
             <h1
-              class="text-black font-bold text-4xl md:text-5xl lg:text-6xl leading-tight"
+              class="text-white font-bold text-2xl md:text-3xl lg:text-4xl leading-tight"
             >
-              Hey, I'm
+              Welcome, My Name Is
               <span
                 class="text-transparent bg-clip-text bg-linear-to-r from-[#b14aed] to-[#454ade]"
                 >Ian </span
-              >😀
+              >
             </h1>
             <p
-              class="text-black font-medium text-lg md:text-xl mt-4"
+              class="text-white font-medium text-lg md:text-xl mt-4"
               data-aos="fade-right"
               data-aos-delay="80"
             ></p>
             <p>Full-Stack Developer</p>
           </div>
           <p
-            class="font-light text-black pt-6 text-center lg:text-left mx-auto max-w-xl text-lg leading-relaxed"
+            class="font-light text-white pt-4 text-center lg:text-center mx-auto max-w-xl text-lg leading-relaxed"
             data-aos="fade-right"
             data-aos-delay="150"
           >
@@ -57,16 +57,16 @@
             project that may need them!
           </p>
           <div
-            class="flex items-center gap-4 pt-8 flex-col sm:flex-row sm:w-max sm:mx-auto lg:mx-0"
+    class="flex items-end gap-4 pt-8 flex-col sm:flex-row w-full justify-center lg:justify-center"
             data-aos="fade-up"
             data-aos-delay="450"
           >
             <div
-              class="p-[2px] bg-linear-to-r from-(--color-primary) to-(--color-secondary) rounded-xl w-full sm:w-max"
+              class="p-[2px] bg-linear-to-r from-(--color-side) to-(--color-secondary) rounded-xl w-full sm:w-max"
             >
               <button
                 @click="scrollToContact"
-                class="px-8 md:px-10 py-4 rounded-xl relative group w-full sm:w-max flex justify-center overflow-hidden bg-(--color-primary) hover:bg-(--color-secondary) cursor-pointer transition-all duration-300"
+                class="px-8 md:px-10 py-4 rounded-xl relative group w-full sm:w-max flex justify-center overflow-hidden bg-(--color-side) hover:bg-(--color-secondary) cursor-pointer transition-all duration-300"
               >
                 <span
                   class="relative flex items-center justify-center text-white font-semibold text-lg"
@@ -81,11 +81,11 @@
             <a href="/Ian.Portfolio.pdf" download>
               <!-- Gradient wrapper -->
               <div
-                class="p-[2px] bg-linear-to-r from-(--color-primary) to-(--color-secondaryalt) rounded-xl w-full sm:w-max"
+                class="p-[2px] bg-linear-to-r from-(--color-side) to-(--color-secondary) rounded-xl w-full sm:w-max"
               >
                 <!-- Inner button -->
                 <button
-                  class="px-8 md:px-10 py-4 rounded-xl relative group w-full flex justify-center bg-(--color-primary) hover:bg-(--color-secondary) transition-all duration-300"
+                  class="px-8 md:px-10 py-4 rounded-xl relative group w-full flex justify-center bg-(--color-side) hover:bg-(--color-secondary) transition-all duration-300"
                 >
                   <div
                     class="flex items-center justify-center relative cursor-pointer"
@@ -102,21 +102,21 @@
             </a>
           </div>
           <div
-            class="flex items-center justify-center lg:justify-start gap-7 pt-12"
+            class="flex items-center justify-center lg:justify-center gap-7 pt-12"
             data-aos="fade-up"
             data-aos-delay="300"
           >
             <div class="text-center">
-              <div class="text-2xl font-bold text-black">4</div>
-              <div class="text-black text-sm">Projects</div>
+              <div class="text-2xl font-bold text-white">4</div>
+              <div class="text-white text-sm">Projects</div>
             </div>
             <div class="text-center">
-              <div class="text-2xl font-bold text-black">2+</div>
-              <div class="text-black text-sm">Years</div>
+              <div class="text-2xl font-bold text-white">2+</div>
+              <div class="text-white text-sm">Years</div>
             </div>
             <div class="text-center">
-              <div class="text-2xl font-bold text-black">2+</div>
-              <div class="text-black text-sm">Clients</div>
+              <div class="text-2xl font-bold text-white">2+</div>
+              <div class="text-white text-sm">Clients</div>
             </div>
           </div>
         </div>
@@ -129,8 +129,6 @@
 import {
   ArrowDownTrayIcon,
   ArrowRightIcon,
-  EyeIcon,
-  CodeBracketIcon,
 } from "@heroicons/vue/16/solid";
 import { ref } from "vue";
 const scrollToContact = () => {

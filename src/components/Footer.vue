@@ -1,10 +1,10 @@
 <template>
-  <footer class="relative bg-(--color-secondary) border-t border-blue-500/20">
+  <footer class="relative bg-(--color-nav) border-t border-blue-500/20">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 py-12">
       <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
         <div class="md:col-span-2">
           <div
-            class="text-2xl font-bold bg-linear-to-r from-blue-400 to-cyan-400 bg-clip-text text-(--color-side)"
+            class="text-2xl font-bold bg-linear-to-r from-blue-400 to-cyan-400 bg-clip-text text-(--color-secondaryalt)"
           >
             Ian.dev
           </div>

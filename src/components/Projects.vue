@@ -2,7 +2,7 @@
   <section class="relative py-20 overflow-hidden" id="projects">
     <div class="relative z-10 max-w-8xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="text-center mb-16" data-aos="fade-up">
-        <h2 class="text-4xl md:text-5xl font-bold text-black mb-4">
+        <h2 class="text-4xl md:text-5xl font-bold text-(--color-text) mb-4">
           My
           <span
             class="text-transparent bg-clip-text bg-linear-to-r from-[#b14aed] to-[#454ade]"
@@ -10,7 +10,7 @@
             Web Development Projects
           </span>
         </h2>
-        <p class="text-black text-lg max-w-2xl mx-auto">
+        <p class="text-(--color-text) text-lg max-w-2xl mx-auto">
           A Collection Of My Web Development Projects
         </p>
       </div>
@@ -18,7 +18,7 @@
         <div
           v-for="(webproject, index) in webprojects"
           :key="webproject.id"
-          class="group relative bg-(--color-secondaryalt) rounded-3xl overflow-hidden border backdrop-blur-sm hover:border-[#a73ee4] transition-all duration-500 hover:transform hover:-translate-y-2"
+          class="group relative bg-(--color-primaryalt) rounded-3xl overflow-hidden border backdrop-blur-sm hover:border-[#a73ee4] transition-all duration-500 hover:transform hover:-translate-y-2"
           :class="webproject.bordColor"
           data-aos="fade-up"
           :data-aos-delay="(index + 1) * 100"
@@ -83,7 +83,7 @@
   <section class="relative py-20 overflow-hidden" id="projects">
     <div class="relative z-10 max-w-8xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="text-center mb-16" data-aos="fade-up">
-        <h2 class="text-4xl md:text-5xl font-bold text-black mb-4">
+        <h2 class="text-4xl md:text-5xl font-bold text-(--color-text) mb-4">
           My
           <span
             class="text-transparent text bg-clip-text bg-linear-to-r from-[#b14aed] to-[#454ade]"
@@ -91,7 +91,7 @@
             Other Projects
           </span>
         </h2>
-        <p class="text-black text-lg max-w-2xl mx-auto">
+        <p class="text-(--color-text) text-lg max-w-2xl mx-auto">
           A Collection Of My App & Game Projects, All Open Source!
         </p>
       </div>
@@ -99,7 +99,7 @@
         <div
           v-for="(otherproject, index) in otherprojects"
           :key="otherproject.id"
-          class="group relative bg-(--color-secondaryalt) rounded-3xl overflow-hidden border backdrop-blur-sm hover:border-[#a73ee4] transition-all duration-500 hover:transform hover:-translate-y-2"
+          class="group relative bg-(--color-primaryalt) rounded-3xl overflow-hidden border backdrop-blur-sm hover:border-[#a73ee4] transition-all duration-500 hover:transform hover:-translate-y-2"
           :class="otherproject.bordColor"
           data-aos="fade-up"
           :data-aos-delay="(index + 1) * 100"
@@ -170,7 +170,7 @@
           </a>
           <button
             @click="scrollToContact"
-            class="px-8 py-4 bg-(--color-primaryalt) cursor-pointer rounded-xl border-2 border-[#5386e4] text-white font-semibold hover:bg-text-white hover:bg-(--color-secondary) hover:shadow-lg hover:shadow-[#b14aed]/60 transition-all duration-300 flex items-center"
+            class="px-8 py-4 bg-(--color-side) cursor-pointer rounded-xl border-2 border-[#5386e4] text-white font-semibold hover:bg-text-white hover:bg-(--color-secondary) hover:shadow-lg hover:shadow-[#b14aed]/60 transition-all duration-300 flex items-center"
           >
             <ChatBubbleLeftRightIcon class="w-5 h-5 mr-2" />
             Discuss Project
@@ -206,7 +206,7 @@ const webprojects = ref([
     image: "../projects/project1.png",
     category: "Frontend",
     bordColor: "border-blue-500/30",
-    badgeColor: "bg-blue-500",
+    badgeColor: "bg-(--color-secondary)",
     technolg: [
       {
         name: "Vue.js",
@@ -222,7 +222,7 @@ const webprojects = ref([
         name: "Website",
         url: "https://romansroad.netlify.app",
         icon: EyeIcon,
-        class: "text-white hover:text-[var(--color-side)]",
+        class: "text-white hover:text-[var(--color-secondary)]",
       },
     ],
   },
@@ -236,7 +236,7 @@ const webprojects = ref([
     image: "projects/project2.png",
     category: "Full-stack",
     bordColor: "border-blue-500/30",
-    badgeColor: "bg-blue-500",
+    badgeColor: "bg-(--color-secondary)",
     technolg: [
       {
         name: "Next.js",
@@ -268,13 +268,13 @@ const webprojects = ref([
         name: "Website (Sign-up and Login)",
         url: "#",
         icon: EyeIcon,
-        class: "text-white hover:text-[var(--color-side)]",
+        class: "text-white hover:text-[var(--color-secondary)]",
       },
       {
         name: "Github Repo",
         url: "https://github.com/ttPuck/c2socket",
         icon: CodeBracketIcon,
-        class: "text-white hover:text-[var(--color-side)]",
+        class: "text-white hover:text-[var(--color-secondary)]",
       },
     ],
   },
@@ -285,7 +285,7 @@ const webprojects = ref([
     image: "projects/project7.png",
     category: "Frontend",
     bordColor: "border-blue-500/30",
-    badgeColor: "bg-blue-500",
+    badgeColor: "bg-(--color-secondary)",
     technolg: [
       {
         name: "Vue.js",
@@ -301,7 +301,7 @@ const webprojects = ref([
         name: "Github Repo",
         url: "https://github.com/ttPuck/portfolio-clone",
         icon: ArrowDownTrayIcon,
-        class: "text-white hover:text-[var(--color-side)]",
+        class: "text-white hover:text-[var(--color-secondary)]",
       },
     ],
   },
@@ -326,7 +326,7 @@ const otherprojects = ref([
         name: "Github Repo & Packaged App",
         url: "https://github.com/ptwees/nvSIL",
         icon: ArrowDownTrayIcon,
-        class: "text-white hover:text-[var(--color-side)]",
+        class: "text-white hover:text-[var(--color-secondary)]",
       },
     ],
   },
@@ -349,7 +349,7 @@ const otherprojects = ref([
         name: "Github Repo & Packaged App",
         url: "https://github.com/ptwees/nvSIL",
         icon: ArrowDownTrayIcon,
-        class: "text-white hover:text-[var(--color-side)]",
+        class: "text-white hover:text-[var(--color-secondary)]",
       },
     ],
   },
@@ -376,7 +376,7 @@ const otherprojects = ref([
         name: "Github Repo & Links To Game",
         url: "https://github.com/ttPuck/BREASTPLATE",
         icon: ArrowDownTrayIcon,
-        class: "text-white hover:text-[var(--color-side)]",
+        class: "text-white hover:text-[var(--color-secondary)]",
       },
     ],
   },

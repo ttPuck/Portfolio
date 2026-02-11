@@ -13,7 +13,7 @@
           <div class="relative w-full max-w">
             <div
               data-aos="zoom-in"
-              class="relative bg-(--color-secondaryalt) rounded-3xl p-6 backdrop-blur-sm border border-blue-500/30 shadow-2xl"
+              class="relative bg-(--color-secondary) rounded-3xl p-6 backdrop-blur-sm border border-blue-500/30 shadow-2xl"
             >
               <div class="grid grid-cols-2 gap-4">
                 <div
@@ -42,11 +42,11 @@
                 </div>
               </div>
               <div
-                class="absolute -bottom-4 left-1/2 transform -translate-x-1/2 z-20 bg-(--color-side) rounded-2xl px-6 py-3 border border-blue-400/40 shadow-xl"
+                class="absolute -bottom-4 left-1/2 transform -translate-x-1/2 z-20 bg-(--color-side) rounded-2xl px-6 py-3 shadow-xl"
                 data-aos="fade-up"
                 data-aos-delay="600"
               >
-                <div class="text-center text-black text-xl font-bold">
+                <div class="text-center text-(--color-text) text-xl font-bold">
                   2+ Years Experience
                 </div>
               </div>
@@ -59,10 +59,10 @@
               class="text-transparent bg-clip-text bg-linear-to-r from-[#454ade] to-[#b14aed] font-bold text-4xl md:text-5xl lg:text-6xl leading-tight"
             >
               About
-              <span class="text-black"> Me</span>
+              <span class="text-(--color-text)"> Me</span>
             </h2>
             <p
-              class="text-black font-medium text-lg md:text-xl mt-4"
+              class="text-(--color-text) font-medium text-lg md:text-xl mt-4"
               data-aos="fade-left"
               data-aos-delay="400"
             >
@@ -81,11 +81,11 @@
                   class="w-6 h-6"
                   :class="skill.iconColor"
                 ></component>
-                <h3 class="text-lg font-bold text-black">
+                <h3 class="text-lg font-bold text-(--color-text)">
                   {{ skill.title }}
                 </h3>
               </div>
-              <p class="text-black text-sm">
+              <p class="text-(--color-text) text-sm">
                 {{ skill.desc }}
               </p>
             </div>
@@ -98,7 +98,7 @@
             <button
               v-for="button in ctaButtons"
               :key="button.id"
-              class="px-8 py-3 rounded-xl bg-(--color-primaryalt) font-semibold transition-all duration-300 flex items-center justify-center hover:shadow-lg hover:shadow-[#b14aed]/60"
+              class="px-8 py-3 rounded-xl bg-(--color-side) font-semibold transition-all duration-300 flex items-center justify-center hover:shadow-lg hover:shadow-[#b14aed]/60"
               :class="button.classes"
               @click="
                 button.text === 'Contact Me' && scrollToContact();
@@ -149,8 +149,8 @@ const aboutImage = [
     id: 1,
     src: about1,
     alt: "Pro",
-    gradient: `bg-black
-         border-blue-400/40`,
+    gradient: `bg-(--color-primarysec)
+         border-(--color-side)`,
     badge: "Web Developer",
     badgeColor: "bg-[var(--color-primary)]",
     animation: "fade-right",
@@ -160,8 +160,8 @@ const aboutImage = [
     id: 2,
     src: about2,
     alt: "",
-    gradient: `bg-black
-         border-blue-400/40`,
+    gradient: `bg-(--color-primarysec)
+         border-(--color-side)`,
     badge: "App Developer",
     badgeColor: "bg-[var(--color-primary)]",
     animation: "fade-left",
@@ -171,8 +171,8 @@ const aboutImage = [
     id: 3,
     src: about3,
     alt: "Pro",
-    gradient: `bg-black
-         border-blue-400/40`,
+    gradient: `bg-(--color-primarysec)
+         border-(--color-side)`,
     badge: "Professional",
     badgeColor: "bg-[var(--color-primary)]",
     animation: "fade-right",
@@ -182,8 +182,8 @@ const aboutImage = [
     id: 4,
     src: about4,
     alt: "Design",
-    gradient: `bg-black
-         border-blue-400/40`,
+    gradient: `bg-(--color-primarysec)
+         border-(--color-side)`,
     badge: "Designer",
     badgeColor: "bg-[var(--color-primary)]",
     animation: "fade-left",
@@ -229,8 +229,8 @@ const ctaButtons = [
     icon: ArrowRightIcon,
     iconclass: `ml-2 group-hover:translate-x-1
         transition-transform`,
-    classes: `bg-[var(--color-secondary)]
-        text-white hover:bg-[var(--color-primary)] cursor-pointer`,
+    classes: `bg-[var(--color-side)]
+        text-white hover:bg-[var(--color-secondary)] cursor-pointer`,
   },
   {
     id: 2,

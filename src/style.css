@@ -1,20 +1,19 @@
 @import "tailwindcss";
 @import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100..900;1,100..900&display=swap');
 :root {
-  --color-primary: #ff0000; 
-   --color-primaryalt: #f43838;
-  --color-secondary: #007AFF;
-  --color-secondaryalt: #3390f3;
-  --color-bg: #d7d7d7;
-  --color-side: #ff9500;
-  --color-sidealt: #ffbf65;
-  --color-head: #00ffff;
-
+  --color-primary: #0d7738; 
+  --color-primaryalt: #02170a;
+  --color-primarysec: #010c04;
+  --color-secondary: #ffb641;
+  --color-secondaryalt: #2ecfff;
+  --color-bg: #0d1321;
+  --color-side: #854798;
+  --color-nav: #617084;
+  --color-text: #f1ffe7;
 }
 
 
-
-@theme {
+#theme {
   --font-roboto: 'Roboto', sans-serif;
 }
 
@@ -64,7 +63,7 @@ body {
   position: absolute;
   inset: -3px;            
   border-radius: inherit;
-  border: 2px solid var(--color-primary);
+  border: 2px solid var(--color-side);
   opacity: 0.6;
   animation: borderPulse2 2s ease-in-out infinite;
   pointer-events: none;

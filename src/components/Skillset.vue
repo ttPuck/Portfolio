@@ -2,7 +2,7 @@
   <section class="relative py-20 overflow-hidden" id="skillset">
     <div class="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="text-center mb-16" data-aos="fade-up">
-        <h2 class="text-4xl md:text-5xl font-bold text-black mb-4">
+        <h2 class="text-4xl md:text-5xl font-bold text-(--color-text) mb-4">
           <span
             class="text-transparent bg-clip-text bg-linear-to-r from-[#454ade] to-[#b14aed]"
           >
@@ -10,21 +10,21 @@
           </span>
           & Experience
         </h2>
-        <p class="text-black text-lg max-w-2xl mx-auto">
+        <p class="text-(--color-text) text-lg max-w-2xl mx-auto">
           My Technical Catalog And Professional Journey
         </p>
       </div>
       <div class="grid lg:grid-cols-2 gap-12 lg:gap-16">
         <div data-aos="fade-right">
           <h3
-            class="text-2xl font-bold text-black mb-8 flex items-center gap-3"
+            class="text-2xl font-bold text-(--color-text) mb-8 flex items-center gap-3"
           >
             Technical Skills
           </h3>
           <div class="space-y-6">
             <div v-for="skill in skills" :key="skill.id" class="group">
               <div class="flex items-center justify-between mb-3">
-                <span class="text-black font-semibold flex items-center gap-2">
+                <span class="text-(--color-text) font-semibold flex items-center gap-2">
                   <component
                     :is="skill.icon"
                     class="w-5 h-5"
@@ -37,7 +37,7 @@
                 <span
                   v-for="t in skill.tech"
                   :key="t.name"
-                  class="px-2 py-2 border-pulse bg-linear-to-r from-blue-500/20 border border-blue-400/30 rounded-full text-black text-sm font-medium hover:scale-105 transition-transform duration-300"
+                  class="px-2 py-2 border-pulse bg-linear-to-r from-blue-500/20 border border-blue-400/30 rounded-full text-(--color-text) text-sm font-medium hover:scale-105 transition-transform duration-300"
                 >
                   {{ t.name }}
                 </span>
@@ -56,7 +56,7 @@
               <span
                 v-for="tech in techStack"
                 :key="tech"
-                class="px-4 py-2 bg-[#5386e4] border border-blue-400/30 rounded-full text-white text-sm font-medium hover:scale-105 transition-transform duration-300"
+                class="px-4 py-2 bg-[#5386e4] border border-blue-400/20 rounded-full text-(--color-text) text-sm font-medium hover:scale-105 transition-transform duration-300"
               >
                 {{ tech }}
               </span>
@@ -65,9 +65,9 @@
         </div>
         <div data-aos="fade-left">
           <h3
-            class="text-2xl font-bold text-black mb-8 flex items-center gap-3"
+            class="text-2xl font-bold text-(--color-text) mb-8 flex items-center gap-3"
           >
-            <BriefcaseIcon class="w-8 h-8 text-(--color-secondary)" />
+            <BriefcaseIcon class="w-8 h-8 text-(--color-text)" />
             Work Experience
           </h3>
           <div class="space-y-8">
@@ -82,13 +82,13 @@
                 :class="exp.dotColor"
               ></div>
               <div
-                class="bg-(--color-secondaryalt) rounded-2xl p-6 border border-[#5386e4] backdrop-blur-sm group-hover:border-[#a73ee4] transition-all duration-300"
+                class="bg-(--color-secondary) rounded-2xl p-6 border border-[#5386e4] backdrop-blur-sm group-hover:border-[#a73ee4] transition-all duration-300"
                 :class="exp.borderClass"
               >
                 <div
                   class="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-3"
                 >
-                  <h4 class="text-lg font-bold text-white">
+                  <h4 class="text-lg font-bold text-(--color-text)">
                     {{ exp.position }}
                   </h4>
                   <span :class="exp.dateColor" class="mt-1 sm:mt-0">{{
@@ -186,7 +186,7 @@ const experiences = [
     dotColor: "bg-[var(--color-secondaryalt)]",
     borderClass: "border-pulse-2",
     dateColor: "text-white text-sm font-semibold",
-    companyColor: "text-[var(--color-sidealt)]",
+    companyColor: "text-[var(--color-primary)]",
   },
   {
     id: 2,
@@ -195,10 +195,10 @@ const experiences = [
     period: "2019 - 2025",
     desc: "Frontend developer and UI/UX design for one recruiting website, and manager of all HR and administrative duties for the company. Duties included: Onboarding, Payroll, Calendar Management, Administrative Tasks, and Clerical Tasks.",
     borderColor: "border-blue-500/30",
-    dotColor: "bg-[var(--color-secondaryalt)]",
+    dotColor: "bg-[var(--color-secondary)]",
     borderClass: "border-blue-500/20",
     dateColor: "text-white text-sm font-semibold",
-    companyColor: "text-[var(--color-sidealt)]",
+    companyColor: "text-[var(--color-primary)]",
   },
 ];
 </script>

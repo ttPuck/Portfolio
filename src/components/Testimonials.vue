@@ -3,7 +3,7 @@
     <div class="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="text-center mb-16" data-aos="fade-up">
         <h2
-          class="text-4xl md:text-5xl font-bold text-black"
+          class="text-4xl md:text-5xl font-bold text-(--color-text)"
           data-aos="fade-up"
         >
           Client
@@ -13,20 +13,20 @@
             Testimonials
           </span>
         </h2>
-        <p class="text-white text-lg">What People Say About Working With Me</p>
+        <p class="text-(--color-text) text-lg">What People Say About Working With Me</p>
       </div>
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6">
         <div
           v-for="(testimonial, index) in testimonials"
           :key="testimonial.id"
-          class="bg-(--color-secondaryalt) rounded-2xl p-6 border border-blue-500/20 backdrop-blur-sm hover:border-blue-400 transition-all duration-300"
+          class="bg-(--color-primarysec) rounded-2xl p-6 border border-blue-500/20 backdrop-blur-sm hover:border-blue-400 transition-all duration-300"
           data-aos="fade-up"
           :data-aos-delay="index * 100"
         >
           <div class="flex gap-1 mb-4">
             <StarIcon v-for="n in 5" :key="n" class="w-5 h-5 text-yellow-400" />
           </div>
-          <p class="text-white text-sm leading-relaxed mb-6">
+          <p class="text-(--color-text) text-sm leading-relaxed mb-6">
             "{{ testimonial.text }}"
           </p>
           <div class="flex items-center gap-4">
@@ -40,10 +40,10 @@
               />
             </div>
             <div>
-              <p class="text-white font-semibold">
+              <p class="text-(--color-text) font-semibold">
                 {{ testimonial.name }}
               </p>
-              <p class="text-(--color-sidealt) text-sm">
+              <p class="text-(--color-text) text-sm">
                 {{ testimonial.position }}
               </p>
             </div>
