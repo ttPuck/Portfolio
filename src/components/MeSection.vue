@@ -81,7 +81,7 @@
                 </span>
               </button>
             </div>
-            <a href="/Ian.Portfolio.pdf" download>
+            <a href="/Ian.Portfolio.pdf" download class="w-full sm:w-max">
               <!-- Gradient wrapper -->
               <div
                 class="p-[2px] bg-linear-to-r from-(--color-side) to-(--color-secondary) rounded-xl w-full sm:w-max"
