@@ -333,7 +333,7 @@ const otherprojects = ref([
   {
     id: 2,
     title: "nvSIL 2",
-    desc: `A successor to my app, nvSIL. It features a new tab (subfolder) feature, allowing notes to be stored in subfolders, and a .md and TODO.txt syntax parser to enable a user to access all TODO's via a TODO tab.`,
+    desc: `A successor to my app, nvSIL. It features a new tab (subfolder) ability, allowing notes to be stored in subfolders, and a .md and TODO.txt syntax parser to enable a user access to all TODO's via a TODO tab.`,
     image: "projects/project6.png",
     category: "App Development",
     bordColor: "border-blue-500/30",
